@@ -1,0 +1,249 @@
+/* ==========================================================================
+   MuraMap — экран «Гид» (чат-бот)
+   Экран занимает всю высоту: сверху заголовок, в середине прокручиваемый
+   диалог, снизу поле ввода над таббаром.
+   Общие части (шапка, переключатель языка) — из scan.css.
+   ========================================================================== */
+
+.body--guide { overflow: hidden; }
+
+.guide {
+  --error: #E8967A;
+
+  height: 100dvh;
+  max-width: 640px;
+  margin: 0 auto;
+  padding:
+    calc(var(--header-h) + env(safe-area-inset-top) + 12px)
+    16px
+    calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.guide__title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.guide__clear {
+  min-height: 36px;
+  padding: 0 14px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--limestone-2);
+}
+.guide__clear:hover { color: var(--limestone); border-color: var(--turquoise); }
+
+/* ---------- Объект разговора ---------- */
+
+.context {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 6px 6px 12px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brass);
+  border-radius: var(--r-sm);
+  font-size: 13px;
+}
+
+.context__label { color: var(--limestone-2); flex: 0 0 auto; }
+
+.context__name {
+  min-width: 0;
+  flex: 1 1 auto;
+  color: var(--brass);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.context__name:hover { text-decoration: underline; }
+
+.context__close {
+  width: 30px; height: 30px;
+  flex: 0 0 auto;
+  display: grid; place-items: center;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  color: var(--limestone-2);
+}
+
+/* ---------- Диалог ---------- */
+
+.chat {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 2px 8px;
+}
+
+.msg {
+  max-width: 86%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  display: grid;
+  gap: 8px;
+  animation: msg-in .22s var(--ease);
+}
+
+@keyframes msg-in {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
+.msg__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+/* Ответ гида — как страница рукописи: светлый камень, засечки */
+.msg--assistant {
+  align-self: flex-start;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-bottom-left-radius: 6px;
+}
+.msg--assistant .msg__text { font-family: var(--serif); font-size: 15.5px; line-height: 1.62; }
+
+.msg--user {
+  align-self: flex-end;
+  background: var(--turquoise);
+  color: #04191D;
+  border-bottom-right-radius: 6px;
+}
+.msg--user .msg__text { font-weight: 500; }
+
+.msg--error { border-color: var(--error); }
+.msg--error .msg__text { color: var(--error); font-family: var(--sans); font-size: 14px; }
+
+.msg__link {
+  justify-self: start;
+  padding: 7px 12px;
+  border: 1px solid var(--brass);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brass);
+  text-decoration: none;
+}
+.msg__link:hover { background: color-mix(in srgb, var(--brass) 14%, transparent); }
+
+/* Три точки «печатает» */
+.msg--typing {
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 5px;
+  padding: 14px 16px;
+}
+.msg--typing span {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--limestone-2);
+  animation: dot 1.1s infinite ease-in-out;
+}
+.msg--typing span:nth-child(2) { animation-delay: .15s; }
+.msg--typing span:nth-child(3) { animation-delay: .3s; }
+
+@keyframes dot {
+  0%, 80%, 100% { opacity: .3; transform: translateY(0); }
+  40% { opacity: 1; transform: translateY(-3px); }
+}
+
+/* ---------- Подсказки ---------- */
+
+.suggest {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 0 0 auto;
+}
+.suggest::-webkit-scrollbar { display: none; }
+
+.suggest__btn {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 0 14px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--limestone);
+  white-space: nowrap;
+}
+.suggest__btn:hover { border-color: var(--brass); }
+.suggest__btn:disabled { opacity: .5; }
+
+/* ---------- Поле ввода ---------- */
+
+.composer {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 6px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+}
+.composer:focus-within { border-color: var(--turquoise); }
+
+.composer__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 42px;
+  max-height: 140px;
+  padding: 10px 8px 10px 12px;
+  background: none;
+  border: 0;
+  resize: none;
+  color: var(--limestone);
+  font: 16px/1.4 var(--sans);   /* 16px — iOS не увеличивает страницу */
+}
+.composer__input:focus { outline: none; }
+.composer__input::placeholder { color: var(--limestone-2); opacity: .7; }
+
+.composer__send {
+  width: 42px; height: 42px;
+  flex: 0 0 auto;
+  display: grid; place-items: center;
+  background: var(--brass);
+  border: 0;
+  border-radius: 50%;
+  color: #2A1A05;
+}
+.composer__send:disabled { opacity: .5; cursor: default; }
+
+.composer__note {
+  margin: 0;
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--limestone-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .msg, .msg--typing span { animation: none; }
+}
