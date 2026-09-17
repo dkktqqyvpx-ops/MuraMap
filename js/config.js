@@ -9,5 +9,6 @@
    ========================================================================== */
 
 window.MURA_CONFIG = {
-  siteUrl: 'https://USERNAME.github.io/MuraMap/'
+  siteUrl: 'https://dkktqqyvpx-ops.github.io/MuraMap/',
+   chatUrl: 'https://muramap-guide.nurdaulet-malikov.workers.dev/'
 };
