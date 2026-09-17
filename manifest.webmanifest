@@ -1,0 +1,13 @@
+{
+  "name": "MuraMap",
+  "short_name": "MuraMap",
+  "description": "Қазақстанның мұра, мәдениет және тарих орындарының картасы",
+  "lang": "kk",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B2A31",
+  "theme_color": "#0B2A31",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
