@@ -15,9 +15,14 @@
       placeholder: 'Мысалы: Жұмағазы хазірет кім?',
       send: 'Жіберу',
       note: 'Гид MuraMap деректері бойынша жауап береді және қателесуі мүмкін.',
-      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR',
+      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR', navStudy: 'Оқу',
 
       hello: 'Сәлеметсіз бе! Мен MuraMap гидімін. Қазақстанның киелі орындары туралы сұраңыз.',
+      helloUniversity: 'Сәлеметсіз бе! Мен MuraMap гидімін. {name} туралы не білгіңіз келеді? Жауаптар тек жиналған дереккөздерге сүйенеді.',
+      showProfile: 'Профильді ашу: {name}',
+      qu1: '{name} жатақханасы қанша тұрады?',
+      qu2: '{name} қала орталығынан қандай қашықтықта?',
+      qu3: '{name} тарихы туралы айтып беріңіз',
       helloObject: 'Сәлеметсіз бе! Мен MuraMap гидімін. «{name}» туралы не білгіңіз келеді?',
       showOnMap: 'Картадан көру: {name}',
       typing: 'Гид жауап жазып жатыр',
@@ -46,9 +51,14 @@
       placeholder: 'Например: кто такой Жумагазы-хазрет?',
       send: 'Отправить',
       note: 'Гид отвечает по данным MuraMap и может ошибаться.',
-      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR',
+      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR', navStudy: 'Учёба',
 
       hello: 'Здравствуйте! Я гид MuraMap. Спрашивайте о сакральных местах Казахстана.',
+      helloUniversity: 'Здравствуйте! Я гид MuraMap. Что вы хотите узнать о {name}? Отвечаю только по собранным источникам.',
+      showProfile: 'Открыть профиль: {name}',
+      qu1: 'Сколько стоит общежитие в {name}?',
+      qu2: 'Как далеко {name} от центра города?',
+      qu3: 'Расскажите историю {name}',
       helloObject: 'Здравствуйте! Я гид MuraMap. Что вы хотите узнать об объекте «{name}»?',
       showOnMap: 'Показать на карте: {name}',
       typing: 'Гид пишет ответ',
@@ -67,27 +77,64 @@
       timeout: 'Ответ идёт слишком долго. Попробуйте ещё раз.',
       rateLimited: 'Слишком много вопросов. Повторите через несколько минут.',
       failed: 'Гид сейчас не смог ответить. Попробуйте чуть позже.'
+    },
+    en: {
+      title: 'Guide',
+      clear: 'New chat',
+      about: 'Talking about:',
+      contextClear: 'Remove context',
+      inputLabel: 'Your question',
+      placeholder: 'For example: who was Zhumagazy Khazret?',
+      send: 'Send',
+      note: 'The guide answers from MuraMap data and may make mistakes.',
+      navGuide: 'Guide', navMap: 'Map', navQr: 'QR', navStudy: 'Study',
+
+      hello: 'Hello! I am the MuraMap guide. Ask me about the sacred places of Kazakhstan.',
+      helloObject: 'Hello! I am the MuraMap guide. What would you like to know about “{name}”?',
+      helloUniversity: 'Hello! I am the MuraMap guide. What would you like to know about {name}? Answers rely only on the collected sources.',
+      showOnMap: 'Show on map: {name}',
+      showProfile: 'Open profile: {name}',
+      typing: 'The guide is typing',
+      you: 'You',
+      guide: 'Guide',
+
+      q1: 'Who was Zhumagazy Khazret?',
+      q2: 'Which mausoleums are on the map?',
+      q3: 'How should one behave at a sacred site?',
+      qo1: 'Tell me about {name}',
+      qo2: 'Which century does it date from?',
+      qo3: 'Which region is it in?',
+      qu1: 'How much is a dormitory at {name}?',
+      qu2: 'How far is {name} from the city center?',
+      qu3: 'Tell me the history of {name}',
+
+      notConfigured: 'The chatbot is not connected yet: chatUrl is missing in js/config.js.',
+      offline: 'No internet connection. Check it and try again.',
+      timeout: 'The answer is taking too long. Please try again.',
+      rateLimited: 'Too many questions. Try again in a few minutes.',
+      failed: 'The guide could not answer right now. Try again a bit later.'
     }
   };
 
   const LANG_KEY = 'mura-lang';
   const CHAT_KEY = 'mura-chat';
   const ID_RE = /^MURA-\d{3,}$/;
+  const UNI_RE = /^UNI-[A-Z0-9]+$/;
   const TIMEOUT = 30000;
 
 
   const params = new URLSearchParams(location.search);
   let lang = readLang();
-  let objects = [];             
+  let objects = [];
+  let universities = [];
   let busy = false;
 
   const saved = readChat();
   let messages = saved.messages; 
   let contextId = saved.contextId;
 
-  const fromUrl = (params.get('object') || '').toUpperCase();
-  if (ID_RE.test(fromUrl) && fromUrl !== contextId) {
-  
+  const fromUrl = (params.get('object') || params.get('university') || '').toUpperCase();
+  if ((ID_RE.test(fromUrl) || UNI_RE.test(fromUrl)) && fromUrl !== contextId) {
     contextId = fromUrl;
     messages = [];
   }
@@ -139,12 +186,14 @@
   }
 
   function objectName(id, names) {
-    const obj = objects.find(function (o) { return o.id === id; });
-    const n = names || (obj && obj.name);
-    return (n && (n[lang] || n.ru || n.kk)) || id;
+    const list = UNI_RE.test(id) ? universities : objects;
+    const obj = list.find(function (o) { return o.id === id; });
+    const n = names || (obj && (obj.shortName || obj.name));
+    return (n && (n[lang] || n.ru || n.kk || n.en)) || id;
   }
 
   function mapLink(id) {
+    if (UNI_RE.test(id)) return 'university.html?id=' + encodeURIComponent(id) + '&lang=' + lang;
     return 'map.html?id=' + encodeURIComponent(id) + '&lang=' + lang;
   }
 
@@ -186,7 +235,7 @@
         const link = document.createElement('a');
         link.className = 'msg__link';
         link.href = mapLink(o.id);
-        link.textContent = t('showOnMap', { name: objectName(o.id, o.name) });
+        link.textContent = t(UNI_RE.test(o.id) ? 'showProfile' : 'showOnMap', { name: objectName(o.id, o.name) });
         item.appendChild(link);
       });
     }
@@ -196,7 +245,7 @@
   function renderAll() {
     chat.innerHTML = '';
     const hello = contextId
-      ? t('helloObject', { name: objectName(contextId) })
+      ? t(UNI_RE.test(contextId) ? 'helloUniversity' : 'helloObject', { name: objectName(contextId) })
       : t('hello');
     chat.appendChild(bubble('assistant', hello));
     messages.forEach(renderMessage);
@@ -224,9 +273,12 @@
     }
     suggest.hidden = false;
 
-    const list = contextId
-      ? [t('qo1', { name: objectName(contextId) }), t('qo2'), t('qo3')]
-      : [t('q1'), t('q2'), t('q3')];
+    const name = contextId ? objectName(contextId) : '';
+    const list = !contextId
+      ? [t('q1'), t('q2'), t('q3')]
+      : UNI_RE.test(contextId)
+        ? [t('qu1', { name: name }), t('qu2', { name: name }), t('qu3', { name: name })]
+        : [t('qo1', { name: name }), t('qo2'), t('qo3')];
 
     list.forEach(function (text) {
       const btn = document.createElement('button');
@@ -316,7 +368,7 @@
       if (!res.ok) throw new Error('failed');
 
       const data = await res.json();
-      const found = Array.isArray(data.objects) ? data.objects : [];
+      const found = (Array.isArray(data.objects) ? data.objects : []).concat(Array.isArray(data.universities) ? data.universities : []);
       const answer = { role: 'assistant', content: String(data.answer || ''), objects: found };
 
       messages.push(answer);
@@ -423,7 +475,15 @@
     .then(function (r) { return r.ok ? r.json() : { objects: [] }; })
     .then(function (data) {
       objects = data.objects || [];
-      renderAll();  
+      renderAll();
     })
     .catch(function (err) { console.warn('objects.json:', err); });
+
+  fetch('data/universities.json')
+    .then(function (r) { return r.ok ? r.json() : { universities: [] }; })
+    .then(function (data) {
+      universities = data.universities || [];
+      if (contextId && UNI_RE.test(contextId)) renderAll();
+    })
+    .catch(function (err) { console.warn('universities.json:', err); });
 })();

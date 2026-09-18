@@ -1,0 +1,426 @@
+{
+ "generatedAt": "2026-09-18",
+ "universities": [
+  {
+   "id": "UNI-AYU",
+   "gaps": [
+    {
+     "field": "tuition",
+     "note": "Searched 'оқу ақысы 2025-2026' (ayu.edu.kz), 'МКТУ Ясави стоимость обучения 2025-2026', 'Стоимость обучения по образовательным программам' (ayu.edu.kz/students.ayu.edu.kz/talapker.ayu.edu.kz) and univision.kz price page. Official pages exist (https://ayu.edu.kz/ru/haberler/1099 and https://students.ayu.edu.kz/ru/kurumsal/detay/ogrenci-katki-payi/213) but WebSearch returned no figures from them. Only the Turkic-world quota page states no tuition for quota students."
+    },
+    {
+     "field": "costOfLiving",
+     "note": "Numbeo has no Turkistan city page; only Kazakhstan country-level data was returned. No official student budget beyond the dormitory fee was found."
+    },
+    {
+     "field": "housing",
+     "note": "Official dormitory names/numbers, facilities list and coordinates were not returned; the dormitories department page (https://ayu.edu.kz/birimler/kz/334-yurtlar-bolumu/yapisal-birimler/520) appeared in results without content. Fee discrepancy: 5,000 KZT/month in a 2023-2024 announcement vs 10,000 KZT/month on current pages."
+    },
+    {
+     "field": "transport",
+     "note": "Searched Kazakh queries for Turkistan city bus routes serving the university; no route numbers or stops were found. Nearest public-transport stop omitted."
+    },
+    {
+     "field": "climate",
+     "note": "Wikipedia climate table values (annual mean, precipitation) were not returned; annual mean temperature omitted. January/July averages come only from an aggregator with ambiguous attribution (confidence low)."
+    },
+    {
+     "field": "places",
+     "note": "No coordinates were published for dormitories, library or sports facilities; lat/lng set to null."
+    },
+    {
+     "field": "history",
+     "note": "Official milestones after 1992 (campus construction, faculties, renames) and official current student numbers were not retrieved; the session's WebSearch budget was exhausted after 26 successful calls."
+    }
+   ],
+   "queryLog": [
+    "Khoja Akhmet Yassawi International Kazakh-Turkish University wikipedia coordinates Turkistan",
+    "Turkistan city Kazakhstan wikipedia coordinates 43°18′N 68°15′E",
+    "Mausoleum of Khoja Ahmed Yasawi coordinates wikipedia",
+    "Hazrat Sultan International Airport coordinates wikipedia Turkistan",
+    "Turkistan railway station Kazakhstan wikipedia coordinates",
+    "жатақхана бағасы Ясауи университеті [ayu.edu.kz]",
+    "оқу ақысы стоимость обучения 2025-2026 бакалавриат [ayu.edu.kz]",
+    "Turkistan Kazakhstan climate average January July temperature precipitation",
+    "Tuition fees for applicants for undergraduate program talapker.ayu.edu.kz тенге [talapker.ayu.edu.kz, ayu.edu.kz]",
+    "Студенттік жатақханалар students.ayu.edu.kz бөлме орын ақысы [students.ayu.edu.kz]",
+    "Ahmet Yassawi University history 1991 1992 intergovernmental agreement Kazakhstan Turkey founded [ayu.edu.kz]",
+    "Ahmet Yassawi University campus life student clubs sports complex library [ayu.edu.kz]",
+    "Ahmet Yassawi University Turkistan address B. Sattarkhanov avenue 29 contact",
+    "Numbeo cost of living Turkistan Kazakhstan",
+    "Түркістан қалалық автобус маршруттары университет Ясауи жатақхана бағыт",
+    "Turkistan (city) Wikipedia climate data table mean annual temperature precipitation [en.wikipedia.org, ru.wikipedia.org]",
+    "ХҚТУ оқу ақысы 2025-2026 оқу жылы бакалавриат жылдық ақылы бөлім теңге Ясауи",
+    "МКТУ Ясави стоимость обучения 2025-2026 платное отделение тенге в год",
+    "Түркістанға саяхат students.ayu.edu.kz ulasim әуежай теміржол вокзал автобус университет [students.ayu.edu.kz, ayu.edu.kz]",
+    "Ahmet Yassawi University Wikipedia history students faculties number of students campus Turkistan [en.wikipedia.org]",
+    "Campus Life and Turkistan Ahmet Yesevi University international students living expenses monthly dollars dormitory food [ayu.edu.kz]",
+    "weather-atlas Turkistan Kazakhstan yearly climate average annual temperature rainfall mm [weather-atlas.com, climatestotravel.com]",
+    "Ясауи университеті жатақхана №1 №2 №3 жаңа жатақхана ашылды орын студенттер үйі Түркістан",
+    "Turkistan Kazakhstan Wikidata Q coordinates city Türkistan [wikidata.org]",
+    "Стоимость обучения по образовательным программам бакалавриат магистратура тенге учебный год [ayu.edu.kz, students.ayu.edu.kz, talapker.ayu.edu.kz]",
+    "Стоимость обучения в Международном Казахско-Турецком Университете имени Х.А.Ясави univision цена бакалавриат тенге [univision.kz]"
+   ]
+  },
+  {
+   "id": "UNI-ENU",
+   "gaps": [
+    {
+     "field": "housing",
+     "note": "The official ENU price list («Прейскурант стоимости услуг проживания в СД») is referenced on enu.kz/ru/page/for-students/finance/payment-for-accommodation-in-student-houses and dsd.enu.kz, but no per-house KZT figures were returned by 4 searches (2 restricted to enu.kz/dsd.enu.kz). Prices recorded come from inform.kz (2024), informburo.kz and newtimes.kz instead."
+    },
+    {
+     "field": "housing",
+     "note": "Addresses for Student Houses No. 1–6 and coordinates for all dormitories were not returned; only No. 7 (Pushkin 11/2) and No. 8 (Kutpanov 24A) came from the official page. 2GIS lists No. 7 at Pushkin 11/1a, a minor discrepancy with the official 11/2."
+    },
+    {
+     "field": "tuition",
+     "note": "Official 2025/2026 and 2026/2027 price lists exist on enu.kz/ru/page/applicants/tuition-fees (as PDFs) but their figures were not exposed in search text across 4 queries. The stipend figures 52 372 / 60 227,80 KZT returned by one search were conflated with tuition by the search summary and were deliberately excluded. Only 2024/2025 per-group prices (newtimes.kz) and an unattributed 2025/2026 range (1.44–1.71 mln, low confidence) are recorded. No international-student (USD) fees found."
+    },
+    {
+     "field": "costOfLiving",
+     "note": "Only the Numbeo single-person total was returned; the per-category Numbeo query (meal, monthly pass) and any ENU international-office budget guidance could not be run because the session web-search budget was exhausted."
+    },
+    {
+     "field": "climate",
+     "note": "Wikipedia returned only the annual (3.9 °C) and July (20.6 °C) values; January mean and annual precipitation come from climatestotravel.com (low confidence). Note climatestotravel gives July 20.8 °C vs Wikipedia 20.6 °C."
+    },
+    {
+     "field": "transport",
+     "note": "Bus routes come from a 2GIS stop listing and a 2015 route scheme (low confidence). Astana LRT status and airport-to-campus routes were not searched (budget exhausted)."
+    },
+    {
+     "field": "places",
+     "note": "No coordinates found for the library, sports centre, dormitories or the nearest bus stop; lat/lng left null."
+    },
+    {
+     "field": "history",
+     "note": "Official enu.kz history/milestones page was not retrieved (budget exhausted); 2000 and 2001 milestones rely on English Wikipedia."
+    }
+   ],
+   "queryLog": [
+    "\"Gumilyov Eurasian National University\" wikipedia coordinates",
+    "Astana wikidata coordinates 51°10′N 71°26′E",
+    "Nursultan Nazarbayev International Airport wikipedia coordinates",
+    "Nurly Zhol railway station Astana wikipedia coordinates",
+    "общежитие ЕНУ стоимость проживания 2025 [enu.kz]",
+    "стоимость обучения ЕНУ 2025-2026 бакалавриат [enu.kz]",
+    "Q127745 wikidata \"Eurasian National University\" coordinate location 51.1",
+    "Астана-1 железнодорожный вокзал координаты википедия",
+    "ЕНУ Гумилева студенческий дом стоимость проживания тенге в месяц 2025-2026",
+    "ЕНУ Гумилева стоимость обучения 2025-2026 тенге в год бакалавриат прейскурант",
+    "Eurasian National University history founded 1996 merger Tselinograd Pedagogical Institute Akmola Civil Engineering Institute",
+    "Astana climate wikipedia average January July temperature annual precipitation mm",
+    "Евразийский национальный университет имени Гумилёва википедия координаты 51° с. ш. 71° в. д.",
+    "\"Astana-1 station\" wikipedia coordinates 51° N 71° E",
+    "ЕНУ общежитие \"18 000\" тенге в месяц студенческий дом Астана",
+    "ЕНУ Гумилева стоимость обучения 2025 год тенге \"международные отношения\" \"педагогика\" бакалавриат сколько стоит",
+    "Astana wikipedia climate table \"record high\" \"average high\" mean annual precipitation [en.wikipedia.org]",
+    "ENU student life clubs sports complex library laboratories [enu.kz]",
+    "автобус остановка ЕНУ Астана маршруты Сатпаева 2 как добраться",
+    "прейскурант стоимость проживания студенческий дом ЕНУ 2025-2026 тенге [enu.kz, dsd.enu.kz]",
+    "ЕНУ \"Студенческий дом №5\" 275 000 тенге в год проживание",
+    "newtimes.kz вузы Астаны стоимость обучения 2025 ЕНУ Гумилева тенге в год",
+    "ENU tuition fees international students bachelor master USD per year [enu.kz]",
+    "Astana climate data January mean temperature −14 °C annual precipitation mm wikipedia \"Astana\"",
+    "Numbeo cost of living Astana single person monthly costs without rent 2026",
+    "\"more than 60\" student organizations clubs ENU student theater orchestra debate [enu.kz]",
+    "ENU about us number of students faculties educational programs 2025 [enu.kz]",
+    "ЕНУ студенческие дома адреса Кажымукан Пушкина Мунайтпасова студенческий дом №1 №2 №3 [enu.kz, dsd.enu.kz]"
+   ]
+  },
+  {
+   "id": "UNI-KAZNU",
+   "gaps": [
+    {
+     "field": "tuition",
+     "note": "Official per-program tuition tables for 2025/2026 exist as PDFs on welcome.kaznu.kz (bachelor, master, doctoral) but WebSearch never returned the figures inside them; only a press-reported range (500,000 KZT nursing – 1,700,000 KZT law, lsm.kz) could be recorded. No master/PhD or international (USD) fees were retrievable. Searched RU/EN/official-domain-restricted queries for 'стоимость обучения 2025-2026', 'tuition fees foreign students USD'."
+    },
+    {
+     "field": "housing",
+     "note": "KazNU does not publish dormitory prices on the pages returned (kaznu.kz says the price is set 'в установленном законодательством порядке'). The 15,000 / 20,000 KZT per month figures come from an informburo.kz article whose publication date was not visible, so they are marked low confidence and may be outdated. Dormitory coordinates were not provided by any source; only the campus address (Al-Farabi Ave 71) is known."
+    },
+    {
+     "field": "location",
+     "note": "Wikipedia (43°13′30″N 76°55′16″E) and Wikidata (43°15′9″N 76°55′36″E) disagree by about 3 km; the Wikipedia figure was used because it matches the Al-Farabi Avenue 71 address, and the Wikidata value is recorded as a low-confidence secondary fact."
+    },
+    {
+     "field": "costOfLiving",
+     "note": "No student budget guidance from the KazNU international office was returned. Numbeo detail items (meal price, transport monthly pass, utilities) were not visible in search results; only the single-person total excluding rent and the 1-bedroom city-centre rent were captured."
+    },
+    {
+     "field": "transport",
+     "note": "The metro-to-campus distance ('approximately 1–2 km') and the Alatau station coordinates came from a synthesized search summary of Wikidata, not from a directly quoted page; no official statement names the nearest metro station."
+    },
+    {
+     "field": "history",
+     "note": "The 2001 national-university status is only supported by Wikipedia; the official history page returned no text about it (searched kaznu.kz / farabi.university for '2001 статус национального университета')."
+    }
+   ],
+   "queryLog": [
+    "Al-Farabi Kazakh National University wikipedia coordinates Al-Farabi Avenue 71 Almaty",
+    "Almaty wikidata coordinates 43°16′N 76°53′E",
+    "Almaty International Airport wikipedia coordinates; Almaty-2 railway station wikipedia coordinates",
+    "КазНУ Дом студентов стоимость проживания общежитие 2025 [kaznu.kz, farabi.university, welcome.kaznu.kz]",
+    "КазНУ стоимость обучения 2025-2026 бакалавриат магистратура [kaznu.kz, farabi.university, welcome.kaznu.kz]",
+    "Almaty climate wikipedia average January July temperature annual precipitation",
+    "\"Бакалавриат стоимость обучения 2025-2026\" КазНУ тенге образовательная программа стоимость за год [welcome.kaznu.kz]",
+    "welcome.kaznu.kz стоимость обучения бакалавриат 2025-2026 тенге в год",
+    "Дом студентов КазНУ оплата за проживание тенге в месяц 2025 2026",
+    "Al-Farabi Kazakh National University tuition fees international students USD per year 2025-2026 [official domains]",
+    "КазНУ история университета 1934 переименование аль-Фараби 1991 национальный университет [kaznu.kz, farabi.university]",
+    "Al-Farabi Kazakh National University wikipedia history founded 1934 KazGU-grad campus students number [en.wikipedia.org]",
+    "Almaty Metro station nearest KazNU Al-Farabi University metro Alatau station coordinates wikipedia",
+    "Almaty wikipedia climate table \"Climate data for Almaty\" mean annual temperature precipitation [en.wikipedia.org]",
+    "Numbeo cost of living Almaty 2026 monthly costs single person rent one bedroom",
+    "КазНУ аль-Фараби стоимость обучения 2025-2026 самая дорогая программа юриспруденция 1,7 млн тенге сестринское дело 500 тысяч",
+    "Стоимость обучения 2026-2027 КазНУ бакалавриат тенге [welcome.kaznu.kz]",
+    "KazNU tuition fee foreign students bachelor master PhD USD \"Tuition fees\" [official domains]",
+    "farabi.university hostel dormitory KazNU \"Дом студентов\" 2-местные 4-местные стоимость тенге [farabi.university]",
+    "общежитие КазНУ цена за месяц тенге студенты КазГУград 2025",
+    "KazNU student life clubs sports complex library \"Al-Farabi library\" campus KazGU-grad facilities students [official domains]",
+    "как добраться до КазНУ автобус остановка \"КазГУград\" маршруты автобусов проспект аль-Фараби 71",
+    "Numbeo Almaty cost of living monthly costs single person without rent KZT meal inexpensive restaurant monthly pass [numbeo.com]",
+    "Al-Farabi Kazakh National University Wikipedia students 20,000 faculties campus KazGU-grad renamed 1991 al-Farabi 2001 national",
+    "Almaty wikidata Q35493 coordinate location [wikidata.org]",
+    "informburo сколько стоит проживание в студенческих общежитиях Астане и Алматы КазНУ аль-Фараби 20 000 тенге в месяц",
+    "КазНУ имени аль-Фараби стоимость обучения 2025-2026 тенге \"информационные системы\" OR \"экономика\" OR \"международные отношения\" в год",
+    "KazNU tuition fees 2025-2026 foreign citizens bachelor master doctoral USD per year welcome.kaznu.kz 19388 [welcome.kaznu.kz, kaznu.kz]",
+    "КазНУ контакты как добраться проспект аль-Фараби 71 автобусы остановка [official domains]",
+    "КазГУград строительство студенческого городка КазНУ история кампус 1970-е Ректорат главный корпус",
+    "Numbeo Almaty rent apartment one bedroom city centre KZT monthly pass regular price 2026 [numbeo.com]",
+    "Al-Farabi Kazakh National University student houses \"Дом студентов\" address Al-Farabi avenue 71 dormitory No. wifi laundry study rooms [kaznu.kz, farabi.university]",
+    "informburo.kz общежития Алматы КазНУ иностранных студентов 20 000 тенге граждан Казахстана 15 000 тенге в месяц [informburo.kz]",
+    "bes.media поступление в КазНУ 2026 стоимость обучения тенге в год программы",
+    "КазНУ 2001 статус национального университета указ Президента история 1991 имя аль-Фараби присвоено [kaznu.kz, farabi.university]"
+   ]
+  },
+  {
+   "id": "UNI-KIMEP",
+   "gaps": [
+    {
+     "field": "tuition",
+     "note": "Graduate (MBA/MA/MSc) and PhD per-credit rates for 2025/2026 exist in official PDFs (Tuition-and-fees-2025-26_eng.pdf, tuition_fees_grad_rus.pdf) but WebSearch never returned the figures; searched in English and Russian on kimep.kz and generally. Only a low-confidence external 2024 figure (1 credit from 126,710 KZT, adyrna.kz) was found and kept as fact F-TUI-5 only."
+    },
+    {
+     "field": "tuition",
+     "note": "No separate international-student tuition rate was found; official pages state tuition equals the cost of credits with no domestic/international split, so audience is recorded as 'all'."
+    },
+    {
+     "field": "housing",
+     "note": "The Residence Hall fall-2024 semester fee (KZT 386,788) appeared in a kimep.kz-restricted search whose result list included both the On Campus Housing page and the my.kimep.kz 'Payment policy' PDF; exact page attribution is uncertain, so confidence is set to medium. No 2025/2026 dormitory price and no per-room-type prices were returned."
+    },
+    {
+     "field": "housing",
+     "note": "Guest House (on-campus apartments) prices are set annually by the housing department per an independent real-estate assessment; no figures published in search results."
+    },
+    {
+     "field": "places",
+     "note": "No source gave coordinates for the Residence Hall, Library, New Academic Building or Sports Complex; they are on the single campus at 4 Abai Avenue, lat/lng left null."
+    },
+    {
+     "field": "costOfLiving",
+     "note": "KIMEP publishes no student monthly budget. Numbeo returned only a total (excl. rent), 1-bedroom city-centre rent and a per-meal restaurant price (kept as fact F-COL-3, not a monthly category); monthly transport pass and food prices in KZT were not returned (Wise gave GBP only, not recorded to avoid conversion)."
+    },
+    {
+     "field": "transport",
+     "note": "KIMEP publishes no how-to-get-here page; bus route coverage comes only from external transit aggregators (low confidence)."
+    },
+    {
+     "field": "climate",
+     "note": "Wikipedia gives annual precipitation as a range (650–700 mm); the single value 675 mm comes from climate-data.org (low confidence)."
+    }
+   ],
+   "queryLog": [
+    "KIMEP University wikipedia coordinates Abai Avenue 2 Almaty",
+    "Almaty wikidata coordinates 43°16′N 76°53′E",
+    "KIMEP University tuition per credit 2025-2026 [kimep.kz]",
+    "KIMEP dormitory prices per semester housing [kimep.kz]",
+    "Almaty International Airport wikipedia coordinates",
+    "Almaty-2 railway station wikipedia coordinates",
+    "Abai metro station Almaty wikipedia coordinates",
+    "Almaty climate wikipedia average January July temperature annual precipitation",
+    "KIMEP University history founded 1992 Kazakhstan Institute of Management Economics and Strategic Research",
+    "KIMEP student life clubs sports center [kimep.kz]",
+    "KIMEP University cost of living international students Almaty monthly budget [kimep.kz]",
+    "Numbeo cost of living Almaty 2026 single person monthly",
+    "KIMEP on campus housing dormitory rent per semester tenge room single double [kimep.kz]",
+    "КИМЭП общежитие стоимость проживания в семестр тенге 2025-2026",
+    "KIMEP tuition and fees 2025-2026 graduate MBA PhD per credit foundation program [kimep.kz]",
+    "KIMEP tuition and fees 2025-2026 international students undergraduate per credit student fee [kimep.kz]",
+    "en.wikipedia.org Almaty climate data table mean daily January July annual precipitation mm [en.wikipedia.org]",
+    "KIMEP University wikipedia history renamed 2011 university status students enrolled accreditation [en.wikipedia.org]",
+    "KIMEP library New Academic Building Dostyk Building campus facilities [kimep.kz]",
+    "KIMEP how to get to campus bus routes Abai Dostyk metro directions [kimep.kz]",
+    "Numbeo Almaty rent one bedroom apartment city centre monthly pass meal inexpensive restaurant [numbeo.com]",
+    "KIMEP off-campus housing average rent Almaty apartment students [kimep.kz]",
+    "КИМЭП общежитие \"83,8\" тысячи тенге за семестр депозит 55,2",
+    "КИМЭП общежитие стоимость места семестр Dormitory kimep.kz [kimep.kz]",
+    "KIMEP 2025-2026 tuition graduate MBA MA \"credit\" tenge PhD one credit cost",
+    "KIMEP dormitory address Almaty student residence hall Dostyk campus sports center address",
+    "Almaty bus routes Abai Avenue Dostyk Avenue KIMEP stop bus numbers",
+    "Almaty International Airport distance from city centre km wikipedia Almaty-2 station Seifullin Avenue [en.wikipedia.org]",
+    "Numbeo Almaty monthly pass regular price meal inexpensive restaurant KZT",
+    "KIMEP University history milestones 1992 1994 2006 library 2008 academic building 2012 university status official [kimep.kz]",
+    "КИМЭП стоимость одного кредита магистратура MBA докторантура 2025-2026 тенге [kimep.kz]",
+    "gostudy.cz Университет КИМЭП общежитие 83,8 тысячи тенге семестр [gostudy.cz]",
+    "KIMEP Residence Hall 406 students price per semester deposit housing fee [kimep.kz]",
+    "Almaty cost of living Monthly Pass Regular Price ₸ Meal Inexpensive Restaurant ₸ Numbeo [numbeo.com]",
+    "KIMEP at a glance number of students faculty international students countries [kimep.kz]",
+    "KIMEP campus cafeteria canteen dining food court student center [kimep.kz]",
+    "KIMEP Sports Center gym swimming pool facilities opening year international quality [kimep.kz]",
+    "KIMEP tuition international students same rate foreign citizens tuition per credit 2025-2026",
+    "KIMEP Residence Hall \"386,788\" fall semester fee (not executed: session search budget exhausted)",
+    "КИМЭП стоимость 1 кредита магистратура 2025 тенге MBA докторантура цена кредита (not executed: session search budget exhausted)"
+   ]
+  },
+  {
+   "id": "UNI-NU",
+   "gaps": [
+    {
+     "field": "location",
+     "note": "Wikidata Q2783344 appeared in results but its coordinate excerpt was not returned; coordinates were taken from the English Wikipedia article (51°05′24″N 71°23′58″E), which matches the hint. No official campus map with coordinates was returned."
+    },
+    {
+     "field": "places",
+     "note": "No source returned coordinates for the dormitory blocks, library, Sports Center, University LRT station or the 'Nazarbayev University' bus stop; lat/lng left null. The campus map PDF (nu.edu.kz/media/inf-header/1/6504470c9a0f9.pdf) was listed but its content was not returned."
+    },
+    {
+     "field": "housing",
+     "note": "Current per-semester dormitory tariffs by room type were not returned from the live student-housing pages (registrar 'Стоимость и проживание', smg.nu.edu.kz/dormitory). The only dated-unknown per-room figures (27,000 / 80,000 / 67,000 / 98,000 KZT per semester) come from an old graduate FAQ and are marked low confidence. The FAQ PDF's 100,000 KZT/month average is undated."
+    },
+    {
+     "field": "tuition",
+     "note": "Master's fees are only published as 'from 5,808,000 KZT per year' in an undated announcement; per-program master's fees and the academic year for the Foundation $12,000 fee (KZT 6,132,000 equivalent from the hint) were not returned by search. GSPP tuition page (gspp.nu.edu.kz) was not surfaced."
+    },
+    {
+     "field": "costOfLiving",
+     "note": "The university publishes only an overall ~USD 400/month estimate; no category breakdown (food, transport, mobile) was returned. Numbeo item-level KZT prices (rent, meal, transport pass) were not included in search excerpts; only the single-person total excluding rent was available."
+    },
+    {
+     "field": "history",
+     "note": "Current total student enrolment: a figure of 7,089 students (4,790 undergraduate, 1,691 postgraduate) was returned without an attributable page or date, so it was not recorded as a fact. Official 'NU Data Digest' was mentioned but its numbers were not returned."
+    },
+    {
+     "field": "studentLife",
+     "note": "Web search budget was exhausted before a query on annual student events/traditions could run; the events category is not covered."
+    },
+    {
+     "field": "climate",
+     "note": "English Wikipedia's precipitation figure for Astana was not returned in excerpts; annual precipitation (318 mm) is taken from Russian Wikipedia 'Климат Астаны'. External sites gave 335–401 mm, so the value should be treated as approximate."
+    }
+   ],
+   "queryLog": [
+    "Nazarbayev University tuition fees 2025/2026 undergraduate [nu.edu.kz]",
+    "Nazarbayev University wikidata coordinates",
+    "Astana wikidata coordinates city",
+    "Nazarbayev University on-campus housing rent 100,000 KZT per month deposit international students FAQ [nu.edu.kz]",
+    "Nazarbayev University history founded 2010 milestones about [nu.edu.kz]",
+    "Nazarbayev University Wikipedia",
+    "\"Nazarbayev University\" \"51°5′24″N 71°23′58″E\" OR \"51.09\" coordinates Kabanbay Batyr Avenue 53",
+    "Nazarbayev University Foundation Year Program tuition fee 2025/2026 $12,000 [nu.edu.kz]",
+    "Nazarbayev University graduate master's PhD tuition fee 2025/2026 [nu.edu.kz]",
+    "Nazarbayev University address Kabanbay Batyr Ave 53 Astana 010000 contact [nu.edu.kz]",
+    "Nazarbayev University student housing dormitory blocks rooms facilities price per semester [nu.edu.kz]",
+    "Nursultan Nazarbayev International Airport Wikipedia coordinates",
+    "Astana-Nurly Zhol railway station Wikipedia coordinates",
+    "Astana climate Wikipedia average January July temperature annual precipitation",
+    "en.wikipedia.org Nazarbayev University coordinates 51°05′ 71°23′ campus Astana [en.wikipedia.org, wikidata.org, ru.wikipedia.org]",
+    "Astana Wikipedia climate \"Astana (1991–2020)\" mean January July annual precipitation mm [en.wikipedia.org]",
+    "Nazarbayev University master's programs tuition fee 2025/2026 USD KZT per academic year [apply.nu.edu.kz, nu.edu.kz, seds.nu.edu.kz, ssh.nu.edu.kz]",
+    "how to get to Nazarbayev University bus routes from airport Nurly Zhol station campus [nu.edu.kz]",
+    "Nazarbayev University student clubs organizations sports center library campus facilities [nu.edu.kz]",
+    "Numbeo cost of living Astana single person monthly costs rent one bedroom city centre",
+    "Nazarbayev University international students estimated living expenses monthly budget food transport [nu.edu.kz]",
+    "Astana LRT stations list Nazarbayev University station Wikipedia",
+    "Назарбаев Университет общежитие стоимость проживания за семестр тенге комната [nu.edu.kz]",
+    "Nazarbayev University master's tuition \"5 808 000\" OR \"5,808,000\" KZT per year [nu.edu.kz]",
+    "Nazarbayev University Library collection study spaces opening hours [nu.edu.kz]",
+    "Nazarbayev University number of students faculty 2025 schools graduates total [nu.edu.kz]",
+    "Astana Wikipedia climate table precipitation \"mm\" annual \"Astana\" humid continental Dfb 1991-2020",
+    "Numbeo Astana rent apartment 1 bedroom in city centre KZT monthly pass public transport price [numbeo.com]",
+    "Astana bus routes stop \"Nazarbayev University\" Kabanbay Batyr bus 10 12 21 route campus",
+    "Nazarbayev University campus dining canteen cafeteria events student government laboratories [nu.edu.kz]",
+    "smg.nu.edu.kz dormitory double occupancy 27,000 tenge per semester single 80,000 studio 67,000 one-room 98,000 [nu.edu.kz]",
+    "Астана климат Википедия среднегодовое количество осадков мм средняя температура января июля [ru.wikipedia.org]",
+    "numbeo Astana cost of living meal inexpensive restaurant monthly pass regular price tenge",
+    "Назарбаев Университет оқу ақысы 2025-2026 бакалавриат теңге",
+    "Nazarbayev University 2025 students enrolled total number \"students\" news data digest",
+    "\"University\" station Astana LRT Wikipedia coordinates Nazarbayev University Mega Silk Way [en.wikipedia.org, wikidata.org]",
+    "Nazarbayev University dormitory tariff per semester \"per semester\" tenge students room types PhD single Master's double [smg.nu.edu.kz, nu.edu.kz, registrar.nu.edu.kz, cps.nu.edu.kz]",
+    "Nazarbayev University Wikipedia students 7,089 undergraduates 4,790 postgraduates 1,691 academic staff [en.wikipedia.org]",
+    "Nazarbayev University eight schools list School of Medicine Graduate School of Business established years [nu.edu.kz]",
+    "Nazarbayev University annual student events festival Student Government NU Fest concert campus traditions [nu.edu.kz] (not executed: search budget exhausted)"
+   ]
+  },
+  {
+   "id": "UNI-SATBAYEV",
+   "gaps": [
+    {
+     "field": "housing",
+     "note": "Searched in RU/EN/KK for monthly/semester dormitory prices (official FAQ pages, dormitory.satbayev.university, situation-center pages). Only a 7,500 KZT/day temporary rate for dormitory No. 2 was returned; regular per-month student rates, room types and facilities were not surfaced. The exact FAQ page (2023 vs 2024 edition) carrying the daily rate could not be pinned, so that fact is marked medium."
+    },
+    {
+     "field": "tuition",
+     "note": "The official page 'Стоимость обучения 2025-2026' exists (official.satbayev.university) with per-program PDFs for individuals, legal entities, foreign citizens, online and master's/PhD, but search snippets did not expose the per-program KZT figures. Only the official 'from $2,630' international starting price and external (bes.media) ranges were available; no official domestic per-program values, no master's/PhD figures. Web-search budget ran out before follow-up queries."
+    },
+    {
+     "field": "costOfLiving",
+     "note": "Numbeo returned only rent (from 400,000 KZT) and fitness (15,000 KZT); food, transport pass and mobile/internet prices were not in snippets. No official university student-budget guidance was found. Wise figures are in GBP."
+    },
+    {
+     "field": "places",
+     "note": "No official coordinates for dormitories, library or sports club; dormitory addresses No. 1/4/6 come only from 2GIS (low confidence). Abai metro station and Sayakhat bus station coordinates were not retrieved (search budget exhausted)."
+    },
+    {
+     "field": "history",
+     "note": "Current student/faculty numbers were not returned by official or Wikipedia snippets."
+    },
+    {
+     "field": "cityCenter",
+     "note": "Wikidata coordinates for Almaty were not retrieved directly; the Wikipedia infobox value 43°14′N 76°57′E was used instead."
+    }
+   ],
+   "queryLog": [
+    "Satbayev University wikipedia coordinates Almaty Satpayev street 22",
+    "Almaty wikidata coordinates 43°16′N 76°53′E",
+    "общежитие Satbayev University стоимость проживания 2025",
+    "стоимость обучения Satbayev University 2025-2026 бакалавриат",
+    "Satbayev University history founded 1934 Kazakh Mining and Metallurgical Institute [satbayev.university]",
+    "Almaty climate average temperature January July precipitation wikipedia",
+    "Satbayev University стоимость обучения 2025-2026 тенге год образовательная программа физические лица [official.satbayev.university]",
+    "Общежитие оплата библиотека проезд FAQ поступления Satbayev University стоимость проживания в месяц [satbayev.university]",
+    "Almaty International Airport wikipedia coordinates",
+    "Almaty-2 railway station wikipedia coordinates",
+    "Baikonur (Almaty Metro) station wikipedia coordinates",
+    "Almaty wikipedia climate data table mean annual temperature precipitation record [en.wikipedia.org]",
+    "Numbeo cost of living Almaty 2026 single person monthly costs rent",
+    "Satbayev University student life clubs sports complex library campus [satbayev.university]",
+    "Satbayev University общежитие стоимость проживания в месяц тенге 2025 dormitory.satbayev.university",
+    "Satbayev University tuition fees 2025-2026 international students USD bachelor master PhD per year [satbayev.university]",
+    "Поступление в Satbayev University в 2026 подробный гид стоимость обучения 905 тысяч 1,3 млн инженерные",
+    "Satbayev University wikipedia students number rector 2014 national research university 2017 renamed [wikipedia.org]",
+    "Numbeo Almaty cost of living tenge meal inexpensive restaurant monthly pass apartment 1 bedroom city centre ₸ [numbeo.com]",
+    "Satbayev University history 1960 Kazakh Polytechnic Institute 1994 KazNTU 1999 named Satbayev 2014 national research technical university 2017 Satbayev University [satbayev.university]",
+    "Satbayev University как добраться автобус остановка Сатпаева Масанчи метро Байконур",
+    "Satbayev University жатақхана бағасы айына студенттер 2025",
+    "Satbayev University общежития адреса Габдуллина №1 №2 №4 №5 список общежитий стоимость [satbayev.university]",
+    "Сколько стоит обучение в популярных вузах Казахстана в 2026 году Satbayev University inform.kz",
+    "\"Tuition Fees for Bachelor's Programs for International Students\" Satbayev University 2025–2026 USD [official.satbayev.university]",
+    "Satbayev University FAQ 2024 how to get to university bus routes from airport Almaty-2 station campus travel [satbayev.university]",
+    "Satbayev University about number of students faculty institutes 2025 largest technical university [satbayev.university]",
+    "Numbeo Almaty prices meal inexpensive restaurant monthly pass regular price mobile internet utilities KZT September 2026 [numbeo.com]",
+    "Satbayev University library scientific library main building GUK MMB campus buildings laboratories [satbayev.university]",
+    "общежитие Satbayev University цена за месяц студенты 2025 2026 плата за проживание Алматы вузы",
+    "(not performed - budget exhausted) Satbayev University \"7500\" тенге сутки общежитие №2 посуточное проживание FAQ",
+    "(not performed - budget exhausted) finratings.kz стоимость обучения в вузах Казахстана Satbayev University 905 тысяч 1,3 млн 2025-2026",
+    "(not performed - budget exhausted) Satbayev University стоимость обучения 2025-2026 бакалавриат физические лица тенге pdf",
+    "(not performed - budget exhausted) numbeo Almaty Meal Inexpensive Restaurant Monthly Pass ₸",
+    "(not performed - budget exhausted) Almaty wikidata Q35493 coordinate location",
+    "(not performed - budget exhausted) Abay (Almaty Metro) station wikipedia coordinates",
+    "(not performed - budget exhausted) Satbayev University Fab-Lab laboratories student events",
+    "(not performed - budget exhausted) Satbayev University international students cost of living Almaty budget"
+   ]
+  }
+ ]
+}

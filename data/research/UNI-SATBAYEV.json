@@ -1,0 +1,471 @@
+{
+  "id": "UNI-SATBAYEV",
+  "slug": "satbayev-university",
+  "name": {
+    "en": "Kazakh National Research Technical University named after K.I. Satpayev (Satbayev University)",
+    "ru": "Казахский национальный исследовательский технический университет имени К.И. Сатпаева (Satbayev University)",
+    "kk": "Қ.И. Сәтбаев атындағы Қазақ ұлттық техникалық зерттеу университеті (Satbayev University)"
+  },
+  "shortName": { "en": "Satbayev University", "ru": "Satbayev University", "kk": "Satbayev University" },
+  "website": "https://satbayev.university",
+  "founded": 1934,
+  "city": { "en": "Almaty", "ru": "Алматы", "kk": "Алматы" },
+  "country": { "en": "Kazakhstan", "ru": "Казахстан", "kk": "Қазақстан" },
+  "campus": {
+    "name": { "en": "Main campus (Satpayev St 22)", "ru": "Главный кампус (ул. Сатпаева, 22)", "kk": "Негізгі кампус (Сәтбаев көшесі, 22)" },
+    "multiCampus": false,
+    "note": {
+      "en": "Single main campus in central Almaty at 22 Satpayev St; the Main Academic Building, Mining and Metallurgical Building, Petroleum Building and other blocks are on this site. Dormitories are on Gabdullin St nearby.",
+      "ru": "Единый главный кампус в центре Алматы по ул. Сатпаева, 22: Главный учебный корпус, Горно-металлургический корпус, Нефтяной корпус и другие здания. Общежития расположены рядом на ул. Габдуллина.",
+      "kk": "Алматы орталығындағы Сәтбаев көшесі, 22 мекенжайындағы бірыңғай негізгі кампус: Бас оқу корпусы, Тау-кен металлургия корпусы, Мұнай корпусы және басқа ғимараттар. Жатақханалар жақын жердегі Ғабдуллин көшесінде."
+    }
+  },
+  "location": {
+    "lat": 43.236481,
+    "lng": 76.93157,
+    "address": { "en": "22 Satpayev Street, Almaty, Kazakhstan", "ru": "ул. Сатпаева, 22, Алматы, Казахстан", "kk": "Сәтбаев көшесі, 22, Алматы, Қазақстан" },
+    "factId": "F-01"
+  },
+  "cityCenter": {
+    "lat": 43.233,
+    "lng": 76.95,
+    "label": { "en": "Almaty (Wikipedia reference point)", "ru": "Алматы (опорная точка по Википедии)", "kk": "Алматы (Уикипедия бойынша тірек нүкте)" },
+    "factId": "F-02"
+  },
+  "places": [
+    { "id": "P-1", "kind": "building", "name": { "en": "Main Academic Building (MAB), 22 Satpayev St", "ru": "Главный учебный корпус (ГУК), ул. Сатпаева, 22", "kk": "Бас оқу корпусы (БОК), Сәтбаев көшесі, 22" }, "lat": 43.236481, "lng": 76.93157, "factId": "F-03" },
+    { "id": "P-2", "kind": "library", "name": { "en": "Scientific Library (Mining and Metallurgical Building, room 174)", "ru": "Научная библиотека (Горно-металлургический корпус, каб. 174)", "kk": "Ғылыми кітапхана (Тау-кен металлургия корпусы, 174-каб.)" }, "lat": null, "lng": null, "factId": "F-04" },
+    { "id": "P-3", "kind": "sports", "name": { "en": "Sports Club (MMB, office 11)", "ru": "Спортивный клуб (ГМК, каб. 11)", "kk": "Спорт клубы (ТМК, 11-каб.)" }, "lat": null, "lng": null, "factId": "F-05" },
+    { "id": "P-4", "kind": "dormitory", "name": { "en": "Dormitory No. 2, 2 Gabdullin St", "ru": "Общежитие №2, ул. Габдуллина, 2", "kk": "№2 жатақхана, Ғабдуллин көшесі, 2" }, "lat": null, "lng": null, "factId": "F-06" },
+    { "id": "P-5", "kind": "dormitory", "name": { "en": "Dormitory No. 1, 1 Gabdullin St", "ru": "Общежитие №1, ул. Габдуллина, 1", "kk": "№1 жатақхана, Ғабдуллин көшесі, 1" }, "lat": null, "lng": null, "factId": "F-07" },
+    { "id": "P-6", "kind": "dormitory", "name": { "en": "Dormitory No. 4, 5 Gabdullin St", "ru": "Общежитие №4, ул. Габдуллина, 5", "kk": "№4 жатақхана, Ғабдуллин көшесі, 5" }, "lat": null, "lng": null, "factId": "F-08" },
+    { "id": "P-7", "kind": "dormitory", "name": { "en": "Dormitory No. 6, 34 Ladygin St", "ru": "Общежитие №6, ул. Ладыгина, 34", "kk": "№6 жатақхана, Ладыгин көшесі, 34" }, "lat": null, "lng": null, "factId": "F-09" },
+    { "id": "P-8", "kind": "transit", "name": { "en": "Baikonur metro station", "ru": "Станция метро «Байконур»", "kk": "«Байқоңыр» метро станциясы" }, "lat": 43.24111, "lng": 76.92722, "factId": "F-10" },
+    { "id": "P-9", "kind": "airport", "name": { "en": "Almaty International Airport", "ru": "Международный аэропорт Алматы", "kk": "Алматы халықаралық әуежайы" }, "lat": 43.35528, "lng": 77.04472, "factId": "F-11" },
+    { "id": "P-10", "kind": "rail", "name": { "en": "Almaty-2 railway station", "ru": "Вокзал Алматы-2", "kk": "Алматы-2 теміржол вокзалы" }, "lat": 43.2737, "lng": 76.9391, "factId": "F-12" }
+  ],
+  "housing": [
+    {
+      "name": { "en": "Dormitory No. 2 – temporary (daily) accommodation", "ru": "Общежитие №2 – временное (посуточное) проживание", "kk": "№2 жатақхана – уақытша (тәуліктік) тұру" },
+      "value": 7500,
+      "currency": "KZT",
+      "period": "day",
+      "roomType": { "en": "Temporary daily placement (room type not specified)", "ru": "Временное посуточное размещение (тип комнаты не указан)", "kk": "Уақытша тәуліктік орналастыру (бөлме түрі көрсетілмеген)" },
+      "distanceKm": null,
+      "facilities": [],
+      "factId": "F-13"
+    }
+  ],
+  "costOfLiving": [
+    {
+      "category": "accommodation",
+      "value": 400000,
+      "currency": "KZT",
+      "period": "month",
+      "note": { "en": "Numbeo: rent for a 1-bedroom apartment in Almaty city centre starts from about 400,000 KZT/month.", "ru": "Numbeo: аренда 1-комнатной квартиры в центре Алматы – от ~400 000 KZT/мес.", "kk": "Numbeo: Алматы орталығында 1 бөлмелі пәтер жалдау – айына ~400 000 KZT-ден." },
+      "factId": "F-14"
+    },
+    {
+      "category": "personal",
+      "value": 15000,
+      "currency": "KZT",
+      "period": "month",
+      "note": { "en": "Numbeo: fitness club membership in Almaty from about 15,000 KZT/month.", "ru": "Numbeo: абонемент в фитнес-клуб в Алматы – от ~15 000 KZT/мес.", "kk": "Numbeo: Алматыдағы фитнес-клуб абонементі – айына ~15 000 KZT-ден." },
+      "factId": "F-15"
+    },
+    {
+      "category": "total",
+      "value": 514,
+      "currency": "GBP",
+      "period": "month",
+      "note": { "en": "Wise (2026): estimated monthly cost for a single person in Almaty excluding rent, about £514.", "ru": "Wise (2026): ориентировочные расходы одного человека в Алматы без аренды – около £514/мес.", "kk": "Wise (2026): Алматыда бір адамның жалдау ақысынсыз айлық шығыны – шамамен £514." },
+      "factId": "F-16"
+    },
+    {
+      "category": "accommodation",
+      "value": 69,
+      "currency": "GBP",
+      "period": "month",
+      "note": { "en": "Wise (2026): basic utilities (electricity, heating, water, garbage) for an 85 m² apartment, about £69/month.", "ru": "Wise (2026): коммунальные услуги для квартиры 85 м² – около £69/мес.", "kk": "Wise (2026): 85 м² пәтердің коммуналдық қызметтері – айына шамамен £69." },
+      "factId": "F-17"
+    }
+  ],
+  "tuition": [
+    {
+      "level": "undergraduate",
+      "audience": "international",
+      "program": { "en": "All bachelor programs – starting price for foreign citizens (depends on program)", "ru": "Все программы бакалавриата – стартовая цена для иностранных граждан (зависит от программы)", "kk": "Барлық бакалавриат бағдарламалары – шетел азаматтары үшін бастапқы баға (бағдарламаға байланысты)" },
+      "value": 2630,
+      "currency": "USD",
+      "period": "year",
+      "academicYear": "2025/2026",
+      "factId": "F-18"
+    },
+    {
+      "level": "undergraduate",
+      "audience": "domestic",
+      "program": { "en": "Cheapest bachelor programs: management; trunk networks and infrastructure; finance, economics, banking and insurance", "ru": "Самые доступные программы бакалавриата: менеджмент и управление; магистральные сети и инфраструктура; финансы, экономика, банковское и страховое дело", "kk": "Ең қолжетімді бакалавриат бағдарламалары: менеджмент; магистральдық желілер мен инфрақұрылым; қаржы, экономика, банк және сақтандыру ісі" },
+      "value": 1000000,
+      "currency": "KZT",
+      "period": "year",
+      "academicYear": null,
+      "factId": "F-19"
+    },
+    {
+      "level": "undergraduate",
+      "audience": "domestic",
+      "program": { "en": "Geology, mining, metallurgy and construction programs", "ru": "Программы по геологии, горному делу, металлургии и строительству", "kk": "Геология, тау-кен ісі, металлургия және құрылыс бағдарламалары" },
+      "value": 1200000,
+      "currency": "KZT",
+      "period": "year",
+      "academicYear": null,
+      "factId": "F-20"
+    },
+    {
+      "level": "undergraduate",
+      "audience": "domestic",
+      "program": { "en": "Most expensive bachelor programs (upper end of the published range)", "ru": "Самые дорогие программы бакалавриата (верхняя граница диапазона)", "kk": "Ең қымбат бакалавриат бағдарламалары (диапазонның жоғарғы шегі)" },
+      "value": 1300000,
+      "currency": "KZT",
+      "period": "year",
+      "academicYear": null,
+      "factId": "F-19"
+    }
+  ],
+  "history": [
+    {
+      "year": 1933,
+      "title": { "en": "Institute founded by USSR decree", "ru": "Институт учреждён постановлением СНК СССР", "kk": "Институт КСРО ХКК қаулысымен құрылды" },
+      "text": { "en": "On 20 October 1933 the Council of People's Commissars of the USSR ordered the creation of the Kazakh Mining and Metallurgical Institute in Alma-Ata with two faculties: mining and non-ferrous metals.", "ru": "20 октября 1933 года постановлением СНК СССР в Алма-Ате создан Казахский горно-металлургический институт с двумя факультетами: горным и цветных металлов.", "kk": "1933 жылғы 20 қазанда КСРО ХКК қаулысымен Алматыда тау-кен және түсті металдар факультеттері бар Қазақ тау-кен металлургия институты құрылды." },
+      "factId": "F-21"
+    },
+    {
+      "year": 1934,
+      "title": { "en": "First academic year begins", "ru": "Начало первого учебного года", "kk": "Алғашқы оқу жылы басталды" },
+      "text": { "en": "The first bell of the first academic year at KazMMI rang on 19 September 1934; the university counts 1934 as its founding year.", "ru": "Первый звонок первого учебного года в КазГМИ прозвенел 19 сентября 1934 года; университет считает 1934 год годом основания.", "kk": "ҚазТМИ-дегі алғашқы оқу жылының алғашқы қоңырауы 1934 жылғы 19 қыркүйекте соғылды; университет 1934 жылды құрылған жылы деп санайды." },
+      "factId": "F-22"
+    },
+    {
+      "year": 1960,
+      "title": { "en": "Renamed Kazakh Polytechnic Institute", "ru": "Переименован в Казахский политехнический институт", "kk": "Қазақ политехникалық институты болып өзгертілді" },
+      "text": { "en": "In 1960 KazMMI became the Kazakh Polytechnic Institute (KazPTI), later named after V.I. Lenin.", "ru": "В 1960 году КазГМИ преобразован в Казахский политехнический институт (КазПТИ), позже носивший имя В.И. Ленина.", "kk": "1960 жылы ҚазТМИ Қазақ политехникалық институты (ҚазПТИ) болып қайта құрылды, кейін В.И. Ленин атындағы болды." },
+      "factId": "F-23"
+    },
+    {
+      "year": 1994,
+      "title": { "en": "Becomes Kazakh National Technical University", "ru": "Становится Казахским национальным техническим университетом", "kk": "Қазақ ұлттық техникалық университеті болды" },
+      "text": { "en": "In January 1994 KazPTI was transformed into the Kazakh National Technical University (KazNTU).", "ru": "В январе 1994 года КазПТИ преобразован в Казахский национальный технический университет (КазНТУ).", "kk": "1994 жылғы қаңтарда ҚазПТИ Қазақ ұлттық техникалық университеті (ҚазҰТУ) болып қайта құрылды." },
+      "factId": "F-23"
+    },
+    {
+      "year": 1999,
+      "title": { "en": "Named after Kanysh Satbayev", "ru": "Присвоено имя Каныша Сатпаева", "kk": "Қаныш Сәтбаевтың есімі берілді" },
+      "text": { "en": "By Government Decree No. 1436 of 22 September 1999 KazNTU was named after academician Kanysh Satbayev; in 2001 (Decree No. 892) it became Satbayev Kazakh National Technical University.", "ru": "Постановлением Правительства №1436 от 22 сентября 1999 года КазНТУ присвоено имя академика Каныша Сатпаева; в 2001 году (постановление №892) вуз переименован в КазНТУ имени К.И. Сатпаева.", "kk": "1999 жылғы 22 қыркүйектегі Үкіметтің №1436 қаулысымен ҚазҰТУ-ға академик Қаныш Сәтбаевтың есімі берілді; 2001 жылы (№892 қаулы) Қ.И. Сәтбаев атындағы ҚазҰТУ болып өзгертілді." },
+      "factId": "F-24"
+    },
+    {
+      "year": 2014,
+      "title": { "en": "National Research Technical University status", "ru": "Статус национального исследовательского технического университета", "kk": "Ұлттық техникалық зерттеу университеті мәртебесі" },
+      "text": { "en": "In 2014 the university was awarded the 'National Research Technical University' category.", "ru": "В 2014 году университету присвоена категория «Национальный исследовательский технический университет».", "kk": "2014 жылы университетке «Ұлттық техникалық зерттеу университеті» санаты берілді." },
+      "factId": "F-23"
+    },
+    {
+      "year": 2017,
+      "title": { "en": "Brand name Satbayev University", "ru": "Бренд Satbayev University", "kk": "Satbayev University брендi" },
+      "text": { "en": "In 2017 the university received the name Satbayev University alongside the full name NPJSC KazNRTU named after K.I. Satbayev. It is the oldest technical university in Kazakhstan, with 10 institutes and 27 departments.", "ru": "В 2017 году университет получил название Satbayev University наряду с полным наименованием НАО КазНИТУ им. К.И. Сатпаева. Это старейший технический вуз Казахстана: 10 институтов и 27 кафедр.", "kk": "2017 жылы университет Қ.И. Сәтбаев атындағы ҚазҰТЗУ КеАҚ толық атауымен қатар Satbayev University атауын алды. Бұл Қазақстанның ең көне техникалық жоғары оқу орны: 10 институт және 27 кафедра." },
+      "factId": "F-23"
+    }
+  ],
+  "studentLife": [
+    {
+      "category": "organizations",
+      "text": { "en": "Student organizations include the Intellectual Debate Club Satbayev (organizer of the Techno Cup, one of the largest debate tournaments in Central Asia), Enactus Satbayev University and the Youth Committee, which runs events like Bauyrsak Day and Korissu.", "ru": "Студенческие организации: Интеллектуальный дебатный клуб Satbayev (организатор Techno Cup – одного из крупнейших турниров Центральной Азии), Enactus Satbayev University и Комитет по делам молодёжи (Bauyrsak Day, Korissu).", "kk": "Студенттік ұйымдар: Satbayev интеллектуалды дебат клубы (Орталық Азиядағы ең ірі турнирлердің бірі Techno Cup ұйымдастырушысы), Enactus Satbayev University және Жастар комитеті (Bauyrsak Day, Көрісу)." },
+      "factId": "F-26"
+    },
+    {
+      "category": "sports",
+      "text": { "en": "The Sports Club (MMB, office 11) runs sections in basketball, mas-wrestling, fitness, volleyball, freestyle wrestling, football and chess; alumni include Olympic volleyball champion Valery Kravchenko.", "ru": "Спортклуб (ГМК, каб. 11) ведёт секции по баскетболу, мас-рестлингу, фитнесу, волейболу, вольной борьбе, футболу и шахматам; среди выпускников – олимпийский чемпион по волейболу Валерий Кравченко.", "kk": "Спорт клубы (ТМК, 11-каб.) баскетбол, мас-рестлинг, фитнес, волейбол, еркін күрес, футбол және шахмат секцияларын жүргізеді; түлектер арасында волейболдан Олимпиада чемпионы Валерий Кравченко бар." },
+      "factId": "F-05"
+    },
+    {
+      "category": "study_spaces",
+      "text": { "en": "The Scientific Library in the Mining and Metallurgical Building holds about 1.5 million books, including rare 19th–20th century editions, with a creative centre, 7 service points, 3 computer rooms and 4 lending desks; the university ID card doubles as a library card.", "ru": "Научная библиотека в Горно-металлургическом корпусе хранит около 1,5 млн книг, включая редкие издания XIX–XX вв.; есть творческий центр, 7 пунктов обслуживания, 3 компьютерных зала и 4 абонемента; ID-карта студента служит читательским билетом.", "kk": "Тау-кен металлургия корпусындағы Ғылыми кітапханада XIX–XX ғасырлардың сирек басылымдарын қоса алғанда 1,5 млн-ға жуық кітап бар; шығармашылық орталық, 7 қызмет көрсету пункті, 3 компьютер залы және 4 абонемент; студенттің ID-картасы оқырман билеті ретінде қолданылады." },
+      "factId": "F-04"
+    },
+    {
+      "category": "facilities",
+      "text": { "en": "Campus buildings include the Main Academic Building, Small Academic Building, Petroleum Building, Mining and Metallurgical Building, Institute of Energy and Mechanical Engineering block and a Fab-Lab; academic units include 7 institutes/schools plus an Academy of Digital Technologies and AI.", "ru": "В кампусе – Главный и Малый учебные корпуса, Нефтяной корпус, Горно-металлургический корпус, корпус Института энергетики и машиностроения и Fab-Lab; в структуре 7 институтов/школ и Академия цифровых технологий и ИИ.", "kk": "Кампуста Бас және Кіші оқу корпустары, Мұнай корпусы, Тау-кен металлургия корпусы, Энергетика және машина жасау институтының корпусы және Fab-Lab бар; құрылымында 7 институт/мектеп және Цифрлық технологиялар мен ЖИ академиясы." },
+      "factId": "F-27"
+    },
+    {
+      "category": "facilities",
+      "text": { "en": "A new 9-storey dormitory with 955 beds is under construction; students are expected to move in during 2026 (planned commissioning February 2026).", "ru": "Строится новое 9-этажное общежитие на 955 мест; заселение ожидается в 2026 году (плановый ввод – февраль 2026).", "kk": "955 орындық жаңа 9 қабатты жатақхана салынуда; студенттер 2026 жылы қоныстанады деп күтілуде (жоспарлы іске қосу – 2026 жылғы ақпан)." },
+      "factId": "F-28"
+    }
+  ],
+  "transport": [
+    {
+      "kind": "airport",
+      "text": { "en": "From Almaty International Airport to the campus: buses 3, 92 and 79 (official admission FAQ).", "ru": "От Международного аэропорта Алматы до кампуса: автобусы 3, 92 и 79 (официальный FAQ приёмной кампании).", "kk": "Алматы халықаралық әуежайынан кампусқа: 3, 92 және 79 автобустар (ресми қабылдау FAQ)." },
+      "factId": "F-29"
+    },
+    {
+      "kind": "rail",
+      "text": { "en": "From Almaty-2 railway station: trolleybuses 5, 6 and buses 92, 98, 79; from Almaty-1 station: trolleybus 7 and buses 34, 30, 18.", "ru": "От вокзала Алматы-2: троллейбусы 5, 6 и автобусы 92, 98, 79; от вокзала Алматы-1: троллейбус 7 и автобусы 34, 30, 18.", "kk": "Алматы-2 вокзалынан: 5, 6 троллейбустар және 92, 98, 79 автобустар; Алматы-1 вокзалынан: 7 троллейбус және 34, 30, 18 автобустар." },
+      "factId": "F-29"
+    },
+    {
+      "kind": "bus_station",
+      "text": { "en": "From Sayakhat bus station: buses 3, 92, 98 and 79. The campus entrance is from Masanchi Street.", "ru": "От автовокзала «Саяхат»: автобусы 3, 92, 98 и 79. Вход в кампус – со стороны улицы Масанчи.", "kk": "«Саяхат» автовокзалынан: 3, 92, 98 және 79 автобустар. Кампусқа кіру – Масанчи көшесі жағынан." },
+      "factId": "F-29"
+    },
+    {
+      "kind": "metro",
+      "text": { "en": "Baikonur station of the Almaty Metro lies about 0.6 km north-west of the campus coordinates (straight-line distance computed from Wikidata/Wikipedia coordinates).", "ru": "Станция метро «Байконур» находится примерно в 0,6 км к северо-западу от координат кампуса (расстояние по прямой рассчитано по координатам Wikidata/Википедии).", "kk": "«Байқоңыр» метро станциясы кампус координаттарынан солтүстік-батысқа қарай шамамен 0,6 км жерде (Wikidata/Уикипедия координаттары бойынша түзу сызықпен есептелген)." },
+      "factId": "F-10"
+    }
+  ],
+  "climate": [
+    { "metric": "avg_annual_temp", "value": 10, "unit": "°C", "text": { "en": "Almaty's annual average air temperature is about 10 °C (Wikipedia).", "ru": "Среднегодовая температура воздуха в Алматы – около 10 °C (Википедия).", "kk": "Алматыдағы ауаның орташа жылдық температурасы – шамамен 10 °C (Уикипедия)." }, "factId": "F-30" },
+    { "metric": "avg_jan_temp", "value": -4.7, "unit": "°C", "text": { "en": "January, the coldest month, averages −4.7 °C.", "ru": "Январь – самый холодный месяц, в среднем −4,7 °C.", "kk": "Қаңтар – ең суық ай, орташа −4,7 °C." }, "factId": "F-30" },
+    { "metric": "avg_jul_temp", "value": 23.8, "unit": "°C", "text": { "en": "July, the warmest month, averages 23.8 °C.", "ru": "Июль – самый тёплый месяц, в среднем 23,8 °C.", "kk": "Шілде – ең жылы ай, орташа 23,8 °C." }, "factId": "F-30" },
+    { "metric": "annual_precipitation_mm", "value": 675, "unit": "mm", "text": { "en": "Annual precipitation is about 675 mm (Climates to Travel); Wikipedia gives 650–700 mm, with April–May the wettest months.", "ru": "Годовое количество осадков – около 675 мм (Climates to Travel); Википедия указывает 650–700 мм, самые дождливые месяцы – апрель и май.", "kk": "Жылдық жауын-шашын – шамамен 675 мм (Climates to Travel); Уикипедия 650–700 мм деп көрсетеді, ең ылғалды айлар – сәуір мен мамыр." }, "factId": "F-31" },
+    { "metric": "summary", "value": 0, "unit": "text", "text": { "en": "Humid continental climate (Köppen); frost usually lasts from mid-October to mid-April, with sustained cold from late December to late February. Spring is the wettest season.", "ru": "Влажный континентальный климат (Кёппен); заморозки обычно с середины октября до середины апреля, устойчивые холода – с конца декабря до конца февраля. Весна – самый влажный сезон.", "kk": "Ылғалды континенттік климат (Кёппен); аяз әдетте қазан ортасынан сәуір ортасына дейін, тұрақты суық – желтоқсан аяғынан ақпан аяғына дейін. Көктем – ең ылғалды маусым." }, "factId": "F-30" }
+  ],
+  "facts": [
+    {
+      "id": "F-01", "type": "location",
+      "value": "43°14'11.33\"N, 76°55'53.65\"E (Wikidata Q1513804); address 22 Satbayev street, Almaty",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1513804", "sourceDomain": "wikidata.org", "sourceTitle": "Satbayev University - Wikidata", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["According to the Wikidata source, the coordinate location is 43°14'11.33\"N, 76°55'53.65\"E.", "Satbayev University is located at 22 Satbayev street, Almaty, Kazakhstan."]
+    },
+    {
+      "id": "F-02", "type": "city_center",
+      "value": "Almaty 43°14′N 76°57′E (43.233°N 76.950°E)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Almaty", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Almaty", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["According to Wikipedia, Almaty's coordinates are listed as 43°14′N 76°57′E (43.233°N 76.950°E)."]
+    },
+    {
+      "id": "F-03", "type": "place",
+      "value": "Campus: Almaty, 22 Satbayev str., The main academic building (MAB); entrance from Masanchi street",
+      "sourceUrl": "https://satbayev.university/en/news/hostel-payment-library-travel-faq-of-admission-to-satbayev-university-in-2024", "sourceDomain": "satbayev.university", "sourceTitle": "Hostel, payment, library, travel: FAQ of admission to Satbayev University in 2024 — Satbayev University", "sourceKind": "official", "sourceDate": "2024", "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The university campus is located at Almaty, 22 Satbayev str., The main academic building (MAB).", "There is an entrance from the side of Masanchi street (contacts page)."]
+    },
+    {
+      "id": "F-04", "type": "student_life",
+      "value": "Scientific library in the Mining and Metallurgical Building (room 174); ~1.5 million books; creative center, 7 service points, 3 computer rooms, 4 subscriptions",
+      "sourceUrl": "https://library.satbayev.university/en/about", "sourceDomain": "library.satbayev.university", "sourceTitle": "About the Library — Scientific library", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The Scientific library is located in the Mining and Metallurgical Building (GMK). Admission to the library is carried out in Room 174, MMB.", "The library ... employs: creative center named after U. Sydykov, 7 service points, 3 computer rooms and 4 subscriptions.", "The library's collections contain about 1.5 million books, including ... rare books from the late 19th and early 20th centuries."]
+    },
+    {
+      "id": "F-05", "type": "student_life",
+      "value": "Sports club sections: basketball, mas-wrestling, fitness, volleyball, freestyle wrestling, football, chess; located in MMB office 11",
+      "sourceUrl": "https://satbayev.university/en/sportclub", "sourceDomain": "satbayev.university", "sourceTitle": "Sport club — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The sports club has sections on basketball, mas-wrestling, fitness, volleyball, freestyle wrestling, football, and chess. Sports Club is located in MMB, office 11.", "Satbayev University has always been one of the centers of sport life of the republic, with notable athletes including Olympic champion in volleyball Valery Kravchenko."]
+    },
+    {
+      "id": "F-06", "type": "place",
+      "value": "Dormitory No. 2 at Gabdullina Street 2 (address of the dormitory situation center); university has dormitories No. 1, 2, 3 and 'Dos-Mukan uyasy'",
+      "sourceUrl": "https://satbayev.university/ru/situation-center", "sourceDomain": "satbayev.university", "sourceTitle": "Ситуационный центр по вопросам размещения в общежития — Satbayev University", "sourceKind": "official", "sourceDate": "2025", "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The main office address is located on Gabdullina Street, building 2 in Almaty, where Dormitory No. 2 is situated.", "The university has dormitories No. 1, 2, and 3. Additionally, there is a dormitory called 'Dos-Mukan uyasy'.", "Situational Center ... operates from July 15 to September 10, 2025, with the address at Gabdullina Street, 2."]
+    },
+    {
+      "id": "F-07", "type": "place",
+      "value": "Satbayev University dormitory №1, Gabdullina street 1, Almaty",
+      "sourceUrl": "https://2gis.kz/almaty/firm/9429940001030828", "sourceDomain": "2gis.kz", "sourceTitle": "Satbayev University, общежитие №1, улица Габдуллина, 1, Алматы — 2ГИС", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["Satbayev University, общежитие №1, улица Габдуллина, 1, Алматы — 2ГИС"]
+    },
+    {
+      "id": "F-08", "type": "place",
+      "value": "Satbayev University dormitory №4, Gabdullina street 5, Almaty",
+      "sourceUrl": "https://2gis.kz/almaty/firm/9429940001030832", "sourceDomain": "2gis.kz", "sourceTitle": "Satbayev University, общежитие №4, улица Габдуллина, 5, Алматы — 2ГИС", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["Satbayev University, общежитие №4, улица Габдуллина, 5, Алматы — 2ГИС"]
+    },
+    {
+      "id": "F-09", "type": "place",
+      "value": "Satbayev University dormitory №6, Ladygina street 34, Almaty",
+      "sourceUrl": "https://2gis.kz/almaty/firm/70000001039212598", "sourceDomain": "2gis.kz", "sourceTitle": "Satbayev University, общежитие №6, улица Ладыгина, 34, Алматы — 2ГИС", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["Satbayev University, общежитие №6, улица Ладыгина, 34, Алматы — 2ГИС"]
+    },
+    {
+      "id": "F-10", "type": "place",
+      "value": "Baikonur (Almaty Metro) 43°14′28″N 76°55′38″E / 43.24111°N 76.92722°E",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Baikonur_(Almaty_Metro)", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Baikonur (Almaty Metro)", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["Coordinates for Baikonur (Almaty Metro) station from Wikipedia: 43°14′28″N 76°55′38″E / 43.24111°N 76.92722°E"]
+    },
+    {
+      "id": "F-11", "type": "place",
+      "value": "Almaty International Airport 43°21′19″N 077°02′41″E / 43.35528°N 77.04472°E",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Almaty_International_Airport", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Almaty International Airport", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The coordinates are 43°21′19″N 077°02′41″E / 43.35528°N 77.04472°E"]
+    },
+    {
+      "id": "F-12", "type": "place",
+      "value": "Almaty-2 railway station 43°16′25″N 76°56′21″E / 43.2737°N 76.9391°E",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Almaty_2_railway_station", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Almaty 2 railway station", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The coordinates for Almaty-2 railway station are 43°16′25″N 76°56′21″E / 43.2737°N 76.9391°E."]
+    },
+    {
+      "id": "F-13", "type": "housing",
+      "value": "Temporary (daily) accommodation in dormitory №2: 7500 KZT per day",
+      "sourceUrl": "https://satbayev.university/ru/news/obshchezhitie-oplata-biblioteka-proezd-faq-postupleniya-v-satbayev-university-2024", "sourceDomain": "satbayev.university", "sourceTitle": "Общежитие, оплата, библиотека, проезд: FAQ поступления в Satbayev University 2024 — Satbayev University", "sourceKind": "official", "sourceDate": "2024", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Daily accommodation in dormitory №2 costs 7500 ₸ per day. However, this appears to be for daily (посуточное) accommodation rates rather than standard semester-based student housing costs.", "To apply for the hostel, you need to fill out a questionnaire on the https://dormitory.satbayev.university website ... Priority is given to first-year students, orphans, persons with disabilities, and foreign students."]
+    },
+    {
+      "id": "F-14", "type": "cost_of_living",
+      "value": "Rent for a 1 bedroom apartment in the city centre starts from 400,000 KZT",
+      "sourceUrl": "https://www.numbeo.com/cost-of-living/in/Almaty", "sourceDomain": "numbeo.com", "sourceTitle": "Cost of Living in Almaty. Sep 2026. Prices in Almaty", "sourceKind": "external", "sourceDate": "2026-09", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Rent for a 1 bedroom apartment in the city centre starts from 400,000 KZT", "The data was last updated on 8 September 2026"]
+    },
+    {
+      "id": "F-15", "type": "cost_of_living",
+      "value": "Fitness membership from 15,000 KZT monthly",
+      "sourceUrl": "https://www.numbeo.com/cost-of-living/in/Almaty", "sourceDomain": "numbeo.com", "sourceTitle": "Cost of Living in Almaty. Sep 2026. Prices in Almaty", "sourceKind": "external", "sourceDate": "2026-09", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Numbeo lists prices such as rent starting from 400,000 KZT for a 1-bedroom apartment in the city center and fitness memberships from 15,000 KZT monthly"]
+    },
+    {
+      "id": "F-16", "type": "cost_of_living",
+      "value": "Estimated monthly cost of living for a single person in Almaty: £514 excluding rent",
+      "sourceUrl": "https://wise.com/gb/cost-of-living/kazakhstan/almaty", "sourceDomain": "wise.com", "sourceTitle": "Cost of Living in Almaty 2026 | Almaty Living Costs - Wise", "sourceKind": "external", "sourceDate": "2026", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["The estimated monthly cost of living in Almaty for a single person is £514, excluding rent.", "The average monthly rent for a 1-bedroom apartment in the city centre is £566, compared to £372 outside the centre."]
+    },
+    {
+      "id": "F-17", "type": "cost_of_living",
+      "value": "Basic utilities for an 85 m² apartment: £69 per month",
+      "sourceUrl": "https://wise.com/gb/cost-of-living/kazakhstan/almaty", "sourceDomain": "wise.com", "sourceTitle": "Cost of Living in Almaty 2026 | Almaty Living Costs - Wise", "sourceKind": "external", "sourceDate": "2026", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Basic utilities in Almaty (including electricity, heating, cooling, water, and garbage for an 85m² apartment) cost an average of £69 per month."]
+    },
+    {
+      "id": "F-18", "type": "tuition",
+      "value": "Tuition fee for foreign entrants starts from $2,630 per year; depends on the educational program",
+      "sourceUrl": "https://satbayev.university/en/foreignApplicants-guide", "sourceDomain": "satbayev.university", "sourceTitle": "For Foreign entrants — Satbayev University", "sourceKind": "official", "sourceDate": "2025/2026", "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The tuition fee starts from $2,630 for international students. However, the price depends on the educational program and may change.", "Tuition fees at Satbayev University are calculated per year of study (36 credits for Bachelor's degree program)."]
+    },
+    {
+      "id": "F-19", "type": "tuition",
+      "value": "Bachelor tuition ranges from 1,000,000 to 1,300,000 KZT per year depending on specialty; cheapest: management, trunk networks and infrastructure, finance/economics/banking/insurance",
+      "sourceUrl": "https://bes.media/amp/postuplenie-v-satbayev-university-v-2026-podrobnyy-gid-dlya-abiturientov/", "sourceDomain": "bes.media", "sourceTitle": "Поступление в Satbayev University в 2026: подробный гид для абитуриентов", "sourceKind": "external", "sourceDate": "2026", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Стоимость обучения варьируется от 1 000 000 до 1 300 000 тенге в год в зависимости от специальности.", "Самые доступные направления – «менеджмент и управление», «магистральные сети и инфраструктура», «финансы, экономика, банковское и страховое дело»."]
+    },
+    {
+      "id": "F-20", "type": "tuition",
+      "value": "Geology, mining, metallurgy and construction programs: 1.2 million KZT per year",
+      "sourceUrl": "https://bes.media/amp/postuplenie-v-satbayev-university-v-2026-podrobnyy-gid-dlya-abiturientov/", "sourceDomain": "bes.media", "sourceTitle": "Поступление в Satbayev University в 2026: подробный гид для абитуриентов", "sourceKind": "external", "sourceDate": "2026", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Значительная часть направлений, связанных с геологией, горным делом, металлургией и строительством, оценена в 1,2 млн."]
+    },
+    {
+      "id": "F-21", "type": "history",
+      "value": "KazMMI organized on October 20, 1933 by decree of the Council of People's Commissars of the USSR in Alma-Ata with two faculties: mining and non-ferrous metals",
+      "sourceUrl": "https://satbayev.university/en/history", "sourceDomain": "satbayev.university", "sourceTitle": "History of university — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The Kazakh Mining and Metallurgical Institute (KazMMI) was organized on October 20, 1933, by decree of the Council of People's Commissars of the USSR in Alma-Ata ... with two faculties: mining and non-ferrous metals."]
+    },
+    {
+      "id": "F-22", "type": "founded",
+      "value": "First call of the first academic year in KazMMI rang on September 19, 1934; university founded 1934",
+      "sourceUrl": "https://satbayev.university/en/history", "sourceDomain": "satbayev.university", "sourceTitle": "History of university — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The first call of the first academic year in KazMMI rang on September 19, 1934.", "Satbayev University is the first and leading technical university in Kazakhstan, founded in 1934."]
+    },
+    {
+      "id": "F-23", "type": "history",
+      "value": "1960 renamed KazPTI; January 1994 transformed into KazNTU; 2014 awarded 'National Research Technical University' category; 2017 received the name Satbayev University (NPJSC KazNRTU named after K.I. Satbayev)",
+      "sourceUrl": "https://satbayev.university/en/history", "sourceDomain": "satbayev.university", "sourceTitle": "History of university — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["In 1960, KazMMI was renamed into KazPTI - Kazakh Polytechnic Institute.", "In January 1994, the KazPTI named after V.I. Lenin was transformed into the Kazakh National Technical University (KazNTU).", "In 2014, University was awarded 'National Research Technical University' category. In 2017, University received the name 'Satbayev University' along with the full name 'NPJSC KazNRTU named after K.I. Satbayev'."]
+    },
+    {
+      "id": "F-24", "type": "history",
+      "value": "Decree No. 1436 of 22 Sept 1999: KazNTU named after Kanysh Satbayev; Decree No. 892 of 29 June 2001: renamed Satbayev Kazakh National Technical University",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Satbayev_University", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Satbayev University - Wikipedia", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Based on Decree No. 1436 issued by the Government of the Republic of Kazakhstan on September 22, 1999, Kazakh National Technical University was named after Kanysh Satbayev.", "Based on Decree No. 892 issued ... on June 29, 2001, Kazakh National Technical University named after Kanysh Satpayev was renamed into Satbayev Kazakh National Technical University."]
+    },
+    {
+      "id": "F-25", "type": "history",
+      "value": "Oldest technical university in Kazakhstan, comprising 10 institutions and 27 departments",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Satbayev_University", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Satbayev University", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Satbayev University is a technical university established in 1934, and it is the oldest technical university in Kazakhstan, comprising 10 institutions and 27 departments."]
+    },
+    {
+      "id": "F-26", "type": "student_life",
+      "value": "Student organizations: IDC Satbayev (Techno Cup), ENACTUS Satbayev University, Youth Committee (Bauyrsak Day, Korissu)",
+      "sourceUrl": "https://satbayev.university/en/stud-life", "sourceDomain": "satbayev.university", "sourceTitle": "Student life — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["Intellectual Debate Club Satbayev (IDC Satbayev) ... is the organizer of large-scale interuniversity tournaments, including the prestigious Techno Cup, one of the largest in Central Asia.", "ENACTUS Satbayev University is a community of business leaders who see business as a way to solve social issues.", "Youth Committee ... promote national values by organizing events such as 'Bauyrsak Day' and 'Korissu', and the team actively promotes sports."]
+    },
+    {
+      "id": "F-27", "type": "student_life",
+      "value": "Campus buildings: MAB, Admissions Committee, Student Registrar Office, Fab-Lab, Petroleum Building, MMB, IEME, Small Academic Building, EMEB; institutes: Geology and Oil-gas Business, Mining and Metallurgical, Automation and IT, Energy and Mechanical Engineering, Architecture and Civil Engineering, School of Transport Engineering and Logistics, Institute for Project Management, Academy of Digital Technologies and AI",
+      "sourceUrl": "https://satbayev.university/en", "sourceDomain": "satbayev.university", "sourceTitle": "Kazakh National Research Technical University — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["Main Academic Building (MAB), Admissions Committee (AC), Student Registrar Office (ORS), Fab-Lab, Petroleum Corps (OB), Mining and Metallurgical Building (MMB), Institute of Energy and Mechanical Engineering (IEME), Small Academic Building (SAB), and Engineering and Mechanical Engineering Building (EMEB).", "Satbayev University includes ... Geology and Oil-gas Business Institute named after K. Turyssov, Mining and Metallurgical Institute named after O.A. Baikonurov, Institute of Automation and Information Technologies, Institute of Energy and Mechanical Engineering named after A. Burkitbayev, T.K. Bassenov Institute of Architecture and Civil engineering, School of transport engineering and logistics named after M. Tynyshpayev, and E. Turkebayev Institute for Project Management, along with an Academy of Digital Technologies and Artificial Intelligence."]
+    },
+    {
+      "id": "F-28", "type": "student_life",
+      "value": "New 9-storey dormitory with 955 beds under construction; move-in expected 2026; planned commissioning February 2026",
+      "sourceUrl": "https://satbayev.university/en/news/the-project-for-building-the-new-student-dormitory-has-been-launched-at-satbayev-university", "sourceDomain": "satbayev.university", "sourceTitle": "The project for building the new student dormitory has been launched at Satbayev University — Satbayev University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["A new 9-storey dormitory with 955 beds is under construction, with students expected to move in during 2026.", "A new dormitory is planned to be put into operation in February 2026, and the construction will use environmentally clean and energy-efficient materials while meeting all seismic safety regulations."]
+    },
+    {
+      "id": "F-29", "type": "transport",
+      "value": "From Almaty International Airport: buses 3, 92, 79; from Almaty-2: trolleybuses 5, 6, buses 92, 98, 79; from Almaty-1: trolleybus 7, buses 34, 30, 18; from Sayakhat bus station: buses 3, 92, 98, 79",
+      "sourceUrl": "https://satbayev.university/en/news/hostel-payment-library-travel-faq-of-admission-to-satbayev-university-in-2024", "sourceDomain": "satbayev.university", "sourceTitle": "Hostel, payment, library, travel: FAQ of admission to Satbayev University in 2024 — Satbayev University", "sourceKind": "official", "sourceDate": "2024", "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["From Almaty-2 railway station: Trolleybuses 5, 6, Buses 92, 98, 79.", "From Almaty International Airport: Buses 3, 92, 79.", "From Almaty-1 railway station: Trolleybus 7, Buses 34, 30, 18. Sayakhat Bus Station: Buses 3, 92, 98, 79."]
+    },
+    {
+      "id": "F-30", "type": "climate",
+      "value": "Annual average 10 °C; January −4.7 °C; July 23.8 °C; annual precipitation about 650–700 mm; humid continental climate",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Almaty", "sourceDomain": "en.wikipedia.org", "sourceTitle": "Almaty - Wikipedia", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["The annual average air temperature is equal to 10 °C (50 °F)", "The coldest month is January, −4.7 °C (24 °F) (on average), the warmest month (July) 23.8 °C (75 °F) (on average)", "Annual precipitation is about 650 to 700 mm (25.6 to 27.6 in) ... April and May are the wettest months ... frost starts on about 14 October and ends on about 18 April, with sustained extreme cold from about 19 December to about 23 February"]
+    },
+    {
+      "id": "F-31", "type": "climate",
+      "value": "Precipitation 675 mm per year; January −3.8 °C; July 24.6 °C",
+      "sourceUrl": "https://www.climatestotravel.com/climate/kazakhstan/almaty", "sourceDomain": "climatestotravel.com", "sourceTitle": "Almaty climate: seasons, monthly averages - Climates to Travel", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["In Almaty, the average temperature of the coldest month (January) is -3.8°C, and that of the warmest month (July) is 24.6°C.", "Precipitation amounts to 675 millimeters per year, ranging from 27.8 millimeters in the driest month (September) to 112.4 millimeters in the wettest one (April)."]
+    }
+  ],
+  "gaps": [
+    { "field": "housing", "note": "Searched in RU/EN/KK for monthly/semester dormitory prices (official FAQ pages, dormitory.satbayev.university, situation-center pages). Only a 7,500 KZT/day temporary rate for dormitory No. 2 was returned; regular per-month student rates, room types and facilities were not surfaced. The exact FAQ page (2023 vs 2024 edition) carrying the daily rate could not be pinned, so that fact is marked medium." },
+    { "field": "tuition", "note": "The official page 'Стоимость обучения 2025-2026' exists (official.satbayev.university) with per-program PDFs for individuals, legal entities, foreign citizens, online and master's/PhD, but search snippets did not expose the per-program KZT figures. Only the official 'from $2,630' international starting price and external (bes.media) ranges were available; no official domestic per-program values, no master's/PhD figures. Web-search budget ran out before follow-up queries." },
+    { "field": "costOfLiving", "note": "Numbeo returned only rent (from 400,000 KZT) and fitness (15,000 KZT); food, transport pass and mobile/internet prices were not in snippets. No official university student-budget guidance was found. Wise figures are in GBP." },
+    { "field": "places", "note": "No official coordinates for dormitories, library or sports club; dormitory addresses No. 1/4/6 come only from 2GIS (low confidence). Abai metro station and Sayakhat bus station coordinates were not retrieved (search budget exhausted)." },
+    { "field": "history", "note": "Current student/faculty numbers were not returned by official or Wikipedia snippets." },
+    { "field": "cityCenter", "note": "Wikidata coordinates for Almaty were not retrieved directly; the Wikipedia infobox value 43°14′N 76°57′E was used instead." }
+  ],
+  "queryLog": [
+    "Satbayev University wikipedia coordinates Almaty Satpayev street 22",
+    "Almaty wikidata coordinates 43°16′N 76°53′E",
+    "общежитие Satbayev University стоимость проживания 2025",
+    "стоимость обучения Satbayev University 2025-2026 бакалавриат",
+    "Satbayev University history founded 1934 Kazakh Mining and Metallurgical Institute [satbayev.university]",
+    "Almaty climate average temperature January July precipitation wikipedia",
+    "Satbayev University стоимость обучения 2025-2026 тенге год образовательная программа физические лица [official.satbayev.university]",
+    "Общежитие оплата библиотека проезд FAQ поступления Satbayev University стоимость проживания в месяц [satbayev.university]",
+    "Almaty International Airport wikipedia coordinates",
+    "Almaty-2 railway station wikipedia coordinates",
+    "Baikonur (Almaty Metro) station wikipedia coordinates",
+    "Almaty wikipedia climate data table mean annual temperature precipitation record [en.wikipedia.org]",
+    "Numbeo cost of living Almaty 2026 single person monthly costs rent",
+    "Satbayev University student life clubs sports complex library campus [satbayev.university]",
+    "Satbayev University общежитие стоимость проживания в месяц тенге 2025 dormitory.satbayev.university",
+    "Satbayev University tuition fees 2025-2026 international students USD bachelor master PhD per year [satbayev.university]",
+    "Поступление в Satbayev University в 2026 подробный гид стоимость обучения 905 тысяч 1,3 млн инженерные",
+    "Satbayev University wikipedia students number rector 2014 national research university 2017 renamed [wikipedia.org]",
+    "Numbeo Almaty cost of living tenge meal inexpensive restaurant monthly pass apartment 1 bedroom city centre ₸ [numbeo.com]",
+    "Satbayev University history 1960 Kazakh Polytechnic Institute 1994 KazNTU 1999 named Satbayev 2014 national research technical university 2017 Satbayev University [satbayev.university]",
+    "Satbayev University как добраться автобус остановка Сатпаева Масанчи метро Байконур",
+    "Satbayev University жатақхана бағасы айына студенттер 2025",
+    "Satbayev University общежития адреса Габдуллина №1 №2 №4 №5 список общежитий стоимость [satbayev.university]",
+    "Сколько стоит обучение в популярных вузах Казахстана в 2026 году Satbayev University inform.kz",
+    "\"Tuition Fees for Bachelor's Programs for International Students\" Satbayev University 2025–2026 USD [official.satbayev.university]",
+    "Satbayev University FAQ 2024 how to get to university bus routes from airport Almaty-2 station campus travel [satbayev.university]",
+    "Satbayev University about number of students faculty institutes 2025 largest technical university [satbayev.university]",
+    "Numbeo Almaty prices meal inexpensive restaurant monthly pass regular price mobile internet utilities KZT September 2026 [numbeo.com]",
+    "Satbayev University library scientific library main building GUK MMB campus buildings laboratories [satbayev.university]",
+    "общежитие Satbayev University цена за месяц студенты 2025 2026 плата за проживание Алматы вузы",
+    "(not performed - budget exhausted) Satbayev University \"7500\" тенге сутки общежитие №2 посуточное проживание FAQ",
+    "(not performed - budget exhausted) finratings.kz стоимость обучения в вузах Казахстана Satbayev University 905 тысяч 1,3 млн 2025-2026",
+    "(not performed - budget exhausted) Satbayev University стоимость обучения 2025-2026 бакалавриат физические лица тенге pdf",
+    "(not performed - budget exhausted) numbeo Almaty Meal Inexpensive Restaurant Monthly Pass ₸",
+    "(not performed - budget exhausted) Almaty wikidata Q35493 coordinate location",
+    "(not performed - budget exhausted) Abay (Almaty Metro) station wikipedia coordinates",
+    "(not performed - budget exhausted) Satbayev University Fab-Lab laboratories student events",
+    "(not performed - budget exhausted) Satbayev University international students cost of living Almaty budget"
+  ]
+}

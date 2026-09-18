@@ -15,7 +15,7 @@
       manualLabel: 'Немесе нысан кодын енгізіңіз',
       manualHint: 'Код табличкадағы QR астында жазылған',
       open: 'Ашу',
-      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR',
+      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR', navStudy: 'Оқу',
 
       idle: 'Камера өшірулі',
       starting: 'Камера қосылуда…',
@@ -46,7 +46,7 @@
       manualLabel: 'Или введите код объекта',
       manualHint: 'Код написан под QR на табличке',
       open: 'Открыть',
-      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR',
+      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR', navStudy: 'Учёба',
 
       idle: 'Камера выключена',
       starting: 'Включаем камеру…',
@@ -65,6 +65,37 @@
       needHttps: 'Камера работает только на сайте, открытом через https.',
       libFailed: 'Сканер не загрузился. Проверьте интернет и обновите страницу.',
       cameraError: 'Не удалось включить камеру. Попробуйте прочитать код с фото.'
+    },
+    en: {
+      skip: 'Skip to content',
+      title: 'QR scanner',
+      lead: 'Point the camera at the QR code next to the site',
+      start: 'Turn on camera',
+      stop: 'Turn off camera',
+      retry: 'Scan again',
+      fromPhoto: 'Read from photo',
+      manualLabel: 'Or enter the site code',
+      manualHint: 'The code is printed under the QR on the plaque',
+      open: 'Open',
+      navGuide: 'Guide', navMap: 'Map', navQr: 'QR', navStudy: 'Study',
+
+      idle: 'Camera is off',
+      starting: 'Starting camera…',
+      scanning: 'Place the QR code inside the frame',
+      paused: 'Camera stopped',
+      reading: 'Reading photo…',
+      checking: 'Checking code…',
+      found: 'Found: {name}. Opening the map…',
+      foreign: 'This is not a MuraMap code. Scan the plaque next to the site.',
+      unknown: 'No site with code {id} in the database',
+      badManual: 'Enter the code as 001 or MURA-001',
+      photoFail: 'No QR code found in the photo. Make sure the code is sharp.',
+      denied: 'No camera access. Allow it in the browser settings or read the code from a photo.',
+      noCamera: 'No camera found. Try reading the code from a photo.',
+      busyCamera: 'Another app is using the camera. Close it and try again.',
+      needHttps: 'The camera only works on a site opened over https.',
+      libFailed: 'The scanner failed to load. Check your connection and reload the page.',
+      cameraError: 'Could not start the camera. Try reading the code from a photo.'
     }
   };
 

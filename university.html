@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B2A31">
+<title>MuraMap — университет</title>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Noto+Serif:wght@500;700&display=swap&subset=cyrillic,cyrillic-ext,latin" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/study.css">
+</head>
+
+<body class="body--study">
+
+<a class="skip-link" href="#main" data-i18n="skip">Негізгі мазмұнға өту</a>
+
+<header class="header">
+  <a class="brand" href="index.html" data-page="index.html">
+    <div class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 96 96" width="22" height="22" fill="none" aria-hidden="true">
+        <path fill="currentColor" fill-rule="evenodd" d="M48 80C39 68 28 58 28 42A20 20 0 1 1 68 42C68 58 57 68 48 80ZM37 56V42A11 11 0 0 1 59 42V56Z"/>
+        <path fill="currentColor" d="M44 56V51A4 4 0 0 1 52 51V56Z"/>
+        <circle cx="48" cy="26" r="2.6" fill="#D9A441"/>
+      </svg>
+    </div>
+    <span class="brand__name">MuraMap</span>
+  </a>
+
+  <div class="langmini" role="group" aria-label="Тіл / Язык / Language">
+    <button class="langmini__btn is-active" type="button" data-lang="kk" aria-pressed="true">ҚАЗ</button>
+    <button class="langmini__btn" type="button" data-lang="ru" aria-pressed="false">РУС</button>
+    <button class="langmini__btn" type="button" data-lang="en" aria-pressed="false">ENG</button>
+  </div>
+</header>
+
+<main class="study" id="main">
+  <p class="study__status" id="status" role="status" aria-live="polite"></p>
+
+  <article class="profile" id="profile" hidden>
+
+    <a class="profile__back" href="study.html" data-page="study.html" id="backLink">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      <span data-i18n="back">Университеттер тізімі</span>
+    </a>
+
+    <!-- Hero -->
+    <header class="hero-u">
+      <p class="hero-u__city" id="heroCity"></p>
+      <h1 class="hero-u__title" id="heroTitle"></h1>
+      <p class="hero-u__campus" id="heroCampus"></p>
+      <div class="hero-u__actions">
+        <a class="btn btn--map hero-u__site" id="heroSite" href="#" target="_blank" rel="noopener" data-i18n="website">Ресми сайт</a>
+        <a class="btn btn--ghost" id="heroGuide" href="#" data-i18n="askGuide">Гидтен сұрау</a>
+      </div>
+    </header>
+
+    <!-- At a glance -->
+    <section class="sec" aria-labelledby="glanceTitle">
+      <h2 class="sec__title" id="glanceTitle" data-i18n="atGlance">Қысқаша</h2>
+      <div class="glance" id="glance"></div>
+    </section>
+
+    <!-- Visual gallery (rendered only when verified images exist) -->
+    <section class="sec" id="gallerySec" hidden aria-labelledby="galleryTitle">
+      <h2 class="sec__title" id="galleryTitle" data-i18n="secGallery">Галерея</h2>
+      <div class="gallery" id="gallery"></div>
+      <p class="sec__note" data-i18n="galleryNote"></p>
+    </section>
+
+    <!-- Map -->
+    <section class="sec" aria-labelledby="mapTitle">
+      <h2 class="sec__title" id="mapTitle" data-i18n="secMap">Кампус картасы</h2>
+      <div class="umap" id="umap" role="img" aria-label="Campus map"></div>
+      <ul class="legend" id="legend"></ul>
+    </section>
+
+    <!-- Distance -->
+    <section class="sec" aria-labelledby="distTitle">
+      <h2 class="sec__title" id="distTitle" data-i18n="secDistance">Қала орталығына дейін</h2>
+      <div class="distance" id="distance"></div>
+    </section>
+
+    <!-- Housing -->
+    <section class="sec" aria-labelledby="housingTitle">
+      <h2 class="sec__title" id="housingTitle" data-i18n="secHousing">Студенттік тұрғын үй</h2>
+      <div class="cards" id="housing"></div>
+    </section>
+
+    <!-- Cost of living -->
+    <section class="sec" aria-labelledby="costTitle">
+      <h2 class="sec__title" id="costTitle" data-i18n="secCost">Тұрмыс шығындары</h2>
+      <div id="cost"></div>
+    </section>
+
+    <!-- Tuition -->
+    <section class="sec" aria-labelledby="tuitionTitle">
+      <h2 class="sec__title" id="tuitionTitle" data-i18n="secTuition">Оқу ақысы</h2>
+      <div id="tuition"></div>
+    </section>
+
+    <!-- Student life -->
+    <section class="sec" aria-labelledby="lifeTitle">
+      <h2 class="sec__title" id="lifeTitle" data-i18n="secLife">Студенттік өмір</h2>
+      <div class="cards" id="life"></div>
+    </section>
+
+    <!-- History -->
+    <section class="sec" aria-labelledby="historyTitle">
+      <h2 class="sec__title" id="historyTitle" data-i18n="secHistory">Университет тарихы</h2>
+      <ol class="timeline" id="history"></ol>
+    </section>
+
+    <!-- Transport -->
+    <section class="sec" aria-labelledby="transportTitle">
+      <h2 class="sec__title" id="transportTitle" data-i18n="secTransport">Көлікпен жету</h2>
+      <div id="transport"></div>
+    </section>
+
+    <!-- Climate -->
+    <section class="sec sec--secondary" aria-labelledby="climateTitle">
+      <h2 class="sec__title" id="climateTitle" data-i18n="secClimate">Климат</h2>
+      <div id="climate"></div>
+    </section>
+
+    <!-- Sources -->
+    <section class="sec" aria-labelledby="sourcesTitle">
+      <h2 class="sec__title" id="sourcesTitle" data-i18n="secSources">Дереккөздер</h2>
+      <p class="sec__note" data-i18n="sourcesLead"></p>
+      <p class="sec__note sec__note--warn" data-i18n="freshnessNote"></p>
+      <ol class="sources" id="sources"></ol>
+    </section>
+  </article>
+</main>
+
+<nav class="tabbar" aria-label="MuraMap">
+  <a class="tab" href="guide.html" data-page="guide.html">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 4h5v16H6a2 2 0 0 0-2 2z"/><path d="M20 5.5A2 2 0 0 0 18 4h-5v16h5a2 2 0 0 1 2 2z"/></svg>
+    <span data-i18n="navGuide">Гид</span>
+  </a>
+  <a class="tab" href="map.html" data-page="map.html">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <span data-i18n="navMap">Карта</span>
+  </a>
+  <a class="tab is-active" href="study.html" data-page="study.html" aria-current="page">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/><path d="M21 9v5"/></svg>
+    <span data-i18n="navStudy">Оқу</span>
+  </a>
+  <a class="tab" href="scan.html" data-page="scan.html">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V5h4M20 9V5h-4M4 15v4h4M20 15v4h-4"/><path d="M8 12h8"/></svg>
+    <span data-i18n="navQr">QR</span>
+  </a>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/config.js"></script>
+<script src="js/uni-core.js"></script>
+<script src="js/university.js"></script>
+</body>
+</html>

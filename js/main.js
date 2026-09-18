@@ -20,6 +20,7 @@
       openMap:     'Картаны ашу',
       navGuide:    'Гид',
       navMap:      'Карта',
+      navStudy:    'Оқу',
       navQr:       'QR'
     },
     ru: {
@@ -36,11 +37,39 @@
       openMap:     'Открыть карту',
       navGuide:    'Гид',
       navMap:      'Карта',
+      navStudy:    'Учёба',
+      navQr:       'QR'
+    },
+    en: {
+      skip:        'Skip to content',
+      menuOpen:    'Open menu',
+      menuClose:   'Close menu',
+      drawerTitle: 'Account and language',
+      signIn:      'Sign in',
+      signUp:      'Sign up',
+      langLabel:   'Language',
+      heroLead:    'Sacred places of Kazakhstan on one map',
+      heroAlt:     'Mausoleum of Khoja Ahmed Yasawi, Turkistan',
+      heroFallback:'Heritage',
+      openMap:     'Open the map',
+      navGuide:    'Guide',
+      navMap:      'Map',
+      navStudy:    'Study',
       navQr:       'QR'
     }
   };
 
-  let lang = 'kk';
+  const LANG_KEY = 'mura-lang';
+
+  let lang = (function () {
+    const p = new URLSearchParams(location.search).get('lang');
+    if (I18N[p]) return p;
+    try {
+      const s = localStorage.getItem(LANG_KEY);
+      if (I18N[s]) return s;
+    } catch (e) { /* private mode */ }
+    return 'kk';
+  })();
 
   function applyLang(next) {
     if (!I18N[next]) return;
@@ -48,6 +77,7 @@
     const dict = I18N[lang];
 
     document.documentElement.lang = lang;
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* ignore */ }
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       const value = dict[el.dataset.i18n];
@@ -181,6 +211,7 @@
   const ROUTES = {
     guide: 'guide.html',
     map: 'map.html',
+    study: 'study.html',
     qr: 'scan.html'
   };
 
