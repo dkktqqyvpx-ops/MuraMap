@@ -1,29 +1,5 @@
-/* ==========================================================================
-   MuraMap — сервер чат-бота (Cloudflare Worker)
-
-   Зачем он нужен: ключ ИИ нельзя класть в код сайта — его сможет украсть
-   любой посетитель. Сайт отправляет вопрос сюда, а сервер:
-     1) загружает data/objects.json с твоего сайта;
-     2) находит объекты, о которых спрашивают (например, «Жұмағазы хазірет»);
-     3) передаёт ИИ вопрос + описание найденных объектов;
-     4) возвращает ответ сайту.
-
-   ИИ можно выбрать двумя способами:
-     БЕСПЛАТНО — Cloudflare Workers AI: Settings → Bindings → Add → Workers AI,
-                 имя переменной AI. Ключ не нужен.
-     ПЛАТНО    — Claude API: добавьте секрет ANTHROPIC_API_KEY.
-   Если есть привязка AI, используется бесплатный вариант.
-
-   Переменные в настройках Worker (Settings → Variables and Secrets):
-     SITE_URL           — адрес сайта, например https://login.github.io/MuraMap/
-     ALLOWED_ORIGINS    — с каких сайтов можно обращаться, через запятую:
-                          https://login.github.io,http://127.0.0.1:5500
-     ANTHROPIC_API_KEY  — (только для платного варианта) ключ, тип Secret!
-     MODEL              — (необязательно) другая модель вместо стандартной
-   ========================================================================== */
-
-const FREE_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';  // Cloudflare
-const PAID_MODEL = 'claude-haiku-4-5-20251001';                 // Claude API
+const FREE_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';  
+const PAID_MODEL = 'claude-haiku-4-5-20251001';                
 const API_URL = 'https://api.anthropic.com/v1/messages';
 
 const MAX_QUESTION = 500;        // символов в вопросе
@@ -33,13 +9,7 @@ const RATE_LIMIT = 20;           // вопросов
 const RATE_WINDOW = 10 * 60e3;   // за 10 минут с одного IP
 
 const ID_RE = /^MURA-\d{3,}$/;
-
-/* ---------- Поиск объекта по тексту вопроса ---------- */
-
-// Казахские буквы → русские, чтобы «Жұмағазы» и «Жумагазы» совпадали
 const LETTERS = { 'ә': 'а', 'ғ': 'г', 'қ': 'к', 'ң': 'н', 'ө': 'о', 'ұ': 'у', 'ү': 'у', 'һ': 'х', 'і': 'и', 'ё': 'е', 'й': 'и' };
-
-// Слова, которые есть во многих названиях и ничего не различают
 const STOP_WORDS = new Set([
   'кесенеси', 'кесене', 'мавзолеи', 'мешити', 'мешит', 'мечеть', 'мечети',
   'корымы', 'корым', 'некрополь', 'некрополи', 'хазирет', 'хазрет',
@@ -58,7 +28,6 @@ function tokens(text) {
   return normalize(text).split(' ').filter(Boolean);
 }
 
-// Ключевые слова объекта: из названий на двух языках и из aliases
 function keywords(obj) {
   const source = [
     obj.name && obj.name.kk,
@@ -68,8 +37,6 @@ function keywords(obj) {
   return [...new Set(tokens(source))].filter((w) => w.length >= 4 && !STOP_WORDS.has(w));
 }
 
-// Сколько ключевых слов объекта встретилось в вопросе.
-// Сравниваем начало слова, чтобы падежи не мешали: «Бекеттің», «Бекета».
 function score(questionTokens, obj) {
   let hits = 0;
   for (const word of keywords(obj)) {
@@ -90,12 +57,9 @@ export function pickObjects(question, objects, contextId) {
 
   if (found.length) return found;
 
-  // В вопросе нет названия («а когда его построили?») — берём объект из контекста
   const current = objects.find((o) => o.id === contextId);
   return current ? [current] : [];
 }
-
-/* ---------- Инструкция для ИИ ---------- */
 
 function pick(field, lang) {
   if (!field) return '';
@@ -156,8 +120,6 @@ ${details}
 </objects>`;
 }
 
-/* ---------- Данные сайта ---------- */
-
 let cache = { objects: null, time: 0 };
 
 async function loadObjects(env) {
@@ -170,10 +132,6 @@ async function loadObjects(env) {
   return cache.objects;
 }
 
-/* ---------- Ограничение частоты ---------- */
-// Простое ограничение в памяти. Для школьного проекта достаточно,
-// но оно сбрасывается при перезапуске Worker.
-
 const hits = new Map();
 
 function tooMany(ip) {
@@ -185,10 +143,8 @@ function tooMany(ip) {
   return list.length > RATE_LIMIT;
 }
 
-/* ---------- Запрос к ИИ ---------- */
-
 async function askAI(env, system, messages) {
-  // Бесплатно: Cloudflare Workers AI (10 000 «нейронов» в день)
+ 
   if (env.AI) {
     const result = await env.AI.run(env.MODEL || FREE_MODEL, {
       messages: [{ role: 'system', content: system }, ...messages],
@@ -203,7 +159,7 @@ async function askAI(env, system, messages) {
     return String(text || '').trim();
   }
 
-  // Платно: Claude API
+ 
   const res = await fetch(API_URL, {
     method: 'POST',
     headers: {
@@ -229,8 +185,6 @@ async function askAI(env, system, messages) {
     .trim();
 }
 
-/* ---------- HTTP ---------- */
-
 function corsHeaders(origin, allowed) {
   const ok = !allowed.length || allowed.includes(origin);
   return {
@@ -249,7 +203,6 @@ function json(body, status, headers) {
   });
 }
 
-// Сообщения для ИИ должны чередоваться: user, assistant, user…
 function cleanHistory(history) {
   const out = [];
   for (const m of Array.isArray(history) ? history.slice(-MAX_HISTORY) : []) {
@@ -305,7 +258,6 @@ export default {
         answer = await askAI(env, buildSystem(lang, objects, picked), messages);
       } catch (err) {
         console.error('AI error:', err);
-        // Бесплатный лимит на сегодня исчерпан или модель недоступна
         return json({ error: 'ai_failed' }, 502, cors);
       }
 
