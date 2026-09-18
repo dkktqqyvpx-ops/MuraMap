@@ -70,7 +70,7 @@
       btn.setAttribute('aria-pressed', String(on));
     });
 
-    // Кнопка «Мәзірді ашу / жабу» зависит от состояния меню
+    
     syncBurgerLabel();
   }
 
@@ -97,7 +97,7 @@
 
     drawer.hidden = false;
     scrim.hidden = false;
-    // Перерисовка кадра нужна, чтобы сработал transition после снятия hidden
+    
     requestAnimationFrame(function () {
       drawer.classList.add('is-open');
       scrim.classList.add('is-open');
@@ -124,7 +124,7 @@
       drawer.removeEventListener('transitionend', hide);
     };
     drawer.addEventListener('transitionend', hide);
-    setTimeout(hide, 400); // страховка, если transitionend не придёт
+    setTimeout(hide, 400); 
 
     if (lastFocused) lastFocused.focus();
   }
@@ -171,7 +171,7 @@
 
   drawer.querySelectorAll('[data-action]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      // Здесь позже подключается экран авторизации
+      
       console.log('action:', btn.dataset.action);
       closeMenu();
     });
