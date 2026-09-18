@@ -1,0 +1,15 @@
+{
+  "name": "muramap-tools",
+  "private": true,
+  "type": "module",
+  "description": "Offline tooling for MuraMap: fact pipeline (search → retrieve → extract → validate → store) and the universities data build.",
+  "scripts": {
+    "build:universities": "node build-universities.mjs",
+    "check:universities": "node build-universities.mjs --check",
+    "pipeline": "node fact-pipeline.mjs",
+    "test": "node fact-pipeline.mjs --self-test && node build-universities.mjs --check"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.127.0"
+  }
+}

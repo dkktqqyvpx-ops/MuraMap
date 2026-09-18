@@ -1,0 +1,953 @@
+{
+  "id": "UNI-AYU",
+  "slug": "yassawi-university",
+  "name": {
+    "en": "Khoja Akhmet Yassawi International Kazakh-Turkish University",
+    "ru": "Международный казахско-турецкий университет имени Ходжи Ахмеда Ясави",
+    "kk": "Қожа Ахмет Ясауи атындағы Халықаралық қазақ-түрік университеті"
+  },
+  "shortName": {
+    "en": "Yassawi University (AYU)",
+    "ru": "МКТУ им. Ясави",
+    "kk": "Ясауи университеті (ХҚТУ)"
+  },
+  "website": "https://ayu.edu.kz",
+  "founded": 1991,
+  "city": {
+    "en": "Turkistan",
+    "ru": "Туркестан",
+    "kk": "Түркістан"
+  },
+  "country": {
+    "en": "Kazakhstan",
+    "ru": "Казахстан",
+    "kk": "Қазақстан"
+  },
+  "campus": {
+    "name": {
+      "en": "Main campus, Turkistan",
+      "ru": "Главный кампус, Туркестан",
+      "kk": "Бас кампус, Түркістан"
+    },
+    "multiCampus": true,
+    "note": {
+      "en": "The main campus at B. Sattarkhanov Ave 29 in Turkistan holds the rectorate, faculties and dormitories; the university also has educational buildings in Kentau (dormitories ~300 beds), Shymkent and Almaty.",
+      "ru": "Главный кампус на пр. Б. Саттарханова, 29 в Туркестане (ректорат, факультеты, общежития); есть также учебные корпуса в Кентау (общежития ~300 мест), Шымкенте и Алматы.",
+      "kk": "Бас кампус Түркістан, Б. Саттарханов даңғылы 29 (ректорат, факультеттер, жатақханалар); сондай-ақ Кентауда (~300 орындық жатақхана), Шымкент пен Алматыда оқу ғимараттары бар."
+    }
+  },
+  "location": {
+    "lat": 43.289169,
+    "lng": 68.301197,
+    "address": {
+      "en": "29 B. Sattarkhanov Avenue, Turkistan 161200, Kazakhstan",
+      "ru": "пр. Б. Саттарханова, 29, г. Туркестан, 161200, Казахстан",
+      "kk": "Б. Саттарханов даңғылы, 29, Түркістан қ., 161200, Қазақстан"
+    },
+    "factId": "F-LOC-1"
+  },
+  "cityCenter": {
+    "lat": 43.30194,
+    "lng": 68.26917,
+    "label": {
+      "en": "Turkistan city (Wikipedia reference point)",
+      "ru": "Город Туркестан (опорная точка Википедии)",
+      "kk": "Түркістан қаласы (Уикипедия тірек нүктесі)"
+    },
+    "factId": "F-CITY-1"
+  },
+  "places": [
+    {
+      "id": "P-1",
+      "kind": "building",
+      "name": {
+        "en": "Main campus / rectorate, B. Sattarkhanov Ave 29",
+        "ru": "Главный кампус / ректорат, пр. Б. Саттарханова, 29",
+        "kk": "Бас кампус / ректорат, Б. Саттарханов даңғылы 29"
+      },
+      "lat": 43.289169,
+      "lng": 68.301197,
+      "factId": "F-LOC-2"
+    },
+    {
+      "id": "P-2",
+      "kind": "dormitory",
+      "name": {
+        "en": "Turkistan campus dormitories (men's and women's, ~650 places)",
+        "ru": "Общежития кампуса в Туркестане (мужское и женское, ~650 мест)",
+        "kk": "Түркістан кампусының жатақханалары (ұлдар мен қыздар, ~650 орын)"
+      },
+      "lat": null,
+      "lng": null,
+      "factId": "F-PL-4"
+    },
+    {
+      "id": "P-3",
+      "kind": "library",
+      "name": {
+        "en": "University library (on campus)",
+        "ru": "Университетская библиотека (на кампусе)",
+        "kk": "Университет кітапханасы (кампуста)"
+      },
+      "lat": null,
+      "lng": null,
+      "factId": "F-PL-5"
+    },
+    {
+      "id": "P-4",
+      "kind": "sports",
+      "name": {
+        "en": "Campus sports grounds (tennis, football, basketball courts)",
+        "ru": "Спортивные площадки кампуса (теннис, футбол, баскетбол)",
+        "kk": "Кампустың спорт алаңдары (теннис, футбол, баскетбол)"
+      },
+      "lat": null,
+      "lng": null,
+      "factId": "F-PL-5"
+    },
+    {
+      "id": "P-5",
+      "kind": "dormitory",
+      "name": {
+        "en": "Kentau dormitories (~300 beds)",
+        "ru": "Общежития в Кентау (~300 мест)",
+        "kk": "Кентау жатақханалары (~300 орын)"
+      },
+      "lat": null,
+      "lng": null,
+      "factId": "F-PL-6"
+    },
+    {
+      "id": "P-6",
+      "kind": "building",
+      "name": {
+        "en": "Mausoleum of Khoja Ahmed Yasawi (landmark)",
+        "ru": "Мавзолей Ходжи Ахмеда Ясави (достопримечательность)",
+        "kk": "Қожа Ахмет Ясауи кесенесі (көрікті орын)"
+      },
+      "lat": 43.29778,
+      "lng": 68.27083,
+      "factId": "F-PL-1"
+    },
+    {
+      "id": "P-7",
+      "kind": "airport",
+      "name": {
+        "en": "Hazrat Sultan International Airport",
+        "ru": "Международный аэропорт Хазрет Султан",
+        "kk": "Хазірет Сұлтан халықаралық әуежайы"
+      },
+      "lat": 43.31111,
+      "lng": 68.55028,
+      "factId": "F-PL-2"
+    },
+    {
+      "id": "P-8",
+      "kind": "rail",
+      "name": {
+        "en": "Turkistan railway station",
+        "ru": "Железнодорожный вокзал Туркестан",
+        "kk": "Түркістан теміржол вокзалы"
+      },
+      "lat": 43.28591,
+      "lng": 68.212113,
+      "factId": "F-PL-3"
+    }
+  ],
+  "housing": [
+    {
+      "name": {
+        "en": "University dormitory, Turkistan campus",
+        "ru": "Общежитие университета, кампус Туркестан",
+        "kk": "Университет жатақханасы, Түркістан кампусы"
+      },
+      "value": 10000,
+      "currency": "KZT",
+      "period": "month",
+      "roomType": {
+        "en": "Rooms for 2-3 and 4-6 people",
+        "ru": "Комнаты на 2-3 и 4-6 человек",
+        "kk": "2-3 және 4-6 адамдық бөлмелер"
+      },
+      "distanceKm": null,
+      "facilities": [
+        "canteen",
+        "study_area"
+      ],
+      "factId": "F-HOUS-1"
+    }
+  ],
+  "costOfLiving": [
+    {
+      "category": "dormitory",
+      "value": 10000,
+      "currency": "KZT",
+      "period": "month",
+      "note": {
+        "en": "Official dormitory fee, Turkistan campus (about 22 USD)",
+        "ru": "Официальная плата за общежитие, кампус Туркестан (около 22 USD)",
+        "kk": "Ресми жатақхана ақысы, Түркістан кампусы (шамамен 22 USD)"
+      },
+      "factId": "F-HOUS-1"
+    },
+    {
+      "category": "total",
+      "value": 599.7,
+      "currency": "USD",
+      "period": "month",
+      "note": {
+        "en": "Numbeo estimate for a single person in Kazakhstan (country-level, excl. rent); no Turkistan city data on Numbeo",
+        "ru": "Оценка Numbeo для одного человека по Казахстану (по стране, без аренды); данных по Туркестану на Numbeo нет",
+        "kk": "Numbeo бағалауы, бір адам, Қазақстан бойынша (ел деңгейі, жалдаусыз); Түркістан қаласы бойынша дерек жоқ"
+      },
+      "factId": "F-COL-1"
+    }
+  ],
+  "tuition": [],
+  "history": [
+    {
+      "year": 1991,
+      "title": {
+        "en": "University founded",
+        "ru": "Основание университета",
+        "kk": "Университеттің құрылуы"
+      },
+      "text": {
+        "en": "Established in 1991 in Turkistan on the initiative of President Nazarbayev under the Kazakhstan–Turkey intergovernmental agreement; the first university in Kazakhstan with international status.",
+        "ru": "Основан в 1991 году в Туркестане по инициативе Президента Назарбаева на основе межправительственного соглашения Казахстана и Турции; первый вуз со статусом международного.",
+        "kk": "1991 жылы Түркістанда Президент Назарбаевтың бастамасымен Қазақстан–Түркия үкіметаралық келісімі негізінде құрылды; халықаралық мәртебе алған алғашқы университет."
+      },
+      "factId": "F-HIST-1"
+    },
+    {
+      "year": 1992,
+      "title": {
+        "en": "International status (1 May 1992)",
+        "ru": "Статус международного (1 мая 1992)",
+        "kk": "Халықаралық мәртебе (1992 ж. 1 мамыр)"
+      },
+      "text": {
+        "en": "At the meeting of Nursultan Nazarbayev and Turkish Prime Minister Süleyman Demirel on 1 May 1992 the university was given the status of an international university.",
+        "ru": "На встрече Нурсултана Назарбаева и премьер-министра Турции Сулеймана Демиреля 1 мая 1992 года университету присвоен статус международного.",
+        "kk": "1992 жылғы 1 мамырда Нұрсұлтан Назарбаев пен Түркия премьер-министрі Сүлейман Демирелдің кездесуінде университетке халықаралық мәртебе берілді."
+      },
+      "factId": "F-HIST-2"
+    },
+    {
+      "year": 1992,
+      "title": {
+        "en": "Reorganization agreement (31 Oct 1992)",
+        "ru": "Соглашение о реорганизации (31 окт 1992)",
+        "kk": "Қайта ұйымдастыру келісімі (1992 ж. 31 қазан)"
+      },
+      "text": {
+        "en": "On 31 October 1992 the governments of Kazakhstan and Turkey signed the agreement reorganizing the university into Khoja Akhmet Yasawi International Kazakh-Turkish University.",
+        "ru": "31 октября 1992 года правительства Казахстана и Турции подписали соглашение о реорганизации вуза в Международный казахско-турецкий университет им. Х. А. Ясави.",
+        "kk": "1992 жылғы 31 қазанда Қазақстан мен Түркия үкіметтері университетті Қожа Ахмет Ясауи атындағы Халықаралық қазақ-түрік университеті етіп қайта ұйымдастыру туралы келісімге қол қойды."
+      },
+      "factId": "F-HIST-3"
+    },
+    {
+      "year": 2026,
+      "title": {
+        "en": "Today",
+        "ru": "Сегодня",
+        "kk": "Бүгін"
+      },
+      "text": {
+        "en": "Named after the 12th-century Sufi poet Khoja Akhmet Yassawi; about 10,000 students; offers bachelor's, internship, master's, residency and doctoral programmes on state/Turkish grants and on a paid basis.",
+        "ru": "Назван в честь суфийского поэта XII века Ходжи Ахмеда Ясави; около 10 000 студентов; бакалавриат, интернатура, магистратура, резидентура и докторантура на грантовой и платной основе.",
+        "kk": "XII ғасырдағы сопы ақын Қожа Ахмет Ясауидің есімімен аталады; шамамен 10 000 студент; бакалавриат, интернатура, магистратура, резидентура және докторантура грант пен ақылы негізде."
+      },
+      "factId": "F-HIST-4"
+    }
+  ],
+  "studentLife": [
+    {
+      "category": "sports",
+      "text": {
+        "en": "16 sports sections with about 700 participating students: judo, Kazakh wrestling, sambo, freestyle wrestling, basketball, taekwondo, boxing, gymnastics, togyzkumalak, volleyball, plus sports clubs and gyms.",
+        "ru": "16 спортивных секций, около 700 студентов: дзюдо, казахская борьба, самбо, вольная борьба, баскетбол, тхэквондо, бокс, гимнастика, тогызкумалак, волейбол, спортклубы и залы.",
+        "kk": "16 спорт секциясы, шамамен 700 студент: дзюдо, қазақ күресі, самбо, еркін күрес, баскетбол, таеквондо, бокс, гимнастика, тоғызқұмалақ, волейбол, спорт клубтары мен залдар."
+      },
+      "factId": "F-SL-1"
+    },
+    {
+      "category": "organizations",
+      "text": {
+        "en": "Student Council and Youth Center; students take part in clubs, cultural events, scientific projects and social-responsibility initiatives; cultural center and health services on campus.",
+        "ru": "Студенческий совет и Молодежный центр; клубы, культурные мероприятия, научные проекты и социальные инициативы; культурный центр и медслужба на кампусе.",
+        "kk": "Студенттік кеңес пен Жастар орталығы; клубтар, мәдени іс-шаралар, ғылыми жобалар мен әлеуметтік бастамалар; кампуста мәдени орталық пен медициналық қызмет."
+      },
+      "factId": "F-SL-2"
+    },
+    {
+      "category": "facilities",
+      "text": {
+        "en": "Campus includes dormitories, a library, a dining room, tennis, football and basketball courts, a clinic and cafeterias.",
+        "ru": "На кампусе: общежития, библиотека, столовая, теннисные, футбольные и баскетбольные площадки, клиника и буфеты.",
+        "kk": "Кампуста жатақханалар, кітапхана, асхана, теннис, футбол және баскетбол алаңдары, клиника және буфеттер бар."
+      },
+      "factId": "F-PL-5"
+    },
+    {
+      "category": "recreation",
+      "text": {
+        "en": "Multicultural student body from Kazakhstan, Türkiye and the Turkic world; the Yasawi Mausoleum, city centre, cultural complexes and markets are part of student life beyond campus.",
+        "ru": "Многонациональный студенческий состав из Казахстана, Турции и тюркского мира; мавзолей Ясави, центр города, культурные комплексы и базары — часть жизни вне кампуса.",
+        "kk": "Қазақстан, Түркия және түркі әлемінен келген көпұлтты студенттер; Ясауи кесенесі, қала орталығы, мәдени кешендер мен базарлар кампустан тыс өмірдің бөлігі."
+      },
+      "factId": "F-SL-3"
+    },
+    {
+      "category": "facilities",
+      "text": {
+        "en": "External portal: 6 student houses with internet, libraries, reading rooms, buffets, gyms and laundries; a 1,500-place dormitory complex and a 400-seat student canteen (unverified).",
+        "ru": "Внешний портал: 6 студенческих домов с интернетом, библиотеками, читальными залами, буфетами, спортзалами и прачечными; комплекс общежитий на 1 500 мест и столовая на 400 мест (не подтверждено).",
+        "kk": "Сыртқы портал: интернет, кітапхана, оқу залы, буфет, жаттығу бөлмесі, кір жуу орны бар 6 студенттік үй; 1 500 орындық жатақхана кешені мен 400 орындық асхана (расталмаған)."
+      },
+      "factId": "F-HOUS-5"
+    }
+  ],
+  "transport": [
+    {
+      "kind": "airport",
+      "text": {
+        "en": "Hazrat Sultan International Airport lies about 16 km north-east of the city centre; flights by FlyArystan, Qazaq Air and SCAT.",
+        "ru": "Международный аэропорт Хазрет Султан — около 16 км к северо-востоку от центра города; рейсы FlyArystan, Qazaq Air и SCAT.",
+        "kk": "Хазірет Сұлтан халықаралық әуежайы қала орталығынан шамамен 16 км солтүстік-шығыста; FlyArystan, Qazaq Air және SCAT рейстері."
+      },
+      "factId": "F-PL-2"
+    },
+    {
+      "kind": "rail",
+      "text": {
+        "en": "Turkistan railway station serves the city; the university's student portal lists train as one of the ways to reach Turkistan.",
+        "ru": "Железнодорожный вокзал Туркестан; студенческий портал университета называет поезд одним из способов добраться до города.",
+        "kk": "Түркістан теміржол вокзалы; университеттің студенттік порталы пойызды қалаға жету жолдарының бірі ретінде көрсетеді."
+      },
+      "factId": "F-TR-1"
+    }
+  ],
+  "climate": [
+    {
+      "metric": "annual_precipitation_mm",
+      "value": 205,
+      "unit": "mm",
+      "text": {
+        "en": "About 205 mm of precipitation per year, mostly in late autumn to spring; September is driest (1.8 mm), March wettest (31.1 mm).",
+        "ru": "Около 205 мм осадков в год, в основном с поздней осени до весны; сентябрь самый сухой (1,8 мм), март самый влажный (31,1 мм).",
+        "kk": "Жылына шамамен 205 мм жауын-шашын, негізінен күз соңынан көктемге дейін; қыркүйек ең құрғақ (1,8 мм), наурыз ең ылғалды (31,1 мм)."
+      },
+      "factId": "F-CLI-1"
+    },
+    {
+      "metric": "avg_jan_temp",
+      "value": -1.1,
+      "unit": "°C",
+      "text": {
+        "en": "January average about -1.1°C (aggregator figure, unverified).",
+        "ru": "Средняя температура января около -1,1°C (данные агрегатора, не подтверждены).",
+        "kk": "Қаңтардың орташа температурасы шамамен -1,1°C (агрегатор дерегі, расталмаған)."
+      },
+      "factId": "F-CLI-2"
+    },
+    {
+      "metric": "avg_jul_temp",
+      "value": 29.5,
+      "unit": "°C",
+      "text": {
+        "en": "July average about +29.5°C with highs above +36°C (aggregator figure, unverified).",
+        "ru": "Средняя температура июля около +29,5°C, максимумы выше +36°C (данные агрегатора, не подтверждены).",
+        "kk": "Шілденің орташа температурасы шамамен +29,5°C, ең жоғарғысы +36°C-тан асады (агрегатор дерегі, расталмаған)."
+      },
+      "factId": "F-CLI-2"
+    },
+    {
+      "metric": "summary",
+      "value": 0,
+      "unit": "text",
+      "text": {
+        "en": "Cool semi-arid climate (Köppen BSk): short cold winters and long, dry, very hot summers; typical range from about -7°C to +36°C.",
+        "ru": "Холодный полупустынный климат (Кёппен BSk): короткая холодная зима и долгое сухое жаркое лето; диапазон примерно от -7°C до +36°C.",
+        "kk": "Салқын жартылай құрғақ климат (Кёппен BSk): қысқа суық қыс және ұзақ, құрғақ, өте ыстық жаз; шамамен -7°C-тан +36°C-қа дейін."
+      },
+      "factId": "F-CLI-4"
+    }
+  ],
+  "facts": [
+    {
+      "id": "F-LOC-1",
+      "type": "location",
+      "value": "43°17'21.01\"N, 68°18'4.31\"E (Wikidata Q401546)",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q401546",
+      "sourceDomain": "wikidata.org",
+      "sourceTitle": "Ahmet Yesevi University - Wikidata",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "According to the Wikidata source, the coordinate location of the university is 43°17'21.01\"N, 68°18'4.31\"E."
+      ]
+    },
+    {
+      "id": "F-LOC-2",
+      "type": "location",
+      "value": "161200, Turkestan city, B. Sattarkhanov Avenue, 29",
+      "sourceUrl": "https://ayu.edu.kz/en/",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Ahmet Yasawi University | AYU",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "Address: 161200, Turkestan city, B. Sattarkhanov Avenue, 29",
+        "Phone: +7 72533 6 35 72, Email: info@ayu.edu.kz, Website: ayu.edu.kz"
+      ]
+    },
+    {
+      "id": "F-LOC-3",
+      "type": "location",
+      "value": "Main campus in Turkistan; additional educational buildings in Kentau, Shymkent and Almaty",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ahmet_Yassawi_University",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Ahmet Yassawi University",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "The center of the university is in Turkestan, with additional educational buildings in Kentau, Shymkent and Almaty.",
+        "The university ... has approximately 10,000 students."
+      ]
+    },
+    {
+      "id": "F-CITY-1",
+      "type": "city_center",
+      "value": "43°18′07″N 68°16′09″E (43.30194, 68.26917) – Turkistan city",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Turkistan_(city)",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Turkistan (city)",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "The Wikipedia coordinates for Turkistan city are 43°18′07″N 68°16′09″E (or 43.30194°N 68.26917°E in decimal format).",
+        "Turkistan is a city and the administrative center of Turkistan Region of Kazakhstan, near the Syr Darya river."
+      ]
+    },
+    {
+      "id": "F-CITY-2",
+      "type": "city_center",
+      "value": "Wikidata item for Turkistan city: Q848638",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q848638",
+      "sourceDomain": "wikidata.org",
+      "sourceTitle": "Turkistan - Wikidata",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "Turkistan is a city in Turkistan Region, Kazakhstan. The Wikidata entry for the city of Turkistan is Q848638."
+      ]
+    },
+    {
+      "id": "F-PL-1",
+      "type": "place",
+      "value": "Mausoleum of Khoja Ahmed Yasawi: 43°17′52″N 68°16′15″E (43.29778, 68.27083)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mausoleum_of_Khoja_Ahmed_Yasawi",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Mausoleum of Khoja Ahmed Yasawi",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "the coordinates of the Mausoleum of Khoja Ahmed Yasawi are 43°17′52″N 68°16′15″E (or 43.29778°N 68.27083°E in decimal format). The mausoleum is located in Turkistan, Kazakhstan."
+      ]
+    },
+    {
+      "id": "F-PL-2",
+      "type": "place",
+      "value": "Hazrat Sultan International Airport: 43°18′40″N 068°33′01″E (43.31111, 68.55028); 16 km NE of Türkistan centre",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C3%84ziret_S%C5%ABltan_International_Airport",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Äziret Sūltan International Airport",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "Hazrat Sultan International Airport is located at coordinates 43°18′40″N 068°33′01″E / 43.31111°N 68.55028°E.",
+        "The airport is located 16 km (9.9 mi) northeast of the centre of Türkistan, the capital of the Türkistan Region"
+      ]
+    },
+    {
+      "id": "F-PL-3",
+      "type": "place",
+      "value": "Turkistan train station building: 43°17'9.276\"N, 68°12'43.607\"E (Wikidata Q131440847)",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131440847",
+      "sourceDomain": "wikidata.org",
+      "sourceTitle": "Turkistan train station building - Wikidata",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "The Turkistan train station building is located at coordinates 43°17'9.276\"N, 68°12'43.607\"E, which is in Turkistan, Kazakhstan."
+      ]
+    },
+    {
+      "id": "F-PL-4",
+      "type": "place",
+      "value": "Turkestan campus dormitories for male and female students, about 650 places",
+      "sourceUrl": "https://ayu.edu.kz/en/2822/yurtlar",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Ahmet Yasawi University | МКТУ | ХҚТУ | AYU (Dormitories)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "The university has dormitories for male and female students, each with a capacity of 650 people, with a monthly fee of approximately $22 (10,000 Tenge)."
+      ]
+    },
+    {
+      "id": "F-PL-5",
+      "type": "place",
+      "value": "Campus has a library, dining room, tennis/football/basketball courts, clinic and cafeterias",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/311-yabanci-ogrenciler/kampuste-ve-turkistanda-yasam",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Campus Life and Turkistan at Ahmet Yesevi University",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "The campus has dormitories, a library, a dining room, tennis, football and basketball courts, a clinic and cafeterias."
+      ]
+    },
+    {
+      "id": "F-PL-6",
+      "type": "place",
+      "value": "Kentau dormitories: about 300 beds, rooms for 3-4 people",
+      "sourceUrl": "https://students.ayu.edu.kz/kk/ogrenci-yurtlari",
+      "sourceDomain": "students.ayu.edu.kz",
+      "sourceTitle": "Студенттік жатақханалар - AYU -Академиялық департамент",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "The university has dormitories in Kentav city with approximately 300 beds for both male and female students and rooms for 3-4 people.",
+        "Housing and personal expenses are covered by the students themselves."
+      ]
+    },
+    {
+      "id": "F-HOUS-1",
+      "type": "housing",
+      "value": "Dormitory fee 10,000 KZT per month; rooms for 2-3 and 4-6 people",
+      "sourceUrl": "https://ayu.edu.kz/en/duyurular/103",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "2024-2025 оқу жылына Қожа Ахмет Ясауи атындағы | AYU",
+      "sourceKind": "official",
+      "sourceDate": "2024/2025",
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "The dormitory fee at the Turkestan campus is 10,000 tenge per month (approximately $22 USD). The rooms in the dormitories accommodate 2-3 and 4-6 people.",
+        "The campus where the dormitories are located has study halls, a library, a dining hall, tennis, football and basketball courts, a medical clinic, and buffets."
+      ]
+    },
+    {
+      "id": "F-HOUS-2",
+      "type": "housing",
+      "value": "Dormitory fee 10000 tenge per month (applicants page)",
+      "sourceUrl": "http://talapker.ayu.edu.kz/?page_id=1869",
+      "sourceDomain": "talapker.ayu.edu.kz",
+      "sourceTitle": "Tuition fees for applicants for undergraduate program – ХҚТУ",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "For dormitory accommodation, the dormitory fee is 10000 tenge per month."
+      ]
+    },
+    {
+      "id": "F-HOUS-3",
+      "type": "housing",
+      "value": "Dormitory eligibility: foreign and scholarship students not living in Turkestan or within 30 km; orphans exempt from fee",
+      "sourceUrl": "https://ayu.edu.kz/birimler/kz/0-ahmet-yesevi-universitesi/sikca-sorulan-sorular",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Ахмет Ясауи университеті | AYU (FAQ)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "Dormitory accommodations are provided to foreign students and scholarship-based students (those not living in Turkestan city or within 30 km of the city).",
+        "orphans and students without guardians are exempt from dormitory fees."
+      ]
+    },
+    {
+      "id": "F-HOUS-4",
+      "type": "housing",
+      "value": "Earlier (2023-2024 announcement): ~650 beds, dormitory fee 5,000 tenge per month",
+      "sourceUrl": "https://www.ayu.edu.tr/mypanel/_app/upload/duyuru/dosya/d56b9fc4b0f1be8871f5e1c40c0067e7.pdf",
+      "sourceDomain": "ayu.edu.tr",
+      "sourceTitle": "ХАБАРЛАНДЫРУ! 2023-2024 оқу жылына Қожа Ахмет ...",
+      "sourceKind": "official",
+      "sourceDate": "2023/2024",
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "The Turkestan campus has male and female dormitories with approximately 650 beds, with dormitory fees at 5,000 tenge per month."
+      ]
+    },
+    {
+      "id": "F-HOUS-5",
+      "type": "housing",
+      "value": "6 student houses with internet, libraries, reading rooms, buffets, gyms, laundry; 1,500-place dormitory complex and 400-seat canteen",
+      "sourceUrl": "https://univision.kz/kk/univ/84-kozha-ahmet-yasaui-atyndafy-halykaralyk-kazak-tyrik-universiteti/",
+      "sourceDomain": "univision.kz",
+      "sourceTitle": "Қ.А.Ясауи атындағы Халықаралық қазақ-түрік университеті",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "low",
+      "evidence": [
+        "6 студенттік үй бар ... интернет, кітапханалар, оқу залдары, фуршеттер, жаттығу бөлмелері, кір жуатын орындар және т.б.",
+        "Қалашық аумағында 1 500 орынға арналған жатақханалар кешені және 400 орынға арналған студенттер асханасы орналасқан."
+      ]
+    },
+    {
+      "id": "F-COL-1",
+      "type": "cost_of_living",
+      "value": "Numbeo Kazakhstan (country level): single person est. monthly costs $599.7 excluding rent",
+      "sourceUrl": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Kazakhstan",
+      "sourceDomain": "numbeo.com",
+      "sourceTitle": "Cost of Living in Kazakhstan. Prices in Kazakhstan. Updated Sep 2026",
+      "sourceKind": "external",
+      "sourceDate": "2026-09",
+      "collectedAt": "2026-09-18",
+      "confidence": "low",
+      "evidence": [
+        "a single person can expect to spend $599.7 per month, excluding rent.",
+        "The data was last updated on September 8, 2026 ... Numbeo does not appear to have specific cost of living data for Turkistan"
+      ]
+    },
+    {
+      "id": "F-COL-2",
+      "type": "cost_of_living",
+      "value": "Scholarships for Turkic-world applicants: about 90 USD/month from Kazakhstan (in tenge) and 50 USD from Turkey",
+      "sourceUrl": "http://talapker.ayu.edu.kz/?page_id=1869",
+      "sourceDomain": "talapker.ayu.edu.kz",
+      "sourceTitle": "Tuition fees for applicants for undergraduate program – ХҚТУ",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "scholarships in the amount of about 90 US dollars per month will be provided by the Republic of Kazakhstan in tenges and in the amount of 50 US dollars by the Republic of Turkey"
+      ]
+    },
+    {
+      "id": "F-TUI-1",
+      "type": "tuition",
+      "value": "Quota (Turkic-world scholarship) undergraduate applicants pay no tuition fees",
+      "sourceUrl": "http://talapker.ayu.edu.kz/?page_id=1869",
+      "sourceDomain": "talapker.ayu.edu.kz",
+      "sourceTitle": "Tuition fees for applicants for undergraduate program – ХҚТУ",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "Students will not pay tuition fees, even if they lose the right to receive a scholarship."
+      ]
+    },
+    {
+      "id": "F-TUI-2",
+      "type": "tuition",
+      "value": "Admission on state and Turkish educational grants and on a contractual (paid) basis",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ahmet_Yassawi_University",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Ahmet Yassawi University",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "Admission to the university is carried out on state and Turkish educational grants and on a contractual basis."
+      ]
+    },
+    {
+      "id": "F-FOUND-1",
+      "type": "founded",
+      "value": "1991",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/0-ahmet-yesevi-universitesi/tarihce",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Akhmet Yasawi University | AYU (History)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "Akhmet Yasawi International Kazakh-Turkish University was established in 1991 on the personal initiative of the Head of State N.A. Nazarbayev and based on the Intergovernmental Agreement between Kazakhstan and Turkey"
+      ]
+    },
+    {
+      "id": "F-HIST-1",
+      "type": "history",
+      "value": "1991: established; first university in Kazakhstan with international status",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/0-ahmet-yesevi-universitesi/tarihce",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Akhmet Yasawi University | AYU (History)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "established in 1991 ... to train modern highly qualified specialists from young Turkic-speaking countries in Turkestan and became the first university that received the status of an international institution of higher education."
+      ]
+    },
+    {
+      "id": "F-HIST-2",
+      "type": "history",
+      "value": "1 May 1992: status of international university granted at Nazarbayev–Demirel meeting",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/0-ahmet-yesevi-universitesi/tarihce",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Akhmet Yasawi University | AYU (History)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "During the official meeting of the President of the Republic of Kazakhstan Nursultan Nazarbayev and the Prime Minister of Turkey Suleyman Demirel on May 1, 1992, the University was given the status of \"international University.\""
+      ]
+    },
+    {
+      "id": "F-HIST-3",
+      "type": "history",
+      "value": "31 October 1992: intergovernmental agreement on reorganization into Khoja Akhmet Yasawi International Kazakh-Turkish University",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/0-ahmet-yesevi-universitesi/tarihce",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Akhmet Yasawi University | AYU (History)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "On October 31, 1992, the Governments of the Republic of Kazakhstan and the Republic of Turkey signed the Agreement on the reorganization of the university into Khoja Akhmet Yasawi International Kazakh-Turkish University."
+      ]
+    },
+    {
+      "id": "F-HIST-4",
+      "type": "history",
+      "value": "Named after the 12th-century Sufi poet Khoja Akhmet Yassawi; about 10,000 students; multi-level education incl. residency and doctoral studies",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ahmet_Yassawi_University",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Ahmet Yassawi University",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "a university in the city of Turkistan in Kazakhstan, named for the twelfth-century Sufi poet Khoja Akhmet Yassawi",
+        "has approximately 10,000 students",
+        "multi-level education system includes: higher basic education (undergraduate), internship, magistracy, residency and doctoral studies"
+      ]
+    },
+    {
+      "id": "F-SL-1",
+      "type": "student_life",
+      "value": "16 sports sections, roughly 700 students participate; judo, Kazakh wrestling, sambo, freestyle wrestling, basketball, taekwondo, boxing, gymnastics, togyzkumalak, volleyball",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/0-ahmet-yesevi-universitesi/spor-olanaklari",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Ahmet Yesevi University (Sports facilities)",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "The university has 16 sports sections to promote a healthy lifestyle among students. Roughly 700 students participate in these activities.",
+        "Judo (men, women), Kazakh wrestling, sambo, freestyle wrestling, basketball (men's, women's), taekwondo, boxing, gymnastics, togyzkumalak, volleyball (men), as well as sports clubs and gyms."
+      ]
+    },
+    {
+      "id": "F-SL-2",
+      "type": "student_life",
+      "value": "Student Council, Youth Center, dormitories, dining services, cultural center, sports facilities, health services; clubs, cultural events, scientific projects, social responsibility initiatives",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/311-yabanci-ogrenciler/kampuste-ve-turkistanda-yasam",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Campus Life and Turkistan at Ahmet Yesevi University",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "campus life is presented under headings such as the Student Council, Youth Center, dormitories, dining services, cultural center, sports facilities, and health services.",
+        "students have the opportunity to participate in club activities, cultural events, scientific projects, sports organizations, and social responsibility initiatives"
+      ]
+    },
+    {
+      "id": "F-SL-3",
+      "type": "student_life",
+      "value": "Multicultural student body from Kazakhstan, Türkiye and the Turkic world; Mausoleum, city centre, cultural complexes and markets nearby",
+      "sourceUrl": "https://ayu.edu.kz/birimler/en/311-yabanci-ogrenciler/kampuste-ve-turkistanda-yasam",
+      "sourceDomain": "ayu.edu.kz",
+      "sourceTitle": "Campus Life and Turkistan at Ahmet Yesevi University",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "students from Kazakhstan, Türkiye, and various regions of the Turkic world studying in the same classrooms and sharing social spaces on campus",
+        "The Mausoleum of Khoja Akhmet Yassawi, Turkistan city center, cultural complexes, local markets, and the city's developing social spaces add color to students' lives beyond the campus."
+      ]
+    },
+    {
+      "id": "F-TR-1",
+      "type": "transport",
+      "value": "Reaching Turkestan: by air (airport; FlyArystan, Qazaq Air, SCAT) or by train",
+      "sourceUrl": "https://students.ayu.edu.kz/kk/ulasim",
+      "sourceDomain": "students.ayu.edu.kz",
+      "sourceTitle": "Түркістанға саяхат - AYU -Академиялық департамент",
+      "sourceKind": "official",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "high",
+      "evidence": [
+        "If you are from other cities in Kazakhstan, there are 3 ways to get to Turkestan city. The first way is by air ... Turkestan has Azamat-Sultan Airport. ... https://flyarystan.com/ https://www.flyqazaq.com/en/ https://www.scat.kz/kz/",
+        "The second way is by train - trains also run from Turkestan city"
+      ]
+    },
+    {
+      "id": "F-CLI-1",
+      "type": "climate",
+      "value": "Annual precipitation 205 mm; driest month September 1.8 mm, wettest March 31.1 mm; arid continental climate",
+      "sourceUrl": "https://www.climatestotravel.com/climate/kazakhstan/turkistan",
+      "sourceDomain": "climatestotravel.com",
+      "sourceTitle": "Turkistan climate: seasons, monthly averages - Climates to Travel",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "Precipitation amounts to 205 millimeters per year: it is therefore scarce. It ranges from 1.8 millimeters in the driest month (September) to 31.1 millimeters in the wettest one (March).",
+        "The climate of Turkistan is arid continental, with cold winters and very hot summers."
+      ]
+    },
+    {
+      "id": "F-CLI-2",
+      "type": "climate",
+      "value": "January average -1.1°C (lows to -5.3°C); July average +29.5°C (highs above +36°C)",
+      "sourceUrl": "https://www.kupi.com/en/explore/kazakhstan/turkistan/weather",
+      "sourceDomain": "kupi.com",
+      "sourceTitle": "Turkistan Weather: Current Forecast & Climate Info",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "low",
+      "evidence": [
+        "The coldest month is typically January, when the average temperature drops to -1.1°C, and nightly lows can reach -5.3°C.",
+        "The hottest period falls in July, with an average temperature of +29.5°C and daily highs regularly exceeding +36°C.",
+        "Attribution note: the search synthesis did not state which result page these two sentences came from; kupi.com was the first result and the phrasing matches a weather-aggregator page."
+      ]
+    },
+    {
+      "id": "F-CLI-3",
+      "type": "climate",
+      "value": "Köppen BSk; temperatures range from -7.2°C to 36.3°C; wettest Oct-Apr 21-29 mm/month; August ~1 mm",
+      "sourceUrl": "https://www.weather-atlas.com/en/kazakhstan/turkistan-climate",
+      "sourceDomain": "weather-atlas.com",
+      "sourceTitle": "Yearly & Monthly weather - Turkistan, Kazakhstan",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "Turkistan is characterized by its mid-latitude steppe climate dictated by the Köppen climate classification as BSk.",
+        "Temperatures oscillate widely between -7.2°C (19°F) to 36.3°C (97.3°F)",
+        "The wettest phase prevails from October to April with monthly averages ranging from 21mm (0.83\") to 29mm (1.14\") ... August, when the rain falls for 1 days and typically collects 1mm"
+      ]
+    },
+    {
+      "id": "F-CLI-4",
+      "type": "climate",
+      "value": "Cool semi-arid climate (Köppen BSk): short cold winters, long dry very hot summers",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Turkistan_(city)",
+      "sourceDomain": "en.wikipedia.org",
+      "sourceTitle": "Turkistan (city) - Wikipedia",
+      "sourceKind": "external",
+      "sourceDate": null,
+      "collectedAt": "2026-09-18",
+      "confidence": "medium",
+      "evidence": [
+        "Turkistan experiences a cool semi-arid climate (Köppen BSk) with short, cold winters and long, dry, very hot summers. The vast majority of the annual precipitation falls between late autumn and late spring."
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "field": "tuition",
+      "note": "Searched 'оқу ақысы 2025-2026' (ayu.edu.kz), 'МКТУ Ясави стоимость обучения 2025-2026', 'Стоимость обучения по образовательным программам' (ayu.edu.kz/students.ayu.edu.kz/talapker.ayu.edu.kz) and univision.kz price page. Official pages exist (https://ayu.edu.kz/ru/haberler/1099 and https://students.ayu.edu.kz/ru/kurumsal/detay/ogrenci-katki-payi/213) but WebSearch returned no figures from them. Only the Turkic-world quota page states no tuition for quota students."
+    },
+    {
+      "field": "costOfLiving",
+      "note": "Numbeo has no Turkistan city page; only Kazakhstan country-level data was returned. No official student budget beyond the dormitory fee was found."
+    },
+    {
+      "field": "housing",
+      "note": "Official dormitory names/numbers, facilities list and coordinates were not returned; the dormitories department page (https://ayu.edu.kz/birimler/kz/334-yurtlar-bolumu/yapisal-birimler/520) appeared in results without content. Fee discrepancy: 5,000 KZT/month in a 2023-2024 announcement vs 10,000 KZT/month on current pages."
+    },
+    {
+      "field": "transport",
+      "note": "Searched Kazakh queries for Turkistan city bus routes serving the university; no route numbers or stops were found. Nearest public-transport stop omitted."
+    },
+    {
+      "field": "climate",
+      "note": "Wikipedia climate table values (annual mean, precipitation) were not returned; annual mean temperature omitted. January/July averages come only from an aggregator with ambiguous attribution (confidence low)."
+    },
+    {
+      "field": "places",
+      "note": "No coordinates were published for dormitories, library or sports facilities; lat/lng set to null."
+    },
+    {
+      "field": "history",
+      "note": "Official milestones after 1992 (campus construction, faculties, renames) and official current student numbers were not retrieved; the session's WebSearch budget was exhausted after 26 successful calls."
+    }
+  ],
+  "queryLog": [
+    "Khoja Akhmet Yassawi International Kazakh-Turkish University wikipedia coordinates Turkistan",
+    "Turkistan city Kazakhstan wikipedia coordinates 43°18′N 68°15′E",
+    "Mausoleum of Khoja Ahmed Yasawi coordinates wikipedia",
+    "Hazrat Sultan International Airport coordinates wikipedia Turkistan",
+    "Turkistan railway station Kazakhstan wikipedia coordinates",
+    "жатақхана бағасы Ясауи университеті [ayu.edu.kz]",
+    "оқу ақысы стоимость обучения 2025-2026 бакалавриат [ayu.edu.kz]",
+    "Turkistan Kazakhstan climate average January July temperature precipitation",
+    "Tuition fees for applicants for undergraduate program talapker.ayu.edu.kz тенге [talapker.ayu.edu.kz, ayu.edu.kz]",
+    "Студенттік жатақханалар students.ayu.edu.kz бөлме орын ақысы [students.ayu.edu.kz]",
+    "Ahmet Yassawi University history 1991 1992 intergovernmental agreement Kazakhstan Turkey founded [ayu.edu.kz]",
+    "Ahmet Yassawi University campus life student clubs sports complex library [ayu.edu.kz]",
+    "Ahmet Yassawi University Turkistan address B. Sattarkhanov avenue 29 contact",
+    "Numbeo cost of living Turkistan Kazakhstan",
+    "Түркістан қалалық автобус маршруттары университет Ясауи жатақхана бағыт",
+    "Turkistan (city) Wikipedia climate data table mean annual temperature precipitation [en.wikipedia.org, ru.wikipedia.org]",
+    "ХҚТУ оқу ақысы 2025-2026 оқу жылы бакалавриат жылдық ақылы бөлім теңге Ясауи",
+    "МКТУ Ясави стоимость обучения 2025-2026 платное отделение тенге в год",
+    "Түркістанға саяхат students.ayu.edu.kz ulasim әуежай теміржол вокзал автобус университет [students.ayu.edu.kz, ayu.edu.kz]",
+    "Ahmet Yassawi University Wikipedia history students faculties number of students campus Turkistan [en.wikipedia.org]",
+    "Campus Life and Turkistan Ahmet Yesevi University international students living expenses monthly dollars dormitory food [ayu.edu.kz]",
+    "weather-atlas Turkistan Kazakhstan yearly climate average annual temperature rainfall mm [weather-atlas.com, climatestotravel.com]",
+    "Ясауи университеті жатақхана №1 №2 №3 жаңа жатақхана ашылды орын студенттер үйі Түркістан",
+    "Turkistan Kazakhstan Wikidata Q coordinates city Türkistan [wikidata.org]",
+    "Стоимость обучения по образовательным программам бакалавриат магистратура тенге учебный год [ayu.edu.kz, students.ayu.edu.kz, talapker.ayu.edu.kz]",
+    "Стоимость обучения в Международном Казахско-Турецком Университете имени Х.А.Ясави univision цена бакалавриат тенге [univision.kz]"
+  ]
+}

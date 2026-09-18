@@ -1,0 +1,391 @@
+{
+  "id": "UNI-ENU",
+  "slug": "gumilyov-enu",
+  "name": {
+    "en": "L.N. Gumilyov Eurasian National University",
+    "ru": "Евразийский национальный университет имени Л.Н. Гумилёва",
+    "kk": "Л.Н. Гумилев атындағы Еуразия ұлттық университеті"
+  },
+  "shortName": { "en": "ENU", "ru": "ЕНУ", "kk": "ЕҰУ" },
+  "website": "https://enu.kz",
+  "founded": 1996,
+  "city": { "en": "Astana", "ru": "Астана", "kk": "Астана" },
+  "country": { "en": "Kazakhstan", "ru": "Казахстан", "kk": "Қазақстан" },
+  "campus": {
+    "name": { "en": "Main campus (Satpayev St 2)", "ru": "Главный кампус (ул. Сатпаева, 2)", "kk": "Бас кампус (Сәтбаев көшесі, 2)" },
+    "multiCampus": true,
+    "note": {
+      "en": "ENU's main building is at Satpayev St 2 in central Astana; academic buildings and 8 student houses are spread over nearby streets (Pushkin, Kutpanov, Kazhymukan). The main building was chosen as the reference point.",
+      "ru": "Главный корпус ЕНУ находится на ул. Сатпаева, 2 в центре Астаны; учебные корпуса и 8 студенческих домов расположены на соседних улицах (Пушкина, Кутпанова, Кажымукана). Точкой отсчёта выбран главный корпус.",
+      "kk": "ЕҰУ бас ғимараты Астана орталығындағы Сәтбаев көшесі, 2-де; оқу ғимараттары мен 8 студенттер үйі жақын көшелерде (Пушкин, Құтпанов, Қажымұқан) орналасқан. Бас ғимарат негізгі нүкте ретінде таңдалды."
+    }
+  },
+  "location": {
+    "lat": 51.16,
+    "lng": 71.465,
+    "address": { "en": "2 Satpayev Street, Astana", "ru": "ул. Каныша Сатпаева, 2, Астана", "kk": "Қаныш Сәтбаев көшесі, 2, Астана" },
+    "factId": "F-LOC-1"
+  },
+  "cityCenter": {
+    "lat": 51.1667,
+    "lng": 71.4333,
+    "label": { "en": "Astana (Wikipedia reference point)", "ru": "Астана (опорная точка Википедии)", "kk": "Астана (Уикипедия тірек нүктесі)" },
+    "factId": "F-CC-1"
+  },
+  "places": [
+    { "id": "P-1", "kind": "building", "name": { "en": "ENU main building", "ru": "Главный корпус ЕНУ", "kk": "ЕҰУ бас ғимараты" }, "lat": 51.16, "lng": 71.465, "factId": "F-LOC-1" },
+    { "id": "P-2", "kind": "dormitory", "name": { "en": "Student House No. 7 (Pushkin St 11/2)", "ru": "Студенческий дом №7 (ул. Пушкина, 11/2)", "kk": "№7 студенттер үйі (Пушкин көшесі, 11/2)" }, "lat": null, "lng": null, "factId": "F-PL-1" },
+    { "id": "P-3", "kind": "dormitory", "name": { "en": "Student House No. 8 (Kutpanov St 24A)", "ru": "Дом студентов №8 (ул. Кутпанова, 24А)", "kk": "№8 студенттер үйі (Құтпанов көшесі, 24А)" }, "lat": null, "lng": null, "factId": "F-PL-2" },
+    { "id": "P-4", "kind": "dormitory", "name": { "en": "Student House No. 5", "ru": "Студенческий дом №5", "kk": "№5 студенттер үйі" }, "lat": null, "lng": null, "factId": "F-HS-3" },
+    { "id": "P-5", "kind": "library", "name": { "en": "ENU Scientific Library", "ru": "Научная библиотека ЕНУ", "kk": "ЕҰУ ғылыми кітапханасы" }, "lat": null, "lng": null, "factId": "F-SL-2" },
+    { "id": "P-6", "kind": "sports", "name": { "en": "University sports centre", "ru": "Университетский спортивный центр", "kk": "Университеттің спорт орталығы" }, "lat": null, "lng": null, "factId": "F-SL-3" },
+    { "id": "P-7", "kind": "transit", "name": { "en": "Bus stop \"Kanysh Satpayev\"", "ru": "Остановка «Каныша Сатпаева»", "kk": "«Қаныш Сәтбаев» аялдамасы" }, "lat": null, "lng": null, "factId": "F-TR-1" },
+    { "id": "P-8", "kind": "airport", "name": { "en": "Nursultan Nazarbayev International Airport", "ru": "Международный аэропорт Нурсултан Назарбаев", "kk": "Нұрсұлтан Назарбаев халықаралық әуежайы" }, "lat": 51.02194, "lng": 71.46694, "factId": "F-PL-3" },
+    { "id": "P-9", "kind": "rail", "name": { "en": "Astana-Nurly Zhol railway station", "ru": "Вокзал Астана-Нурлы Жол", "kk": "Астана-Нұрлы Жол вокзалы" }, "lat": 51.1125, "lng": 71.531667, "factId": "F-PL-4" },
+    { "id": "P-10", "kind": "rail", "name": { "en": "Astana-1 railway station", "ru": "Вокзал Астана-1", "kk": "Астана-1 вокзалы" }, "lat": 51.195833, "lng": 71.409167, "factId": "F-PL-5" }
+  ],
+  "housing": [
+    {
+      "name": { "en": "ENU student houses (older buildings, minimum rate)", "ru": "Студенческие дома ЕНУ (старые корпуса, минимальный тариф)", "kk": "ЕҰУ студенттер үйлері (ескі ғимараттар, ең төменгі баға)" },
+      "value": 18000, "currency": "KZT", "period": "month",
+      "roomType": { "en": "Room with shared showers and kitchens on the floor", "ru": "Комната с общими душевыми и кухнями на этаже", "kk": "Қабатта ортақ душ пен асүйі бар бөлме" },
+      "distanceKm": null, "facilities": ["kitchen"], "factId": "F-HS-1"
+    },
+    {
+      "name": { "en": "ENU student houses (newer buildings, maximum rate)", "ru": "Студенческие дома ЕНУ (новые корпуса, максимальный тариф)", "kk": "ЕҰУ студенттер үйлері (жаңа ғимараттар, ең жоғары баға)" },
+      "value": 25000, "currency": "KZT", "period": "month",
+      "roomType": { "en": "Room with own bathroom and kitchen (electric stove, fridge, washing machine)", "ru": "Комната с санузлом и кухней внутри (электроплита, холодильник, стиральная машина)", "kk": "Ішінде санторабы мен асүйі бар бөлме (электр плита, тоңазытқыш, кір жуғыш машина)" },
+      "distanceKm": null, "facilities": ["kitchen", "laundry"], "factId": "F-HS-2"
+    },
+    {
+      "name": { "en": "Student House No. 5", "ru": "Студенческий дом №5", "kk": "№5 студенттер үйі" },
+      "value": 275000, "currency": "KZT", "period": "year",
+      "roomType": { "en": "Standard room (media report; a 30% reduction to 192,500 KZT was under discussion)", "ru": "Стандартная комната (по данным СМИ; обсуждалось снижение на 30% до 192 500 тенге)", "kk": "Стандартты бөлме (БАҚ дерегі; 30% төмендетіп 192 500 теңге ету талқыланды)" },
+      "distanceKm": null, "facilities": [], "factId": "F-HS-3"
+    }
+  ],
+  "costOfLiving": [
+    {
+      "category": "total", "value": 279681.2, "currency": "KZT", "period": "month",
+      "note": { "en": "Numbeo estimate for a single person in Astana, excluding rent (Aug 2026).", "ru": "Оценка Numbeo для одного человека в Астане без аренды (август 2026).", "kk": "Numbeo бағалауы: Астанада бір адамға жалдау ақысынсыз (2026 ж. тамыз)." },
+      "factId": "F-COL-1"
+    }
+  ],
+  "tuition": [
+    { "level": "undergraduate", "audience": "all", "program": { "en": "Pedagogical sciences", "ru": "Педагогические науки", "kk": "Педагогикалық ғылымдар" }, "value": 1140000, "currency": "KZT", "period": "year", "academicYear": "2024/2025", "factId": "F-TU-1" },
+    { "level": "undergraduate", "audience": "all", "program": { "en": "Arts and humanities", "ru": "Искусство и гуманитарные науки", "kk": "Өнер және гуманитарлық ғылымдар" }, "value": 1270000, "currency": "KZT", "period": "year", "academicYear": "2024/2025", "factId": "F-TU-2" },
+    { "level": "undergraduate", "audience": "all", "program": { "en": "Business, management and law", "ru": "Бизнес, управление и право", "kk": "Бизнес, басқару және құқық" }, "value": 1300000, "currency": "KZT", "period": "year", "academicYear": "2024/2025", "factId": "F-TU-3" },
+    { "level": "undergraduate", "audience": "all", "program": { "en": "Information and communication technologies", "ru": "Информационно-коммуникационные технологии", "kk": "Ақпараттық-коммуникациялық технологиялар" }, "value": 1330000, "currency": "KZT", "period": "year", "academicYear": "2024/2025", "factId": "F-TU-4" }
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": { "en": "University founded by presidential decree", "ru": "Университет создан указом Президента", "kk": "Университет Президент жарлығымен құрылды" },
+      "text": { "en": "Founded on 23 May 1996 by decree of President N. Nazarbayev through the merger of the Tselinograd (Akmola) Civil Engineering Institute and the Tselinograd Pedagogical Institute; named after historian-ethnologist Lev Gumilyov.", "ru": "Создан 23 мая 1996 года указом Президента Н. Назарбаева на основе объединения Целиноградского инженерно-строительного и Целиноградского педагогического институтов; назван в честь историка-этнолога Л.Н. Гумилёва.", "kk": "1996 жылғы 23 мамырда Президент Н. Назарбаевтың жарлығымен Целиноград инженерлік-құрылыс және Целиноград педагогикалық институттарын біріктіру арқылы құрылды; тарихшы-этнолог Л.Н. Гумилев есімімен аталды." },
+      "factId": "F-HI-1"
+    },
+    {
+      "year": 2000,
+      "title": { "en": "Merger with the Academy of Diplomacy", "ru": "Объединение с Дипломатической академией", "kk": "Дипломатия академиясымен біріктірілді" },
+      "text": { "en": "After merging with the Academy of Diplomacy of the Ministry of Foreign Affairs in 2000, the university was renamed L.N. Gumilyov Eurasian State University.", "ru": "После объединения с Дипломатической академией МИД в 2000 году университет переименован в Евразийский государственный университет им. Л.Н. Гумилёва.", "kk": "2000 жылы Сыртқы істер министрлігінің Дипломатия академиясымен біріктірілгеннен кейін университет Л.Н. Гумилев атындағы Еуразия мемлекеттік университеті деп аталды." },
+      "factId": "F-HI-2"
+    },
+    {
+      "year": 2001,
+      "title": { "en": "National university status", "ru": "Статус национального университета", "kk": "Ұлттық университет мәртебесі" },
+      "text": { "en": "In 2001 the university received national status and its current name, L.N. Gumilyov Eurasian National University.", "ru": "В 2001 году университет получил статус национального и нынешнее название — Евразийский национальный университет им. Л.Н. Гумилёва.", "kk": "2001 жылы университет ұлттық мәртебе алып, қазіргі атауына — Л.Н. Гумилев атындағы Еуразия ұлттық университеті — ие болды." },
+      "factId": "F-HI-3"
+    },
+    {
+      "year": 2025,
+      "title": { "en": "ENU today", "ru": "ЕНУ сегодня", "kk": "ЕҰУ бүгін" },
+      "text": { "en": "About 20,000 students, including over 1,500 foreign citizens, study in more than 250 programmes across 13 faculties; the university describes itself as the largest higher-education institution in Astana.", "ru": "Около 20 000 студентов, включая более 1 500 иностранцев, обучаются по более чем 250 программам на 13 факультетах; вуз называет себя крупнейшим в Астане.", "kk": "13 факультетте 250-ден астам бағдарлама бойынша шамамен 20 000 студент, оның ішінде 1 500-ден астам шетел азаматы оқиды; университет өзін Астанадағы ең ірі жоғары оқу орны деп атайды." },
+      "factId": "F-HI-4"
+    }
+  ],
+  "studentLife": [
+    { "category": "organizations", "text": { "en": "More than 60 student organisations and clubs: literary associations, a chess club, a debate movement, environmental and sports clubs, the Shanyrak student theatre, SAMURYQ dance school, E-STUDIO vocalists and the Dala Sazy orchestra.", "ru": "Более 60 студенческих организаций и клубов: литературные объединения, шахматный клуб, дебатное движение, экологические и спортивные клубы, студенческий театр «Шанырак», школа танца SAMURYQ, вокалисты E-STUDIO и оркестр «Дала сазы».", "kk": "60-тан астам студенттік ұйым мен клуб: әдеби бірлестіктер, шахмат клубы, пікірсайыс қозғалысы, экологиялық және спорт клубтары, «Шаңырақ» студенттік театры, SAMURYQ би мектебі, E-STUDIO вокалистері және «Дала сазы» оркестрі." }, "factId": "F-SL-1" },
+    { "category": "study_spaces", "text": { "en": "The Scientific Library holds over 1.5 million items and runs 12 branch reading rooms equipped with computer workstations and internet access for independent study.", "ru": "Фонд научной библиотеки — более 1,5 млн единиц хранения; 12 филиальных читальных залов оснащены компьютерами с доступом в интернет для самостоятельной работы.", "kk": "Ғылыми кітапхана қоры 1,5 млн-нан астам бірлік; 12 филиалдық оқу залы өзіндік жұмысқа арналған интернетке қосылған компьютерлермен жабдықталған." }, "factId": "F-SL-2" },
+    { "category": "sports", "text": { "en": "ENU has its own University sports centre; football and volleyball sports sections operate for students.", "ru": "У ЕНУ есть собственный университетский спортивный центр; работают спортивные секции по футболу и волейболу.", "kk": "ЕҰУ-дың өз спорт орталығы бар; студенттерге арналған футбол және волейбол секциялары жұмыс істейді." }, "factId": "F-SL-3" },
+    { "category": "laboratories", "text": { "en": "Academic building No. 5 serves as an educational and laboratory complex; research is carried out in the university's institutes, centres and laboratories.", "ru": "Учебный корпус №5 является учебно-лабораторным комплексом; исследования ведутся в институтах, центрах и лабораториях университета.", "kk": "№5 оқу ғимараты оқу-зертханалық кешен қызметін атқарады; зерттеулер университеттің институттарында, орталықтары мен зертханаларында жүргізіледі." }, "factId": "F-SL-4" },
+    { "category": "facilities", "text": { "en": "The university operates 8 student houses; accommodation is paid at 100% of the half-year rate.", "ru": "В университете работают 8 студенческих домов; оплата проживания вносится в размере 100% полугодовой стоимости.", "kk": "Университетте 8 студенттер үйі жұмыс істейді; тұру ақысы жарты жылдық құнның 100% мөлшерінде төленеді." }, "factId": "F-HS-4" }
+  ],
+  "transport": [
+    { "kind": "bus", "text": { "en": "The \"Kanysh Satpayev\" stop near the main building is served by bus routes 4, 4A, 20, 23, 24, 24N, 31, 44, 61, 71 and 73 (2GIS listing).", "ru": "Остановку «Каныша Сатпаева» у главного корпуса обслуживают автобусы 4, 4А, 20, 23, 24, 24Н, 31, 44, 61, 71 и 73 (по данным 2ГИС).", "kk": "Бас ғимарат жанындағы «Қаныш Сәтбаев» аялдамасына 4, 4А, 20, 23, 24, 24Н, 31, 44, 61, 71 және 73 автобустары келеді (2ГИС дерегі)." }, "factId": "F-TR-1" },
+    { "kind": "bus", "text": { "en": "Route 61 runs along Satpayev St and then Kazhymukan St past the Kazakhstan sports complex and ENU (2015 route scheme).", "ru": "Маршрут 61 проходит по ул. Сатпаева, затем по ул. Кажымукана мимо спорткомплекса «Казахстан» и ЕНУ (схема 2015 года).", "kk": "61-маршрут Сәтбаев көшесімен, одан кейін Қажымұқан көшесімен «Қазақстан» спорт кешені мен ЕҰУ жанынан өтеді (2015 жылғы схема)." }, "factId": "F-TR-2" },
+    { "kind": "airport", "text": { "en": "Nursultan Nazarbayev International Airport (51.022 N, 71.467 E) lies south of the city centre.", "ru": "Международный аэропорт Нурсултан Назарбаев (51,022 с.ш., 71,467 в.д.) расположен к югу от центра города.", "kk": "Нұрсұлтан Назарбаев халықаралық әуежайы (51,022 с.е., 71,467 ш.б.) қала орталығының оңтүстігінде орналасқан." }, "factId": "F-PL-3" },
+    { "kind": "rail", "text": { "en": "Astana-Nurly Zhol (opened 1 June 2017) is the main train and bus station; the older Astana-1 station (opened 1929, renamed from Nur-Sultan-1 in 2022) is at Goethe St 1.", "ru": "Астана-Нурлы Жол (открыт 1 июня 2017) — главный железнодорожный и автовокзал; старый вокзал Астана-1 (1929; переименован из Нур-Султан-1 в 2022) находится на ул. Гёте, 1.", "kk": "Астана-Нұрлы Жол (2017 жылғы 1 маусымда ашылған) — басты теміржол және автовокзал; ескі Астана-1 вокзалы (1929; 2022 жылы Нұр-Сұлтан-1-ден қайта аталды) Гёте көшесі, 1-де." }, "factId": "F-PL-4" }
+  ],
+  "climate": [
+    { "metric": "avg_annual_temp", "value": 3.9, "unit": "°C", "text": { "en": "Average annual temperature in Astana is 3.9 °C (humid continental, Köppen Dfb).", "ru": "Среднегодовая температура в Астане — 3,9 °C (влажный континентальный климат, Dfb по Кёппену).", "kk": "Астананың орташа жылдық температурасы — 3,9 °C (ылғалды континенттік климат, Кёппен бойынша Dfb)." }, "factId": "F-CL-1" },
+    { "metric": "avg_jul_temp", "value": 20.6, "unit": "°C", "text": { "en": "July is the warmest month with an average of 20.6 °C.", "ru": "Июль — самый тёплый месяц, в среднем 20,6 °C.", "kk": "Шілде — ең жылы ай, орташа 20,6 °C." }, "factId": "F-CL-2" },
+    { "metric": "avg_jan_temp", "value": -14.4, "unit": "°C", "text": { "en": "January, the coldest month, averages about -14.4 °C.", "ru": "Январь, самый холодный месяц, в среднем около -14,4 °C.", "kk": "Ең суық ай — қаңтар, орташа шамамен -14,4 °C." }, "factId": "F-CL-3" },
+    { "metric": "annual_precipitation_mm", "value": 335, "unit": "mm", "text": { "en": "Annual precipitation is about 335 mm, from 16.7 mm in February to 55.8 mm in July.", "ru": "Годовое количество осадков — около 335 мм: от 16,7 мм в феврале до 55,8 мм в июле.", "kk": "Жылдық жауын-шашын шамамен 335 мм: ақпанда 16,7 мм-ден шілдеде 55,8 мм-ге дейін." }, "factId": "F-CL-4" }
+  ],
+  "facts": [
+    {
+      "id": "F-LOC-1", "type": "location",
+      "value": "51°09′36″ с. ш. 71°27′54″ в. д. (51.16, 71.465); ул. Каныша Сатпаева, 2",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82",
+      "sourceDomain": "ru.wikipedia.org", "sourceTitle": "Евразийский национальный университет — Википедия", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Координаты университета: 51°09′36″ с. ш. 71°27′54″ в. д.", "Евразийский национальный университет имени Л. Н. Гумилёва (ЕНУ) — высшее учебное заведение в Астане", "Street address per 2GIS/UrbanPlaces listing title: «Астана (улица Каныш Сатпаев, 2)» (https://urbanplaces.su/kz_astana/astana/card-70000001081676171-evraziiskii-natsionalnyi-universitet-im-l-n-gumileva)"]
+    },
+    {
+      "id": "F-CC-1", "type": "city_center",
+      "value": "51°10′N 71°26′E (51.1667, 71.4333)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Astana",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "Astana", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["the geographical coordinates for Astana are 51°10′N 71°26′E", "Astana is the capital city of Kazakhstan, located on the banks of the Ishim river in the north of Kazakhstan"]
+    },
+    {
+      "id": "F-PL-1", "type": "place",
+      "value": "Студенческий дом №7 — ул. А. Пушкина, 11/2; девятиэтажное здание с лифтами",
+      "sourceUrl": "https://enu.kz/ru/page/applicants/student-houses",
+      "sourceDomain": "enu.kz", "sourceTitle": "Департамент студенческого и служебного жилья | Евразийский национальный университет имени Л.Н. Гумилева", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["Студенческий дом №7 расположен по адресу: улица А. Пушкина, 11/2. Это девятиэтажное здание с работающими лифтами."]
+    },
+    {
+      "id": "F-PL-2", "type": "place",
+      "value": "Дом студентов №8 — ул. И. Кутпанова, 24А",
+      "sourceUrl": "https://enu.kz/ru/page/applicants/student-houses",
+      "sourceDomain": "enu.kz", "sourceTitle": "Департамент студенческого и служебного жилья | Евразийский национальный университет имени Л.Н. Гумилева", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["Дом студентов №8 расположен по адресу: ул. И. Кутпанова, 24А."]
+    },
+    {
+      "id": "F-PL-3", "type": "place",
+      "value": "Nursultan Nazarbayev International Airport: 51°01′19″N 071°28′01″E (51.02194, 71.46694)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "Nursultan Nazarbayev International Airport", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["The coordinates are 51°01′19″N 071°28′01″E (or 51.02194°N 71.46694°E in decimal format)."]
+    },
+    {
+      "id": "F-PL-4", "type": "place",
+      "value": "Astana-Nurly Zhol station: 51°06′45″N 71°31′54″E (51.1125, 71.531667); opened 1 June 2017",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Astana-Nurly_Zhol_station",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "Astana-Nurly Zhol station", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["The coordinates for Astana-Nurly Zhol station are: 51°06′45″N 71°31′54″E", "The station is owned by Kazakhstan Temir Zholy, and it was opened on June 1, 2017. It is a main train station and bus station in Astana."]
+    },
+    {
+      "id": "F-PL-5", "type": "place",
+      "value": "Astana-1 station: 51°11′45″N 71°24′33″E (51.195833, 71.409167); opened 1929; ул. В. Гёте 1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Astana-1_station",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "Astana-1 station", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Astana-1 station has coordinates of 51°11′45″N 71°24′33″E (51.1957°N 71.4091°E).", "It is part of the Kazakhstan Temir Zholy system and was opened in 1929. On 17 September 2022, the station was renamed from Nur-Sultan-1 to Astana-1", "Address per welcome.kz: ул. В. Гёте 1 (https://welcome.kz/ru/info-cities/astana/railway-station)"]
+    },
+    {
+      "id": "F-HS-1", "type": "housing",
+      "value": "минимум 18 000 тенге в месяц (старые общежития ЕНУ)",
+      "sourceUrl": "https://www.inform.kz/ru/zhizn-v-studencheskom-obshezhitii-skolko-eto-stoit-v-2024-godu-0bcd76",
+      "sourceDomain": "inform.kz", "sourceTitle": "Сколько стоит проживание в студенческих общежитиях в Казахстане в 2024 году", "sourceKind": "external", "sourceDate": "2024", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["The minimum cost is 18,000 tenge per month, with a maximum of 25,000 tenge per month for student housing at ЕНУ.", "Dormitories with a cost of 18,000 tenge were built several years ago, and their condition reflects this price, though the equipment and furniture are in good working condition.", "in some the showers and kitchens are shared for the entire floor, while in others the bathrooms and kitchens are located inside each room"]
+    },
+    {
+      "id": "F-HS-2", "type": "housing",
+      "value": "максимум 25 000 тенге в месяц (новые общежития ЕНУ с санузлом и кухней в комнате)",
+      "sourceUrl": "https://informburo.kz/stati/skolko-stoit-prozivanie-v-studenceskix-obshhezitiyax-v-astane-i-almaty-i-kak-oni-vyglyadyat-fotopodborka",
+      "sourceDomain": "informburo.kz", "sourceTitle": "Сколько стоит проживание в студенческих общежитиях в Астане и Алматы и как они выглядят. Фотоподборка - informburo.kz", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["The minimum cost is 18,000 tenge per month, with a maximum of 25,000 tenge per month for student housing at ЕНУ.", "different dormitories have varying conditions - some have shared showers and kitchens on each floor, while others have bathrooms and kitchens inside each room equipped with electric stoves, refrigerators and washing machines", "The Eurasian National University named after Gumilev in Astana has eight student houses"]
+    },
+    {
+      "id": "F-HS-3", "type": "housing",
+      "value": "Студенческий дом №5 — 275 000 тенге в год; обсуждалось снижение на 30% до 192 500 тенге",
+      "sourceUrl": "https://newtimes.kz/obshchestvo/223229-ni-goriachei-vody-ni-mebeli-enu-mozhet-snizit-tsenu-obshchezhitiia-na-30",
+      "sourceDomain": "newtimes.kz", "sourceTitle": "«Ни горячей воды, ни мебели»: ЕНУ может снизить цену общежития на 30%", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Студенты ЕНУ пожаловались в Threads на старую мебель, изношенные матрасы и отсутствие горячей воды в Студенческом доме № 5, проживание в котором стоит 275 тыс. тенге в год.", "В университете рассказали, что цену могут снизить на 30%. Если предложение одобрят, студентам придется заплатить 192,5 тыс. тенге", "Вопрос рассмотрели на заседании правления университета 7 сентября."]
+    },
+    {
+      "id": "F-HS-4", "type": "housing",
+      "value": "8 студенческих домов; оплата в размере 100% полугодовой стоимости",
+      "sourceUrl": "https://enu.kz/ru/page/for-students/finance/payment-for-accommodation-in-student-houses",
+      "sourceDomain": "enu.kz", "sourceTitle": "Оплата проживания в студенческих домах | Евразийский национальный университет имени Л.Н. Гумилева", "sourceKind": "official", "sourceDate": "2025/2026", "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["В ЕНУ работают 8 студенческих домов", "Оплата за проживание в Студенческом доме производится в размере 100% полугодовой стоимости", "Страницы сайта ЕНУ указывают на наличие «Прейскуранта стоимости услуг проживанию в СД» (сам прейскурант в результатах не отображён)"]
+    },
+    {
+      "id": "F-COL-1", "type": "cost_of_living",
+      "value": "₸279,681.2 per month, single person, without rent",
+      "sourceUrl": "https://www.numbeo.com/cost-of-living/in/Astana-Nur-Sultan-Kazakhstan",
+      "sourceDomain": "numbeo.com", "sourceTitle": "Cost of Living in Astana (Nur-Sultan). Aug 2026. Prices in Astana", "sourceKind": "external", "sourceDate": "2026-08", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["the estimated monthly costs for a single person in Astana (Nur-Sultan) are $596.8 (₸279,681.2), excluding rent", "This data is current as of August 2026."]
+    },
+    {
+      "id": "F-TU-1", "type": "tuition",
+      "value": "Педагогические науки — 1 140 000 тенге в год (2024)",
+      "sourceUrl": "https://newtimes.kz/eksklyuziv/204146-udar-po-semeinomu-biudzhetu-skolko-stoit-obuchenie-v-stolichnykh-vuzakh",
+      "sourceDomain": "newtimes.kz", "sourceTitle": "Вузы Астаны: баллы, стоимость и условия приёма в 2025 году", "sourceKind": "external", "sourceDate": "2024/2025", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Согласно данным за прошлый год (2024), педагогические науки обходились в 1 140 000 тенге в год", "Цены для новых студентов ежегодно увеличиваются примерно на 10%."]
+    },
+    {
+      "id": "F-TU-2", "type": "tuition",
+      "value": "Искусство и гуманитарные науки — 1 270 000 тенге в год (2024)",
+      "sourceUrl": "https://newtimes.kz/eksklyuziv/204146-udar-po-semeinomu-biudzhetu-skolko-stoit-obuchenie-v-stolichnykh-vuzakh",
+      "sourceDomain": "newtimes.kz", "sourceTitle": "Вузы Астаны: баллы, стоимость и условия приёма в 2025 году", "sourceKind": "external", "sourceDate": "2024/2025", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["искусство и гуманитарные науки — 1 270 000 тенге в год"]
+    },
+    {
+      "id": "F-TU-3", "type": "tuition",
+      "value": "Бизнес, управление и право — 1 300 000 тенге в год (2024)",
+      "sourceUrl": "https://newtimes.kz/eksklyuziv/204146-udar-po-semeinomu-biudzhetu-skolko-stoit-obuchenie-v-stolichnykh-vuzakh",
+      "sourceDomain": "newtimes.kz", "sourceTitle": "Вузы Астаны: баллы, стоимость и условия приёма в 2025 году", "sourceKind": "external", "sourceDate": "2024/2025", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["бизнес, управление и право — 1 300 000 тенге в год"]
+    },
+    {
+      "id": "F-TU-4", "type": "tuition",
+      "value": "Информационно-коммуникационные технологии — 1 330 000 тенге в год (2024)",
+      "sourceUrl": "https://newtimes.kz/eksklyuziv/204146-udar-po-semeinomu-biudzhetu-skolko-stoit-obuchenie-v-stolichnykh-vuzakh",
+      "sourceDomain": "newtimes.kz", "sourceTitle": "Вузы Астаны: баллы, стоимость и условия приёма в 2025 году", "sourceKind": "external", "sourceDate": "2024/2025", "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["информационно-коммуникационные технологии — 1 330 000 тенге в год"]
+    },
+    {
+      "id": "F-TU-5", "type": "tuition",
+      "value": "2025-2026: обучение в ЕНУ от 1,44 до 1,71 млн тенге в год (range only, program not specified)",
+      "sourceUrl": "https://el.kz/ru/skolko-stoit-uchitsya-v-kazahstanskih-vuzah-v-2025-godu-obzor-tsen_400028976/",
+      "sourceDomain": "el.kz", "sourceTitle": "Сколько стоит учиться в казахстанских вузах в 2025 году — обзор цен - el.kz", "sourceKind": "external", "sourceDate": "2025/2026", "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["в ЕНУ имени Гумилева обучение будет стоить от 1,44 до 1,71 млн тенге на учебный год 2025-2026", "Another summary in the same search session gave «от 1,35 до 1,55 млн тенге» with pedagogy cheapest and international relations most expensive; exact attributing page unclear (bes.media/newtimes/el.kz all appeared in results)"]
+    },
+    {
+      "id": "F-TU-6", "type": "tuition",
+      "value": "Official price lists for paid tuition (bachelor, 2026 intake) are published on enu.kz, but figures were not returned in search text",
+      "sourceUrl": "https://enu.kz/ru/page/applicants/tuition-fees",
+      "sourceDomain": "enu.kz", "sourceTitle": "Стоимость обучения | Евразийский национальный университет имени Л.Н. Гумилева", "sourceKind": "official", "sourceDate": "2026/2027", "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["доступны прейскуранты стоимости платного обучения по образовательным программам бакалавриата приема 2026 года", "ENU has price lists for tuition fees for various study programs for the academic year 2026-2027, but the actual fee amounts are not displayed in the search results"]
+    },
+    {
+      "id": "F-HI-1", "type": "founded",
+      "value": "23 мая 1996 — указ Президента об объединении Целиноградского инженерно-строительного и Целиноградского педагогического институтов",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82",
+      "sourceDomain": "ru.wikipedia.org", "sourceTitle": "Евразийский национальный университет — Википедия", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Университет был создан Указом Президента Республики Казахстан Н. А. Назарбаева от 23 мая 1996 года на основе объединения двух вузов — Целиноградского инженерно-строительного института (ЦИСИ) и Целиноградского педагогического института.", "Университет назван в честь русского учёного, историка-этнолога Л. Н. Гумилёва.", "Official confirmation: «L.N. Gumilyov Eurasian National University was founded in 1996 by the Decree of N.A.Nazarbayev» (https://enu.kz/en/page/university/about-us)"]
+    },
+    {
+      "id": "F-HI-2", "type": "history",
+      "value": "2000 — merger with the Academy of Diplomacy; renamed L. N. Gumilev Eurasian State University",
+      "sourceUrl": "https://en.wikipedia.org/wiki/L._N._Gumilev_Eurasian_National_University",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "L. N. Gumilev Eurasian National University", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["As the result of a merger with the Academy of Diplomacy of Ministry of International Relations of Kazakhstan in 2000, it was renamed L. N. Gumilev Eurasian State University"]
+    },
+    {
+      "id": "F-HI-3", "type": "history",
+      "value": "2001 — national university status; renamed L. N. Gumilev Eurasian National University",
+      "sourceUrl": "https://en.wikipedia.org/wiki/L._N._Gumilev_Eurasian_National_University",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "L. N. Gumilev Eurasian National University", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["in 2001, the university gained national university status and was renamed L. N. Gumilev Eurasian National University", "The university is a Kazakh national research university, and the largest higher education institution in Astana."]
+    },
+    {
+      "id": "F-HI-4", "type": "history",
+      "value": "about 20,000 students incl. >1,500 foreign; >250 programmes; 13 faculties",
+      "sourceUrl": "https://enu.kz/en/page/university/about-us",
+      "sourceDomain": "enu.kz", "sourceTitle": "About Us | L.N. Gumilyov Eurasian National University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["ENU trains bachelors, masters and PhDs in more than 250 education programs, with about 20,000 students, including more than 1,500 foreign citizens.", "Professional training at undergraduate and postgraduate levels is implemented in 13 faculties", "ru.wikipedia adds: ЕНУ включает в себя 28 научных учреждений (НИИ, лаборатории, центры), 13 факультетов"]
+    },
+    {
+      "id": "F-SL-1", "type": "student_life",
+      "value": "more than 60 student organizations and clubs; theatre Shanyrak, dance school SAMURYQ, E-STUDIO, orchestra Dala Sazy",
+      "sourceUrl": "https://enu.kz/en/page/student-life",
+      "sourceDomain": "enu.kz", "sourceTitle": "Student life | L.N. Gumilyov Eurasian National University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["ENU runs more than 60 student organizations and interest clubs. These include literary associations, a chess club, a debate movement, environmental and sports clubs.", "the student theater \"Shanyrak\", dance school \"SAMURYQ\", vocalists \"E-STUDIO\", and orchestra \"Dala Sazy\" are repeatedly recognized as winners at international competitions"]
+    },
+    {
+      "id": "F-SL-2", "type": "student_life",
+      "value": "Scientific library: more than 1.5 million items; 2 lending desks and 12 branch reading rooms with computer workstations and internet",
+      "sourceUrl": "https://enu.kz/en/page/student-life/infrastructure",
+      "sourceDomain": "enu.kz", "sourceTitle": "Infrastructure | L.N. Gumilyov Eurasian National University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The scientific library's funds contain more than 1.5 million units of storage of domestic and foreign publications.", "There are 2 subscriptions and 12 branch study offices specially equipped for independent work with workstations with computers and Internet access."]
+    },
+    {
+      "id": "F-SL-3", "type": "student_life",
+      "value": "University sports centre; football and volleyball sports sections",
+      "sourceUrl": "https://enu.kz/en/page/student-life/sports-club/sports-clubs",
+      "sourceDomain": "enu.kz", "sourceTitle": "Sports Clubs", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["The university has a University sports centre and sports sections for football and volleyball operate as part of student support programs.", "Related official page: University sports centre (https://enu.kz/ru/page/student-life/infrastructure/university-sports-centre)"]
+    },
+    {
+      "id": "F-SL-4", "type": "student_life",
+      "value": "Academic building No. 5 is an educational and laboratory complex",
+      "sourceUrl": "https://enu.kz/en/page/student-life/infrastructure",
+      "sourceDomain": "enu.kz", "sourceTitle": "Infrastructure | L.N. Gumilyov Eurasian National University", "sourceKind": "official", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "high",
+      "evidence": ["Academic building No. 5 serves as an educational and laboratory complex.", "Research activity is carried out at research institutions, centres, and laboratories."]
+    },
+    {
+      "id": "F-TR-1", "type": "transport",
+      "value": "Остановка «Каныша Сатпаева»: автобусы 20, 23, 24, 24Н, 31, 4, 44, 4А, 61, 71, 73",
+      "sourceUrl": "https://2gis.kz/nur_sultan/station/9570935187177499",
+      "sourceDomain": "2gis.kz", "sourceTitle": "Остановка Каныша Сатпаева: автобус в Нур-Султане — 2ГИС", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["К остановке Каныша Сатпаева в Астане подходят маршруты: автобусы 20, 23, 24, 24Н, 31, 4, 44, 4А, 61, 71, 73."]
+    },
+    {
+      "id": "F-TR-2", "type": "transport",
+      "value": "Маршрут №61 проходит по ул. К. Сатпаева, затем по ул. Кажымукана мимо спорткомплекса «Казахстан» и ЕНУ",
+      "sourceUrl": "https://dixinews.today/articles/zhizn/15143/",
+      "sourceDomain": "dixinews.today", "sourceTitle": "Схемы и маршруты движения автобусов в Астане (первый этап изменений c 11 июля 2015) - Общество - новости Казахстана DixiNews", "sourceKind": "external", "sourceDate": "2015-07", "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["Маршрут № 61 проходит по улице К. Сатпаева (остановка «Ул. К. Сатпаева»), затем по улице Кажымукан мимо спортивного комплекса «Казахстан» и ЕНУ, далее по улице Жансугурулы."]
+    },
+    {
+      "id": "F-CL-1", "type": "climate",
+      "value": "average annual temperature 3.9 °C; Köppen Dfb",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Astana",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "Astana - Wikipedia", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["Astana has a humid continental climate classification in the Köppen scheme (Dfb).", "The average annual temperature in Astana is 3.9 °C (39.0 °F)."]
+    },
+    {
+      "id": "F-CL-2", "type": "climate",
+      "value": "July average 20.6 °C",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Astana",
+      "sourceDomain": "en.wikipedia.org", "sourceTitle": "Astana - Wikipedia", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "medium",
+      "evidence": ["July is the hottest month with an average temperature of 20.6 °C (69.1 °F)."]
+    },
+    {
+      "id": "F-CL-3", "type": "climate",
+      "value": "January average -14.4 °C",
+      "sourceUrl": "https://www.climatestotravel.com/climate/kazakhstan/astana",
+      "sourceDomain": "climatestotravel.com", "sourceTitle": "Astana climate: seasons, monthly averages - Climates to Travel", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["The average temperature of the coldest month (January) is of -14.4 °C", "The average temperature of January is -14.4 °C, and July is 20.8 °C"]
+    },
+    {
+      "id": "F-CL-4", "type": "climate",
+      "value": "annual precipitation 335 mm (16.7 mm in February to 55.8 mm in July)",
+      "sourceUrl": "https://www.climatestotravel.com/climate/kazakhstan/astana",
+      "sourceDomain": "climatestotravel.com", "sourceTitle": "Astana climate: seasons, monthly averages - Climates to Travel", "sourceKind": "external", "sourceDate": null, "collectedAt": "2026-09-18", "confidence": "low",
+      "evidence": ["Precipitation amounts to 335 millimeters per year", "It ranges from 16.7 millimeters in February to 55.8 millimeters in July"]
+    }
+  ],
+  "gaps": [
+    { "field": "housing", "note": "The official ENU price list («Прейскурант стоимости услуг проживания в СД») is referenced on enu.kz/ru/page/for-students/finance/payment-for-accommodation-in-student-houses and dsd.enu.kz, but no per-house KZT figures were returned by 4 searches (2 restricted to enu.kz/dsd.enu.kz). Prices recorded come from inform.kz (2024), informburo.kz and newtimes.kz instead." },
+    { "field": "housing", "note": "Addresses for Student Houses No. 1–6 and coordinates for all dormitories were not returned; only No. 7 (Pushkin 11/2) and No. 8 (Kutpanov 24A) came from the official page. 2GIS lists No. 7 at Pushkin 11/1a, a minor discrepancy with the official 11/2." },
+    { "field": "tuition", "note": "Official 2025/2026 and 2026/2027 price lists exist on enu.kz/ru/page/applicants/tuition-fees (as PDFs) but their figures were not exposed in search text across 4 queries. The stipend figures 52 372 / 60 227,80 KZT returned by one search were conflated with tuition by the search summary and were deliberately excluded. Only 2024/2025 per-group prices (newtimes.kz) and an unattributed 2025/2026 range (1.44–1.71 mln, low confidence) are recorded. No international-student (USD) fees found." },
+    { "field": "costOfLiving", "note": "Only the Numbeo single-person total was returned; the per-category Numbeo query (meal, monthly pass) and any ENU international-office budget guidance could not be run because the session web-search budget was exhausted." },
+    { "field": "climate", "note": "Wikipedia returned only the annual (3.9 °C) and July (20.6 °C) values; January mean and annual precipitation come from climatestotravel.com (low confidence). Note climatestotravel gives July 20.8 °C vs Wikipedia 20.6 °C." },
+    { "field": "transport", "note": "Bus routes come from a 2GIS stop listing and a 2015 route scheme (low confidence). Astana LRT status and airport-to-campus routes were not searched (budget exhausted)." },
+    { "field": "places", "note": "No coordinates found for the library, sports centre, dormitories or the nearest bus stop; lat/lng left null." },
+    { "field": "history", "note": "Official enu.kz history/milestones page was not retrieved (budget exhausted); 2000 and 2001 milestones rely on English Wikipedia." }
+  ],
+  "queryLog": [
+    "\"Gumilyov Eurasian National University\" wikipedia coordinates",
+    "Astana wikidata coordinates 51°10′N 71°26′E",
+    "Nursultan Nazarbayev International Airport wikipedia coordinates",
+    "Nurly Zhol railway station Astana wikipedia coordinates",
+    "общежитие ЕНУ стоимость проживания 2025 [enu.kz]",
+    "стоимость обучения ЕНУ 2025-2026 бакалавриат [enu.kz]",
+    "Q127745 wikidata \"Eurasian National University\" coordinate location 51.1",
+    "Астана-1 железнодорожный вокзал координаты википедия",
+    "ЕНУ Гумилева студенческий дом стоимость проживания тенге в месяц 2025-2026",
+    "ЕНУ Гумилева стоимость обучения 2025-2026 тенге в год бакалавриат прейскурант",
+    "Eurasian National University history founded 1996 merger Tselinograd Pedagogical Institute Akmola Civil Engineering Institute",
+    "Astana climate wikipedia average January July temperature annual precipitation mm",
+    "Евразийский национальный университет имени Гумилёва википедия координаты 51° с. ш. 71° в. д.",
+    "\"Astana-1 station\" wikipedia coordinates 51° N 71° E",
+    "ЕНУ общежитие \"18 000\" тенге в месяц студенческий дом Астана",
+    "ЕНУ Гумилева стоимость обучения 2025 год тенге \"международные отношения\" \"педагогика\" бакалавриат сколько стоит",
+    "Astana wikipedia climate table \"record high\" \"average high\" mean annual precipitation [en.wikipedia.org]",
+    "ENU student life clubs sports complex library laboratories [enu.kz]",
+    "автобус остановка ЕНУ Астана маршруты Сатпаева 2 как добраться",
+    "прейскурант стоимость проживания студенческий дом ЕНУ 2025-2026 тенге [enu.kz, dsd.enu.kz]",
+    "ЕНУ \"Студенческий дом №5\" 275 000 тенге в год проживание",
+    "newtimes.kz вузы Астаны стоимость обучения 2025 ЕНУ Гумилева тенге в год",
+    "ENU tuition fees international students bachelor master USD per year [enu.kz]",
+    "Astana climate data January mean temperature −14 °C annual precipitation mm wikipedia \"Astana\"",
+    "Numbeo cost of living Astana single person monthly costs without rent 2026",
+    "\"more than 60\" student organizations clubs ENU student theater orchestra debate [enu.kz]",
+    "ENU about us number of students faculties educational programs 2025 [enu.kz]",
+    "ЕНУ студенческие дома адреса Кажымукан Пушкина Мунайтпасова студенческий дом №1 №2 №3 [enu.kz, dsd.enu.kz]"
+  ]
+}

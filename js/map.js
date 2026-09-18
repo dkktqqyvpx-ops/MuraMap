@@ -4,23 +4,41 @@
   const I18N = {
     kk: {
       fAll: 'Барлығы', fMausoleum: 'Кесене', fMosque: 'Жер асты мешіті', fNecropolis: 'Қорым',
-      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR',
-      route: 'Бағыт салу', askGuide: 'Гидтен сұрау',
+      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR', navStudy: 'Оқу',
+      route: 'Бағыт салу', askGuide: 'Гидтен сұрау', photo: 'Фото',
       loading: 'Нысандар жүктелуде…',
       failed: 'Деректер жүктелмеді. Файлды тексеріңіз: data/objects.geojson',
       empty: 'Бұл сүзгі бойынша нысан жоқ'
     },
     ru: {
       fAll: 'Все', fMausoleum: 'Мавзолеи', fMosque: 'Подземные мечети', fNecropolis: 'Некрополи',
-      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR',
-      route: 'Построить маршрут', askGuide: 'Спросить гида',
+      navGuide: 'Гид', navMap: 'Карта', navQr: 'QR', navStudy: 'Учёба',
+      route: 'Построить маршрут', askGuide: 'Спросить гида', photo: 'Фото',
       loading: 'Загружаем объекты…',
       failed: 'Данные не загрузились. Проверьте файл data/objects.geojson',
       empty: 'По этому фильтру объектов нет'
+    },
+    en: {
+      fAll: 'All', fMausoleum: 'Mausoleums', fMosque: 'Underground mosques', fNecropolis: 'Necropolises',
+      navGuide: 'Guide', navMap: 'Map', navQr: 'QR', navStudy: 'Study',
+      route: 'Get directions', askGuide: 'Ask the guide', photo: 'Photo',
+      loading: 'Loading sites…',
+      failed: 'Data failed to load. Check data/objects.geojson',
+      empty: 'No sites match this filter'
     }
   };
 
-  let lang = new URLSearchParams(location.search).get('lang') || 'kk';
+  const LANG_KEY = 'mura-lang';
+
+  let lang = (function () {
+    const p = new URLSearchParams(location.search).get('lang');
+    if (I18N[p]) return p;
+    try {
+      const s = localStorage.getItem(LANG_KEY);
+      if (I18N[s]) return s;
+    } catch (e) { /* private mode */ }
+    return 'kk';
+  })();
   let objects = [];       
   let activeId = null;
   let activeType = 'all';
@@ -205,7 +223,7 @@
       text.appendChild(p);
     });
 
-    document.getElementById('sheetCredit').textContent = 'Фото: ' + (obj.photoCredit || '');
+    document.getElementById('sheetCredit').textContent = t('photo') + ': ' + (obj.photoCredit || '');
 
     const c = obj.coordinates;
     document.getElementById('sheetRoute').href =
@@ -256,10 +274,14 @@
     if (!I18N[next]) return;
     lang = next;
     document.documentElement.lang = lang;
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* ignore */ }
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       const value = I18N[lang][el.dataset.i18n];
       if (value) el.textContent = value;
+    });
+    document.querySelectorAll('[data-page]').forEach(function (link) {
+      link.href = link.dataset.page + '?lang=' + lang;
     });
 
     document.querySelectorAll('[data-lang]').forEach(function (btn) {

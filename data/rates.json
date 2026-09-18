@@ -1,0 +1,9 @@
+{
+  "base": "USD",
+  "rates": { "USD": 1, "KZT": 511 },
+  "date": "2025/2026",
+  "source": "nu.edu.kz fee page (USD 15,000 = KZT 7,665,000)",
+  "sourceUrl": "https://nu.edu.kz/admissions/fees-and-funding/",
+  "live": false,
+  "note": "Fallback only. The app first tries the live open.er-api.com feed; this stored rate is the exchange rate implied by Nazarbayev University's published 2025/2026 tuition in both currencies, and is labelled approximate wherever it is used."
+}
