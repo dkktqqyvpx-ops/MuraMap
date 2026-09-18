@@ -1,10 +1,3 @@
-/* ==========================================================================
-   MuraMap — карта объектов
-   Данные: data/objects.geojson (точки) + data/objects.json (полные описания)
-   Тайлы: OpenStreetMap. Для продакшена замените источник на MapTiler/2ГИС
-   с ключом и стилем — политика OSM не допускает продуктовую нагрузку.
-   ========================================================================== */
-
 (function () {
   'use strict';
 
@@ -43,7 +36,7 @@
     statusEl.hidden = false;
   }
 
-  /* ---------- Карта ---------- */
+
 
   const map = new maplibregl.Map({
     container: 'map',
@@ -174,8 +167,6 @@
     });
   });
 
-  /* ---------- Взаимодействие с точками ---------- */
-
   map.on('click', 'points', function (e) {
     openObject(e.features[0].properties.id);
   });
@@ -192,8 +183,6 @@
     map.on('mouseenter', layer, function () { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', layer, function () { map.getCanvas().style.cursor = ''; });
   });
-
-  /* ---------- Карточка объекта ---------- */
 
   function openObject(id, fly) {
     const obj = objects.find(function (o) { return o.id === id; });
@@ -245,9 +234,7 @@
   document.getElementById('sheetGuide').addEventListener('click', function () {
     if (activeId) location.href = 'guide.html?object=' + activeId + '&lang=' + lang;
   });
-
-  /* ---------- Фильтры ---------- */
-
+   
   function applyFilter(type) {
     activeType = type;
     const base = ['!', ['has', 'point_count']];
@@ -264,8 +251,6 @@
       applyFilter(chip.dataset.type);
     });
   });
-
-  /* ---------- Язык ---------- */
 
   function applyLang(next) {
     if (!I18N[next]) return;
