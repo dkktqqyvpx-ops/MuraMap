@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  /* ---------- Словарь ---------- */
+
 
   const I18N = {
     kk: {
@@ -107,7 +107,7 @@
     try {
       const s = localStorage.getItem(LANG_KEY);
       if (I18N[s]) return s;
-    } catch (e) { /* ничего */ }
+    } catch (e) {  }
     return 'kk';
   }
 
@@ -135,7 +135,7 @@
         messages: messages.slice(-30),
         contextId: contextId
       }));
-    } catch (e) { /* ничего */ }
+    } catch (e) {  }
   }
 
   function objectName(id, names) {
@@ -148,7 +148,6 @@
     return 'map.html?id=' + encodeURIComponent(id) + '&lang=' + lang;
   }
 
-  // ИИ иногда добавляет разметку Markdown — убираем, показываем простой текст
   function plain(text) {
     return String(text || '')
       .replace(/\*\*(.+?)\*\*/g, '$1')
@@ -323,8 +322,6 @@
       messages.push(answer);
       setTyping(false);
       renderMessage(answer);
-
-      // Следующие вопросы («а когда его построили?») будут про этот объект
       if (found.length) {
         contextId = found[0].id;
         renderContext();
@@ -360,7 +357,6 @@
 
   input.addEventListener('input', autoSize);
 
-  // Enter — отправить, Shift+Enter — новая строка
   input.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
       e.preventDefault();
@@ -394,7 +390,7 @@
     if (!I18N[next]) return;
     lang = next;
     document.documentElement.lang = lang;
-    try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* ничего */ }
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {  }
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       el.textContent = t(el.dataset.i18n);
