@@ -21,7 +21,7 @@
   };
 
   let lang = new URLSearchParams(location.search).get('lang') || 'kk';
-  let objects = [];       // полные записи из objects.json
+  let objects = [];       
   let activeId = null;
   let activeType = 'all';
 
@@ -56,7 +56,7 @@
         { id: 'osm', type: 'raster', source: 'osm' }
       ]
     },
-    center: [63.0, 47.5],   // центр Казахстана
+    center: [63.0, 47.5],  
     zoom: 4.1,
     attributionControl: { compact: true }
   });
