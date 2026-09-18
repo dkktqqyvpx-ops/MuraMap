@@ -2,11 +2,11 @@ const FREE_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
 const PAID_MODEL = 'claude-haiku-4-5-20251001';                
 const API_URL = 'https://api.anthropic.com/v1/messages';
 
-const MAX_QUESTION = 500;        // символов в вопросе
-const MAX_HISTORY = 10;          // последних сообщений диалога
-const MAX_DESCRIPTION = 6000;    // символов описания одного объекта
-const RATE_LIMIT = 20;           // вопросов
-const RATE_WINDOW = 10 * 60e3;   // за 10 минут с одного IP
+const MAX_QUESTION = 500;        
+const MAX_HISTORY = 10;         
+const MAX_DESCRIPTION = 6000;    
+const RATE_LIMIT = 20;       
+const RATE_WINDOW = 10 * 60e3;   
 
 const ID_RE = /^MURA-\d{3,}$/;
 const LETTERS = { 'ә': 'а', 'ғ': 'г', 'қ': 'к', 'ң': 'н', 'ө': 'о', 'ұ': 'у', 'ү': 'у', 'һ': 'х', 'і': 'и', 'ё': 'е', 'й': 'и' };
