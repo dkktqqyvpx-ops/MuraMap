@@ -1,16 +1,7 @@
-/* ==========================================================================
-   MuraMap — QR-сканер
-   1) камера: включение, выключение, распознавание кода
-   2) чтение кода с фотографии
-   3) ручной ввод кода объекта
-   4) проверка кода и переход на карту: map.html?id=MURA-001
-   Библиотека: html5-qrcode (подключена в scan.html)
-   ========================================================================== */
+
 
 (function () {
   'use strict';
-
-  /* ---------- Словарь ---------- */
 
   const I18N = {
     kk: {
@@ -78,15 +69,13 @@
   };
 
   const LANG_KEY = 'mura-lang';
-  const REDIRECT_DELAY = 900; // мс: пользователь успевает увидеть название
-
-  /* ---------- Состояние ---------- */
+  const REDIRECT_DELAY = 900; 
 
   let lang = readLang();
-  let scanner = null;        // экземпляр Html5Qrcode, создаётся при первом запуске
-  let state = 'idle';        // idle | starting | scanning | busy | found | error
+  let scanner = null;      
+  let state = 'idle';        
   let status = { key: 'idle', vars: {}, tone: '' };
-  let objectsPromise = null; // objects.json загружаем один раз
+  let objectsPromise = null;
 
   const frame = document.getElementById('frame');
   const statusEl = document.getElementById('scanStatus');
@@ -95,7 +84,7 @@
   const manualForm = document.getElementById('manualForm');
   const manualInput = document.getElementById('manualInput');
 
-  /* ---------- Язык ---------- */
+  
 
   function readLang() {
     const fromUrl = new URLSearchParams(location.search).get('lang');
@@ -131,7 +120,7 @@
       btn.setAttribute('aria-pressed', String(on));
     });
 
-    // Язык передаём на другие страницы через ?lang=
+    
     document.querySelectorAll('[data-page]').forEach(function (link) {
       link.href = link.dataset.page + '?lang=' + lang;
     });
@@ -143,8 +132,6 @@
   document.querySelectorAll('[data-lang]').forEach(function (btn) {
     btn.addEventListener('click', function () { applyLang(btn.dataset.lang); });
   });
-
-  /* ---------- Отображение ---------- */
 
   function setStatus(key, vars, tone) {
     status = { key: key, vars: vars || {}, tone: tone || '' };
@@ -178,9 +165,6 @@
     setStatus(key, vars, 'error');
   }
 
-  /* ---------- Данные объектов ---------- */
-
-  // Возвращает массив объектов или null, если файл не загрузился
   function loadObjects() {
     if (!objectsPromise) {
       objectsPromise = fetch('data/objects.json')
@@ -191,14 +175,12 @@
         .then(function (data) { return data.objects || []; })
         .catch(function (err) {
           console.warn('objects.json не загрузился:', err);
-          objectsPromise = null; // попробуем ещё раз при следующем скане
+          objectsPromise = null;
           return null;
         });
     }
     return objectsPromise;
   }
-
-  /* ---------- Камера ---------- */
 
   function getLibrary() {
     const lib = window.__Html5QrcodeLibrary__;
@@ -214,7 +196,7 @@
 
     const options = { verbose: false };
     if (lib.Html5QrcodeSupportedFormats) {
-      // Ищем только QR — так распознавание быстрее
+      
       options.formatsToSupport = [lib.Html5QrcodeSupportedFormats.QR_CODE];
     }
     scanner = new lib.Html5Qrcode('reader', options);
@@ -250,10 +232,10 @@
 
     try {
       await s.start(
-        { facingMode: 'environment' },   // задняя камера телефона
-        { fps: 10 },                     // 10 попыток распознать в секунду
+        { facingMode: 'environment' },   
+        { fps: 10 },                     
         onDecoded,
-        function () { /* кадр без кода — это нормально, молчим */ }
+        function () {  }
       );
       setState('scanning');
       setStatus('scanning');
@@ -274,7 +256,7 @@
   }
 
   function onDecoded(text) {
-    // Библиотека может прислать один и тот же код несколько раз подряд
+    
     if (state !== 'scanning') return;
     setState('busy');
     setStatus('checking');
@@ -284,8 +266,6 @@
       handleCode(MuraQR.parse(text));
     });
   }
-
-  /* ---------- Проверка кода и переход ---------- */
 
   async function handleCode(result) {
     if (!result.ok) {
@@ -307,7 +287,6 @@
       }
       name = (obj.name && (obj.name[lang] || obj.name.ru)) || result.id;
     }
-    // Если файл не загрузился, всё равно открываем карту — она сама разберётся
 
     setState('found');
     setStatus('found', { name: name }, 'ok');
@@ -316,8 +295,6 @@
       location.href = 'map.html?id=' + encodeURIComponent(result.id) + '&lang=' + lang;
     }, REDIRECT_DELAY);
   }
-
-  /* ---------- Кнопка камеры ---------- */
 
   toggleBtn.addEventListener('click', async function () {
     if (state === 'scanning') {
@@ -329,8 +306,6 @@
     }
   });
 
-  /* ---------- Чтение с фото ---------- */
-
   photoInput.addEventListener('change', async function () {
     const file = photoInput.files && photoInput.files[0];
     if (!file) return;
@@ -341,7 +316,7 @@
       return;
     }
 
-    await stopCamera();              // с фото нельзя читать, пока идёт видео
+    await stopCamera();              
     setState('busy');
     setStatus('reading');
 
@@ -352,11 +327,9 @@
       console.warn('Фото:', err);
       showError('photoFail');
     } finally {
-      photoInput.value = '';         // чтобы можно было выбрать то же фото ещё раз
+      photoInput.value = '';        
     }
   });
-
-  /* ---------- Ручной ввод ---------- */
 
   manualForm.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -373,9 +346,6 @@
     handleCode({ ok: true, id: id });
   });
 
-  /* ---------- Уход со страницы ---------- */
-
-  // Свернули вкладку — выключаем камеру, чтобы не тратить батарею
   document.addEventListener('visibilitychange', function () {
     if (document.hidden && state === 'scanning') {
       stopCamera();
@@ -386,7 +356,6 @@
 
   window.addEventListener('pagehide', stopCamera);
 
-  // Вернулись кнопкой «Назад» — страница может восстановиться из кэша
   window.addEventListener('pageshow', function (e) {
     if (e.persisted) {
       setState('idle');
@@ -394,10 +363,8 @@
     }
   });
 
-  /* ---------- Старт ---------- */
-
   setState('idle');
   setStatus('idle');
   applyLang(lang);
-  loadObjects(); // заранее, чтобы проверка после скана была мгновенной
+  loadObjects(); 
 })();
