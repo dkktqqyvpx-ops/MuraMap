@@ -1,16 +1,9 @@
-/* ==========================================================================
-   MuraMap — генерация QR-табличек
-   Берёт объекты из data/objects.json, для каждого строит ссылку
-   map.html?id=MURA-XXX, рисует QR (SVG для печати) и умеет сохранить PNG.
-   Библиотека: qrcode-generator (подключена в qr-print.html)
-   ========================================================================== */
-
 (function () {
   'use strict';
 
   const SVG_NS = 'http://www.w3.org/2000/svg';
-  const QUIET = 4;        // белая рамка вокруг кода в «модулях» — нужна сканерам
-  const PNG_SCALE = 20;   // пикселей на один модуль в PNG
+  const QUIET = 4;        
+  const PNG_SCALE = 20;  
 
   const sheet = document.getElementById('sheet');
   const baseInfo = document.getElementById('baseInfo');
@@ -20,7 +13,6 @@
     window.print();
   });
 
-  // Адрес сайта: из config.js, а если не указан — папка на уровень выше этой страницы
   const base = MuraQR.isConfigured()
     ? MuraQR.siteBase()
     : new URL('../', location.href).href;
@@ -44,15 +36,13 @@
     return;
   }
 
-  // Поддержка любых символов в ссылке
+ 
   if (qrcode.stringToBytesFuncs && qrcode.stringToBytesFuncs['UTF-8']) {
     qrcode.stringToBytes = qrcode.stringToBytesFuncs['UTF-8'];
   }
 
-  /* ---------- QR-матрица ---------- */
-
   function makeMatrix(text) {
-    // 0 — размер подберётся сам; 'H' — самая сильная коррекция ошибок (до 30% повреждений)
+   
     const qr = qrcode(0, 'H');
     qr.addData(text);
     qr.make();
@@ -114,7 +104,6 @@
       }
     }
 
-    // Код объекта под QR, ниже белой рамки
     ctx.fillStyle = '#0B2A31';
     ctx.font = '700 44px Manrope, system-ui, sans-serif';
     ctx.textAlign = 'center';
@@ -131,8 +120,6 @@
       setTimeout(function () { URL.revokeObjectURL(link.href); }, 1000);
     }, 'image/png');
   }
-
-  /* ---------- Табличка ---------- */
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -172,8 +159,6 @@
     wrap.append(card, urlLine, pngBtn);
     return wrap;
   }
-
-  /* ---------- Загрузка ---------- */
 
   fetch('../data/objects.json')
     .then(function (r) {
