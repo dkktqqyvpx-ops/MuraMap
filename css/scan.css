@@ -1,13 +1,7 @@
-/* ==========================================================================
-   MuraMap — экран QR-сканера
-   Уголки видоискателя меняют цвет по состоянию:
-   ожидание — известняк, поиск — латунь, найдено — бирюза, ошибка — кирпич.
-   ========================================================================== */
 
 .brand { text-decoration: none; color: inherit; }
 
-/* Переключатель языка — такой же, как в map.css.
-   Позже его можно перенести в style.css и удалить из обоих файлов. */
+
 .langmini {
   display: flex;
   gap: 2px;
@@ -40,11 +34,10 @@
   border: 0;
 }
 
-/* ---------- Страница ---------- */
+
 
 .scan {
-  --error: #E8967A;               /* светлый кирпич: читается на тёмном фоне */
-
+  --error: #E8967A;              
   max-width: 440px;
   min-height: 100dvh;
   margin: 0 auto;
@@ -72,8 +65,6 @@
   color: var(--limestone-2);
 }
 
-/* ---------- Видоискатель ---------- */
-
 .viewfinder {
   --corner: var(--limestone-2);
 
@@ -93,7 +84,6 @@
 .viewfinder[data-state="found"] { --corner: var(--turquoise); }
 .viewfinder[data-state="error"] { --corner: var(--error); }
 
-/* Библиотека задаёт видео свои размеры — растягиваем его на весь квадрат */
 #reader {
   position: absolute !important;
   inset: 0;
@@ -134,7 +124,6 @@
 .viewfinder__corner--bl { bottom: 18px; left: 18px;  border-bottom-width: 3px; border-left-width: 3px;  border-bottom-left-radius: 14px; }
 .viewfinder__corner--br { bottom: 18px; right: 18px; border-bottom-width: 3px; border-right-width: 3px; border-bottom-right-radius: 14px; }
 
-/* Код найден — рамка «схватывает» его */
 .viewfinder[data-state="found"] .viewfinder__corner--tl { transform: translate(10px, 10px); }
 .viewfinder[data-state="found"] .viewfinder__corner--tr { transform: translate(-10px, 10px); }
 .viewfinder[data-state="found"] .viewfinder__corner--bl { transform: translate(10px, -10px); }
@@ -167,8 +156,6 @@
   .viewfinder[data-state="scanning"] .viewfinder__line { display: none; }
 }
 
-/* ---------- Статус ---------- */
-
 .scan__status {
   min-height: 3em;
   margin: 2px 0 0;
@@ -179,7 +166,6 @@
 .scan__status[data-tone="ok"]    { color: var(--turquoise); font-weight: 700; }
 .scan__status[data-tone="error"] { color: var(--error); }
 
-/* ---------- Кнопки ---------- */
 
 .scan__actions { display: grid; gap: 8px; }
 
@@ -195,7 +181,6 @@
   outline-offset: 3px;
 }
 
-/* ---------- Ручной ввод ---------- */
 
 .manual {
   margin-top: 14px;
@@ -221,7 +206,7 @@
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   color: var(--limestone);
-  font: 500 16px var(--sans);     /* 16px: iOS не будет увеличивать страницу */
+  font: 500 16px var(--sans);    
   letter-spacing: .04em;
   text-transform: uppercase;
 }
