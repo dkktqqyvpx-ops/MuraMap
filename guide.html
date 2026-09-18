@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#0B2A31">
+<title>MuraMap — Гид</title>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Noto+Serif:wght@500;700&display=swap&subset=cyrillic,cyrillic-ext,latin" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/scan.css">
+<link rel="stylesheet" href="css/guide.css">
+</head>
+
+<body class="body--guide">
+
+<header class="header">
+  <a class="brand" href="index.html" data-page="index.html">
+    <div class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 96 96" width="22" height="22" fill="none" aria-hidden="true">
+        <path fill="currentColor" fill-rule="evenodd" d="M48 80C39 68 28 58 28 42A20 20 0 1 1 68 42C68 58 57 68 48 80ZM37 56V42A11 11 0 0 1 59 42V56Z"/>
+        <path fill="currentColor" d="M44 56V51A4 4 0 0 1 52 51V56Z"/>
+        <circle cx="48" cy="26" r="2.6" fill="#D9A441"/>
+      </svg>
+    </div>
+    <span class="brand__name">MuraMap</span>
+  </a>
+
+  <div class="langmini" role="group" aria-label="Тіл / Язык">
+    <button class="langmini__btn is-active" type="button" data-lang="kk" aria-pressed="true">ҚАЗ</button>
+    <button class="langmini__btn" type="button" data-lang="ru" aria-pressed="false">РУС</button>
+  </div>
+</header>
+
+<main class="guide" id="main">
+  <div class="guide__top">
+    <h1 class="guide__title" data-i18n="title">Гид</h1>
+    <button class="guide__clear" id="clearChat" type="button" data-i18n="clear">Жаңа сөйлесу</button>
+  </div>
+
+  <!-- Объект, о котором идёт разговор -->
+  <div class="context" id="context" hidden>
+    <span class="context__label" data-i18n="about">Әңгіме нысаны:</span>
+    <a class="context__name" id="contextName" href="#"></a>
+    <button class="context__close" id="contextClose" type="button" data-i18n-aria="contextClear" aria-label="Нысанды алып тастау">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="chat" id="chat" role="log" aria-live="polite" aria-relevant="additions"></div>
+
+  <div class="suggest" id="suggest"></div>
+
+  <form class="composer" id="composer" novalidate>
+    <label class="visually-hidden" for="question" data-i18n="inputLabel">Сұрағыңыз</label>
+    <textarea class="composer__input" id="question" rows="1" maxlength="500"
+              placeholder="Мысалы: Жұмағазы хазірет кім?"></textarea>
+    <button class="composer__send" id="sendBtn" type="submit" data-i18n-aria="send" aria-label="Жіберу">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </button>
+  </form>
+  <p class="composer__note" data-i18n="note">Гид MuraMap деректері бойынша жауап береді және қателесуі мүмкін.</p>
+</main>
+
+<nav class="tabbar" aria-label="MuraMap">
+  <a class="tab is-active" href="guide.html" data-page="guide.html" aria-current="page">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 4h5v16H6a2 2 0 0 0-2 2z"/><path d="M20 5.5A2 2 0 0 0 18 4h-5v16h5a2 2 0 0 1 2 2z"/></svg>
+    <span data-i18n="navGuide">Гид</span>
+  </a>
+  <a class="tab" href="map.html" data-page="map.html">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <span data-i18n="navMap">Карта</span>
+  </a>
+  <a class="tab" href="scan.html" data-page="scan.html">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V5h4M20 9V5h-4M4 15v4h4M20 15v4h-4"/><path d="M8 12h8"/></svg>
+    <span data-i18n="navQr">QR</span>
+  </a>
+</nav>
+
+<script src="js/config.js"></script>
+<script src="js/guide.js"></script>
+</body>
+</html>
