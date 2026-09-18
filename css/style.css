@@ -1,8 +1,4 @@
-/* ==========================================================================
-   MuraMap — базовые стили
-   Палитра взята от материалов казахских памятников: бирюза купола Ясауи,
-   обожжённый кирпич, известняк Мангистау, латунь орнамента.
-   ========================================================================== */
+
 
 :root {
   --ink:        #0B2A31;   /* тёмная бирюза, фон приложения */
@@ -29,8 +25,7 @@
 
 * { box-sizing: border-box; }
 
-/* Классы с display: flex/grid перебивают браузерное правило [hidden],
-   из-за чего скрытые блоки остаются видимыми. Возвращаем приоритет атрибуту. */
+
 [hidden] { display: none !important; }
 
 html, body { height: 100%; }
@@ -71,7 +66,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .skip-link:focus { transform: translateY(0); }
 
-/* ---------- Шапка ---------- */
+
 
 .header {
   position: fixed;
@@ -132,7 +127,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .burger[aria-expanded="true"] .burger__line:nth-child(2) { opacity: 0; }
 .burger[aria-expanded="true"] .burger__line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ---------- Меню ---------- */
+
 
 .scrim {
   position: fixed;
@@ -187,7 +182,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .drawer__body { display: flex; flex-direction: column; gap: 10px; }
 
-/* ---------- Кнопки ---------- */
+
 
 .btn {
   width: 100%;
@@ -236,7 +231,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .lang__btn.is-active { background: var(--limestone); color: var(--ink); font-weight: 700; }
 
-/* ---------- Главный экран ---------- */
+
 
 .main {
   min-height: 100dvh;
@@ -305,7 +300,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
     var(--ink-2);
 }
 
-/* ---------- Нижняя навигация ---------- */
+
 
 .tabbar {
   position: fixed;
@@ -346,7 +341,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border-radius: 0 0 3px 3px;
 }
 
-/* ---------- Доступность и крупные экраны ---------- */
+
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -360,5 +355,4 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .hero__figure { aspect-ratio: 16 / 10; }
 }
 
-/* Табы-ссылки (map.html, scan.html) — без подчёркивания */
 a.tab { text-decoration: none; }
