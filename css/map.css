@@ -1,4 +1,3 @@
-/* MuraMap — экран карты */
 
 .body--map { overflow: hidden; }
 
@@ -26,7 +25,6 @@
 }
 .langmini__btn.is-active { background: var(--limestone); color: var(--ink); }
 
-/* ---------- Фильтры ---------- */
 
 .filters {
   position: fixed;
@@ -56,7 +54,7 @@
 }
 .chip.is-active { background: var(--brass); border-color: var(--brass); color: #2A1A05; font-weight: 700; }
 
-/* ---------- Карта ---------- */
+
 
 .map {
   position: fixed;
@@ -91,7 +89,6 @@
   color: var(--limestone);
 }
 
-/* ---------- Карточка объекта ---------- */
 
 .sheet {
   position: fixed;
