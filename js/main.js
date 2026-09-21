@@ -1,15 +1,5 @@
-/* ==========================================================================
-   MuraMap — логика интерфейса
-   1) меню (шторка): открытие, закрытие, Esc, клик по фону, ловушка фокуса
-   2) переключение языка kk / ru
-   3) нижние табы
-   4) фолбэк для картинки героя
-   ========================================================================== */
-
 (function () {
   'use strict';
-
-  /* ---------- Словарь ---------- */
 
   const I18N = {
     kk: {
@@ -82,8 +72,6 @@
     syncBurgerLabel();
   }
 
-  /* ---------- Меню ---------- */
-
   const burger = document.getElementById('menuButton');
   const drawer = document.getElementById('menu');
   const scrim  = document.getElementById('scrim');
@@ -106,7 +94,7 @@
 
     drawer.hidden = false;
     scrim.hidden = false;
-    // Перерисовка кадра нужна, чтобы сработал transition после снятия hidden
+
     requestAnimationFrame(function () {
       drawer.classList.add('is-open');
       scrim.classList.add('is-open');
@@ -133,7 +121,7 @@
       drawer.removeEventListener('transitionend', hide);
     };
     drawer.addEventListener('transitionend', hide);
-    setTimeout(hide, 400); // страховка, если transitionend не придёт
+    setTimeout(hide, 400); 
 
     if (lastFocused) lastFocused.focus();
   }
@@ -170,15 +158,12 @@
     }
   });
 
-  /* ---------- Язык ---------- */
-
   document.querySelectorAll('[data-lang]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       applyLang(btn.dataset.lang);
     });
   });
 
-  /* ---------- Кнопки аккаунта ---------- */
 
   drawer.querySelectorAll('[data-action]').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -187,8 +172,6 @@
       closeMenu();
     });
   });
-
-  /* ---------- Табы ---------- */
 
   const ROUTES = {
     guide: 'guide.html',
@@ -209,8 +192,6 @@
     location.href = ROUTES.map + '?lang=' + lang;
   });
 
-  /* ---------- Картинка героя ---------- */
-
   const heroImage = document.getElementById('heroImage');
   const heroFallback = document.getElementById('heroFallback');
 
@@ -226,7 +207,6 @@
     if (heroImage.complete && heroImage.naturalWidth === 0) showFallback();
   }
 
-  /* ---------- Старт ---------- */
 
   applyLang(lang);
 })();
