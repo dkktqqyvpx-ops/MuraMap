@@ -1,0 +1,200 @@
+.routes {
+  max-width: 720px;
+  margin: 0 auto;
+  padding:
+    calc(var(--header-h) + env(safe-area-inset-top) + 20px)
+    16px
+    calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 32px);
+}
+
+.routes__title,
+.route__title {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: clamp(27px, 7vw, 34px);
+  line-height: 1.15;
+}
+
+.routes__lead,
+.route__summary {
+  margin: 0 0 18px;
+  color: var(--limestone-2);
+  font-size: 15px;
+}
+
+.routes__status {
+  margin: 16px 0 0;
+  color: var(--limestone-2);
+  font-size: 14px;
+}
+
+/* ---------- Список подборок ---------- */
+
+.cards { display: grid; gap: 14px; }
+
+.card {
+  display: block;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+}
+.card:hover { border-color: var(--brass); }
+
+.card__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card__body { display: grid; gap: 6px; padding: 14px 16px 16px; }
+
+.card__name { margin: 0; font-family: var(--serif); font-size: 21px; }
+.card__text { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--limestone-2); }
+.card__meta { font-size: 13px; color: var(--limestone-2); }
+.card__cta { margin-top: 4px; font-weight: 700; font-size: 14px; color: var(--brass); }
+
+/* ---------- Маршрут ---------- */
+
+.route__back {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--limestone-2);
+  text-decoration: none;
+}
+.route__back:hover { color: var(--brass); }
+
+.facts {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  list-style: none;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brass);
+  border-radius: var(--r-md);
+}
+
+.facts__item { font-size: 14px; }
+
+.route__para {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.route__map {
+  height: 320px;
+  margin: 18px 0 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.route__note {
+  margin: 0 0 24px;
+  font-size: 12.5px;
+  color: var(--limestone-2);
+}
+
+.pin {
+  display: grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 2px solid #0B2A31;
+  background: var(--turquoise);
+  color: #04191D;
+  font: 700 13px var(--sans);
+  cursor: pointer;
+}
+.pin--stay { background: var(--brass); }
+.pin--city { background: var(--limestone-2); }
+
+.maplibregl-popup-content {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--ink-2);
+  color: var(--limestone);
+  font: 500 13px var(--sans);
+}
+.maplibregl-popup-tip { border-top-color: var(--ink-2); border-bottom-color: var(--ink-2); }
+
+/* ---------- Дни и точки ---------- */
+
+.days { display: grid; gap: 26px; }
+
+.day__title {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: 19px;
+  color: var(--brass);
+}
+
+.stop {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stop__photo {
+  grid-column: 1 / -1;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--r-md);
+}
+
+.stop__number {
+  display: grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--turquoise);
+  color: #04191D;
+  font-weight: 700;
+  font-size: 13px;
+}
+.stop--stay .stop__number { background: var(--brass); color: #2A1A05; }
+.stop--city .stop__number { background: var(--line); color: var(--limestone); }
+
+.stop__body { display: grid; gap: 5px; }
+.stop__leg { font-size: 12.5px; color: var(--limestone-2); }
+.stop__name { margin: 0; font-family: var(--serif); font-size: 18px; }
+.stop__type { font-size: 12.5px; color: var(--turquoise); }
+.stop__text { margin: 0; font-size: 14.5px; line-height: 1.55; }
+
+.stop__link {
+  justify-self: start;
+  margin-top: 4px;
+  padding: 7px 12px;
+  border: 1px solid var(--brass);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brass);
+  text-decoration: none;
+}
+
+/* ---------- Советы ---------- */
+
+.tips {
+  margin-top: 28px;
+  padding: 16px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+
+.tips__title { margin: 0 0 10px; font-family: var(--serif); font-size: 18px; }
+.tips__list { display: grid; gap: 8px; margin: 0; padding-left: 18px; }
+.tips__item { font-size: 14px; line-height: 1.5; }
