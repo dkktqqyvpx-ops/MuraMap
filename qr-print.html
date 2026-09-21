@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MuraMap — печать QR-кодов</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Noto+Serif:wght@500;700&display=swap&subset=cyrillic,cyrillic-ext,latin" rel="stylesheet">
+
+<style>
+  /* Служебная страница: печать табличек с QR для объектов.
+     Для пользователей не предназначена, в меню сайта её нет. */
+
+  :root {
+    --ink: #0B2A31;
+    --line: #1E5360;
+    --turquoise: #35B6BE;
+    --brass: #D9A441;
+    --paper: #FFFFFF;
+    --desk: #E7E1D6;
+    --muted: #4F6468;
+    --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: "Noto Serif", Georgia, serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--desk);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.45;
+  }
+
+  .toolbar {
+    max-width: 190mm;
+    margin: 0 auto;
+    padding: 24px 16px 8px;
+  }
+
+  .toolbar h1 {
+    margin: 0 0 6px;
+    font-family: var(--serif);
+    font-size: 26px;
+  }
+
+  .toolbar p { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+
+  .toolbar code {
+    padding: 1px 5px;
+    background: rgba(11, 42, 49, .08);
+    border-radius: 4px;
+    word-break: break-all;
+  }
+
+  .warn {
+    padding: 10px 12px;
+    border-left: 4px solid #A6512F;
+    background: #F6E3DA;
+    color: #5A2410 !important;
+  }
+
+  .print-btn {
+    margin-top: 6px;
+    min-height: 44px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--ink);
+    color: #fff;
+    font: 700 15px var(--sans);
+    cursor: pointer;
+  }
+
+  .sheet {
+    max-width: 190mm;
+    margin: 0 auto;
+    padding: 12px 16px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85mm, 1fr));
+    gap: 8mm;
+  }
+
+  .card-wrap { display: grid; gap: 6px; justify-items: center; }
+
+  /* ---------- Табличка ---------- */
+
+  .card {
+    width: 85mm;
+    padding: 6mm 6mm 5mm;
+    background: var(--paper);
+    border: .4mm solid var(--ink);
+    border-top: 3mm solid var(--brass);
+    border-radius: 4mm;
+    text-align: center;
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card__brand {
+    margin: 0 0 2mm;
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 11pt;
+    color: var(--line);
+  }
+
+  .card__qr svg {
+    display: block;
+    width: 55mm;
+    height: 55mm;
+    margin: 0 auto;
+  }
+
+  .card__code {
+    margin: 1.5mm 0 3mm;
+    font-weight: 700;
+    font-size: 12pt;
+    letter-spacing: .08em;
+  }
+
+  .card__name {
+    margin: 0 0 1mm;
+    font-family: var(--serif);
+    font-size: 12.5pt;
+    line-height: 1.25;
+  }
+
+  .card__name-ru {
+    margin: 0 0 3mm;
+    font-size: 9.5pt;
+    color: var(--muted);
+  }
+
+  .card__call {
+    margin: 0;
+    padding-top: 2.5mm;
+    border-top: .3mm solid rgba(11, 42, 49, .2);
+    font-size: 8.5pt;
+    line-height: 1.35;
+  }
+
+  .card__url {
+    max-width: 85mm;
+    margin: 0;
+    font-size: 11px;
+    color: var(--muted);
+    word-break: break-all;
+    text-align: center;
+  }
+
+  .png-btn {
+    min-height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--ink);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--ink);
+    font: 600 13px var(--sans);
+    cursor: pointer;
+  }
+
+  .error {
+    grid-column: 1 / -1;
+    padding: 14px;
+    background: #F6E3DA;
+    border-radius: 10px;
+    color: #5A2410;
+  }
+
+  button:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+
+  /* ---------- Печать ---------- */
+
+  @page { size: A4; margin: 10mm; }
+
+  @media print {
+    body { background: #fff; }
+    .no-print { display: none !important; }
+    .sheet {
+      max-width: none;
+      padding: 0;
+      grid-template-columns: repeat(2, 85mm);
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="toolbar no-print">
+  <h1>QR-таблички объектов</h1>
+  <p id="baseInfo"></p>
+  <p class="warn" id="warn" hidden>
+    В <code>js/config.js</code> ещё не указан адрес сайта, поэтому ссылки ведут на этот компьютер.
+    Такие коды не откроются с телефона. Опубликуйте сайт, впишите адрес в <code>siteUrl</code> и обновите страницу.
+  </p>
+  <button class="print-btn" id="printBtn" type="button">Распечатать</button>
+</header>
+
+<main class="sheet" id="sheet"></main>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/mura-qr.js"></script>
+<script src="qr-print.js"></script>
+</body>
+</html>
