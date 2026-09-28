@@ -1,0 +1,237 @@
+/* ==========================================================================
+   MuraMap — экран QR-сканера
+   Уголки видоискателя меняют цвет по состоянию:
+   ожидание — известняк, поиск — латунь, найдено — бирюза, ошибка — кирпич.
+   ========================================================================== */
+
+.brand { text-decoration: none; color: inherit; }
+
+/* Переключатель языка — такой же, как в map.css.
+   Позже его можно перенести в style.css и удалить из обоих файлов. */
+.langmini {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.langmini__btn {
+  min-width: 46px;
+  min-height: 32px;
+  padding: 0 10px;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--limestone-2);
+}
+.langmini__btn.is-active { background: var(--limestone); color: var(--ink); }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Страница ---------- */
+
+.scan {
+  --error: #E8967A;               /* светлый кирпич: читается на тёмном фоне */
+
+  max-width: 440px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding:
+    calc(var(--header-h) + env(safe-area-inset-top) + 20px)
+    20px
+    calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scan__title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(28px, 8vw, 36px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.scan__lead {
+  margin: 0 0 6px;
+  max-width: 36ch;
+  font-size: 15px;
+  color: var(--limestone-2);
+}
+
+/* ---------- Видоискатель ---------- */
+
+.viewfinder {
+  --corner: var(--limestone-2);
+
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    repeating-linear-gradient(135deg, rgba(53, 182, 190, .08) 0 2px, transparent 2px 12px),
+    var(--ink-2);
+}
+
+.viewfinder[data-state="starting"],
+.viewfinder[data-state="scanning"],
+.viewfinder[data-state="busy"]  { --corner: var(--brass); }
+.viewfinder[data-state="found"] { --corner: var(--turquoise); }
+.viewfinder[data-state="error"] { --corner: var(--error); }
+
+/* Библиотека задаёт видео свои размеры — растягиваем его на весь квадрат */
+#reader {
+  position: absolute !important;
+  inset: 0;
+  border: 0 !important;
+  z-index: 0;
+}
+
+#reader video {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.viewfinder__idle {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  color: var(--line);
+}
+
+.viewfinder[data-state="scanning"] .viewfinder__idle,
+.viewfinder[data-state="found"] .viewfinder__idle { display: none; }
+
+.viewfinder__corner {
+  position: absolute;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: 0 solid var(--corner);
+  transition: border-color .2s linear, transform .35s var(--ease);
+}
+
+.viewfinder__corner--tl { top: 18px;    left: 18px;  border-top-width: 3px;    border-left-width: 3px;  border-top-left-radius: 14px; }
+.viewfinder__corner--tr { top: 18px;    right: 18px; border-top-width: 3px;    border-right-width: 3px; border-top-right-radius: 14px; }
+.viewfinder__corner--bl { bottom: 18px; left: 18px;  border-bottom-width: 3px; border-left-width: 3px;  border-bottom-left-radius: 14px; }
+.viewfinder__corner--br { bottom: 18px; right: 18px; border-bottom-width: 3px; border-right-width: 3px; border-bottom-right-radius: 14px; }
+
+/* Код найден — рамка «схватывает» его */
+.viewfinder[data-state="found"] .viewfinder__corner--tl { transform: translate(10px, 10px); }
+.viewfinder[data-state="found"] .viewfinder__corner--tr { transform: translate(-10px, 10px); }
+.viewfinder[data-state="found"] .viewfinder__corner--bl { transform: translate(10px, -10px); }
+.viewfinder[data-state="found"] .viewfinder__corner--br { transform: translate(-10px, -10px); }
+
+.viewfinder__line {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  right: 24px;
+  top: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--turquoise), transparent);
+  box-shadow: 0 0 12px var(--turquoise);
+  opacity: 0;
+}
+
+.viewfinder[data-state="scanning"] .viewfinder__line {
+  opacity: .9;
+  animation: scan-line 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes scan-line {
+  from { top: 24px; }
+  to   { top: calc(100% - 26px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewfinder[data-state="scanning"] .viewfinder__line { display: none; }
+}
+
+/* ---------- Статус ---------- */
+
+.scan__status {
+  min-height: 3em;
+  margin: 2px 0 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--limestone-2);
+}
+.scan__status[data-tone="ok"]    { color: var(--turquoise); font-weight: 700; }
+.scan__status[data-tone="error"] { color: var(--error); }
+
+/* ---------- Кнопки ---------- */
+
+.scan__actions { display: grid; gap: 8px; }
+
+.btn:disabled { opacity: .55; cursor: default; }
+
+.scan__photo {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.scan__photo:focus-within {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+/* ---------- Ручной ввод ---------- */
+
+.manual {
+  margin-top: 14px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+}
+
+.manual__label { font-size: 14px; font-weight: 500; }
+
+.manual__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.manual__input {
+  min-width: 0;
+  min-height: 50px;
+  padding: 0 14px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  color: var(--limestone);
+  font: 500 16px var(--sans);     /* 16px: iOS не будет увеличивать страницу */
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.manual__input::placeholder { color: var(--limestone-2); opacity: .6; }
+.manual__input:focus { border-color: var(--turquoise); }
+
+.manual__btn { width: auto; padding: 0 22px; }
+
+.manual__hint {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--limestone-2);
+}
