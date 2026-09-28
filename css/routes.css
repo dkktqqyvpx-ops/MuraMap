@@ -28,8 +28,6 @@
   font-size: 14px;
 }
 
-/* ---------- Список подборок ---------- */
-
 .cards { display: grid; gap: 14px; }
 
 .card {
@@ -56,8 +54,6 @@
 .card__text { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--limestone-2); }
 .card__meta { font-size: 13px; color: var(--limestone-2); }
 .card__cta { margin-top: 4px; font-weight: 700; font-size: 14px; color: var(--brass); }
-
-/* ---------- Маршрут ---------- */
 
 .route__back {
   display: inline-block;
@@ -126,7 +122,6 @@
 }
 .maplibregl-popup-tip { border-top-color: var(--ink-2); border-bottom-color: var(--ink-2); }
 
-/* ---------- Дни и точки ---------- */
 
 .days { display: grid; gap: 26px; }
 
@@ -185,7 +180,6 @@
   text-decoration: none;
 }
 
-/* ---------- Советы ---------- */
 
 .tips {
   margin-top: 28px;
