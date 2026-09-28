@@ -104,8 +104,6 @@
     return points;
   }
 
-  /* ---------- Список ---------- */
-
   function renderList() {
     listEl.hidden = false;
     detailEl.hidden = true;
@@ -138,7 +136,6 @@
     });
   }
 
-  /* ---------- Маршрут ---------- */
 
   function renderDetail(route) {
     listEl.hidden = true;
@@ -217,8 +214,6 @@
     return item;
   }
 
-  /* ---------- Карта маршрута ---------- */
-
   function drawMap(points) {
     if (!window.maplibregl || !points.length) return;
     if (map) { map.remove(); map = null; }
@@ -277,9 +272,7 @@
       map.fitBounds(bounds, { padding: 50, duration: 0 });
     });
   }
-
-  /* ---------- Язык ---------- */
-
+  
   function applyLang(next) {
     if (!I18N[next]) return;
     lang = next;
@@ -304,8 +297,6 @@
   document.querySelectorAll('[data-lang]').forEach(function (btn) {
     btn.addEventListener('click', function () { applyLang(btn.dataset.lang); });
   });
-
-  /* ---------- Старт ---------- */
 
   function render() {
     if (!routes.length) return;
