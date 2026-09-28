@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="MuraMap">
+  <rect width="96" height="96" rx="22" fill="#0B2A31"/>
+  <path fill="#35B6BE" fill-rule="evenodd" d="M48 80C39 68 28 58 28 42A20 20 0 1 1 68 42C68 58 57 68 48 80ZM37 56V42A11 11 0 0 1 59 42V56Z"/>
+  <path fill="#35B6BE" d="M44 56V51A4 4 0 0 1 52 51V56Z"/>
+  <circle cx="48" cy="26" r="2.6" fill="#D9A441"/>
+</svg>
