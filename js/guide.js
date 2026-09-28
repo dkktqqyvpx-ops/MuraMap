@@ -1,14 +1,5 @@
-/* ==========================================================================
-   MuraMap — чат-бот «Гид»
-   1) диалог: отправка вопроса на сервер (server/worker.js), вывод ответа
-   2) контекст: объект, о котором идёт речь (?object=MURA-001 или из ответа)
-   3) подсказки-вопросы, язык kk / ru, сохранение диалога на время сессии
-   ========================================================================== */
-
 (function () {
   'use strict';
-
-  /* ---------- Словарь ---------- */
 
   const I18N = {
     kk: {
@@ -80,20 +71,18 @@
   const ID_RE = /^MURA-\d{3,}$/;
   const TIMEOUT = 30000;
 
-  /* ---------- Состояние ---------- */
-
   const params = new URLSearchParams(location.search);
   let lang = readLang();
-  let objects = [];               // из data/objects.json — для названий
+  let objects = [];             
   let busy = false;
 
   const saved = readChat();
-  let messages = saved.messages;  // [{ role: 'user'|'assistant', content, objects? }]
+  let messages = saved.messages; 
   let contextId = saved.contextId;
 
   const fromUrl = (params.get('object') || '').toUpperCase();
   if (ID_RE.test(fromUrl) && fromUrl !== contextId) {
-    // Пришли с карточки другого объекта — начинаем разговор о нём
+    
     contextId = fromUrl;
     messages = [];
   }
@@ -106,15 +95,13 @@
   const contextBox = document.getElementById('context');
   const contextName = document.getElementById('contextName');
 
-  /* ---------- Утилиты ---------- */
-
   function readLang() {
     const p = new URLSearchParams(location.search).get('lang');
     if (I18N[p]) return p;
     try {
       const s = localStorage.getItem(LANG_KEY);
       if (I18N[s]) return s;
-    } catch (e) { /* ничего */ }
+    } catch (e) {  }
     return 'kk';
   }
 
@@ -132,7 +119,7 @@
       if (data && Array.isArray(data.messages)) {
         return { messages: data.messages, contextId: data.contextId || null };
       }
-    } catch (e) { /* ничего */ }
+    } catch (e) {  }
     return { messages: [], contextId: null };
   }
 
@@ -142,7 +129,7 @@
         messages: messages.slice(-30),
         contextId: contextId
       }));
-    } catch (e) { /* ничего */ }
+    } catch (e) {  }
   }
 
   function objectName(id, names) {
@@ -155,7 +142,6 @@
     return 'map.html?id=' + encodeURIComponent(id) + '&lang=' + lang;
   }
 
-  // ИИ иногда добавляет разметку Markdown — убираем, показываем простой текст
   function plain(text) {
     return String(text || '')
       .replace(/\*\*(.+?)\*\*/g, '$1')
@@ -169,7 +155,6 @@
     return /^https?:\/\//.test(url) && url.indexOf('USERNAME') === -1 ? url : null;
   }
 
-  /* ---------- Отрисовка ---------- */
 
   function bubble(role, text, extraClass) {
     const item = document.createElement('div');
@@ -208,7 +193,7 @@
       : t('hello');
     chat.appendChild(bubble('assistant', hello));
     messages.forEach(renderMessage);
-    if (typingEl) chat.appendChild(typingEl);   // ответ ещё идёт
+    if (typingEl) chat.appendChild(typingEl);   
     renderSuggestions();
     renderContext();
     scrollDown();
@@ -277,8 +262,6 @@
     suggest.querySelectorAll('button').forEach(function (b) { b.disabled = on; });
   }
 
-  /* ---------- Отправка вопроса ---------- */
-
   async function ask(text) {
     const question = String(text || '').trim().slice(0, 500);
     if (!question || busy) return;
@@ -331,7 +314,6 @@
       setTyping(false);
       renderMessage(answer);
 
-      // Следующие вопросы («а когда его построили?») будут про этот объект
       if (found.length) {
         contextId = found[0].id;
         renderContext();
@@ -340,7 +322,7 @@
     } catch (err) {
       console.error('Гид:', err);
       setTyping(false);
-      // Убираем вопрос без ответа, чтобы диалог для ИИ не сломался
+   
       messages.pop();
       saveChat();
 
@@ -358,8 +340,6 @@
     }
   }
 
-  /* ---------- Поле ввода ---------- */
-
   function autoSize() {
     input.style.height = 'auto';
     input.style.height = Math.min(input.scrollHeight, 140) + 'px';
@@ -367,7 +347,6 @@
 
   input.addEventListener('input', autoSize);
 
-  // Enter — отправить, Shift+Enter — новая строка
   input.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
       e.preventDefault();
@@ -379,8 +358,6 @@
     e.preventDefault();
     ask(input.value);
   });
-
-  /* ---------- Кнопки ---------- */
 
   document.getElementById('clearChat').addEventListener('click', function () {
     messages = [];
@@ -395,8 +372,6 @@
     renderContext();
     renderSuggestions();
   });
-
-  /* ---------- Язык ---------- */
 
   function applyLang(next) {
     if (!I18N[next]) return;
@@ -427,8 +402,6 @@
     btn.addEventListener('click', function () { applyLang(btn.dataset.lang); });
   });
 
-  /* ---------- Старт ---------- */
-
   saveChat();
   applyLang(lang);
 
@@ -436,7 +409,7 @@
     .then(function (r) { return r.ok ? r.json() : { objects: [] }; })
     .then(function (data) {
       objects = data.objects || [];
-      renderAll();  // теперь названия объектов известны
+      renderAll(); 
     })
     .catch(function (err) { console.warn('objects.json:', err); });
 })();
