@@ -1,9 +1,4 @@
-/* ==========================================================================
-   MuraMap — экран «Гид» (чат-бот)
-   Экран занимает всю высоту: сверху заголовок, в середине прокручиваемый
-   диалог, снизу поле ввода над таббаром.
-   Общие части (шапка, переключатель языка) — из scan.css.
-   ========================================================================== */
+======================================================================== */
 
 .body--guide { overflow: hidden; }
 
@@ -47,8 +42,6 @@
 }
 .guide__clear:hover { color: var(--limestone); border-color: var(--turquoise); }
 
-/* ---------- Объект разговора ---------- */
-
 .context {
   display: flex;
   align-items: center;
@@ -85,8 +78,6 @@
   color: var(--limestone-2);
 }
 
-/* ---------- Диалог ---------- */
-
 .chat {
   flex: 1 1 auto;
   min-height: 0;
@@ -119,7 +110,7 @@
   overflow-wrap: anywhere;
 }
 
-/* Ответ гида — как страница рукописи: светлый камень, засечки */
+
 .msg--assistant {
   align-self: flex-start;
   background: var(--ink-2);
@@ -151,7 +142,7 @@
 }
 .msg__link:hover { background: color-mix(in srgb, var(--brass) 14%, transparent); }
 
-/* Три точки «печатает» */
+
 .msg--typing {
   grid-auto-flow: column;
   justify-content: start;
@@ -172,7 +163,6 @@
   40% { opacity: 1; transform: translateY(-3px); }
 }
 
-/* ---------- Подсказки ---------- */
 
 .suggest {
   display: flex;
@@ -197,7 +187,6 @@
 .suggest__btn:hover { border-color: var(--brass); }
 .suggest__btn:disabled { opacity: .5; }
 
-/* ---------- Поле ввода ---------- */
 
 .composer {
   flex: 0 0 auto;
