@@ -1,0 +1,189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.9663352,
+          50.7047246
+        ]
+      },
+      "properties": {
+        "id": "MURA-001",
+        "slug": "zhumagazy-haziret-dadem-ata-kesenesi",
+        "type": "mausoleum",
+        "category": "sacred",
+        "name_kk": "Жұмағазы хазірет (Дәдем ата) кесенесі",
+        "name_ru": "Мавзолей Жумагазы-хазрет (Дадем ата)",
+        "region_kk": "БҚО, Сырым ауданы, Тоғанас ауылдық округі",
+        "region_ru": "ЗКО, Сырымский район, сельский округ Тоганас",
+        "period_kk": "XIX ғасыр",
+        "period_ru": "XIX век",
+        "photo": "assets/objects/mura-001.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.0698272,
+          43.5970492
+        ]
+      },
+      "properties": {
+        "id": "MURA-002",
+        "slug": "beket-ata-meshiti",
+        "type": "underground_mosque",
+        "category": "sacred",
+        "name_kk": "Бекет ата мешіті",
+        "name_ru": "Мечеть Бекет ата",
+        "region_kk": "Маңғыстау облысы, Қарақия ауданы, Оғыланды шатқалы",
+        "region_ru": "Мангистауская область, Каракиянский район, урочище Огыланды",
+        "period_kk": "XVIII ғасыр",
+        "period_ru": "XVIII век",
+        "photo": "assets/objects/mura-002.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.3897889,
+          43.5480037
+        ]
+      },
+      "properties": {
+        "id": "MURA-003",
+        "slug": "shopan-ata-qorymy",
+        "type": "necropolis",
+        "category": "sacred",
+        "name_kk": "Шопан ата қорымы",
+        "name_ru": "Некрополь Шопан ата",
+        "region_kk": "Маңғыстау облысы, Қарақия ауданы, Сенек ауылы маңында, Түйесу құмының солтүстік шеті",
+        "region_ru": "Мангистауская область, Каракиянский район, рядом с селом Сенек, северная граница песков Туйесу",
+        "period_kk": "X-ХIХ ғғ.",
+        "period_ru": "X-ХIХ в.",
+        "photo": "assets/objects/mura-003.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.2709232,
+          43.2977379
+        ]
+      },
+      "properties": {
+        "id": "MURA-004",
+        "slug": "qozha-ahmet-iassaui-kesenesi",
+        "type": "mausoleum",
+        "category": "sacred",
+        "name_kk": "Қожа Ахмет Яссауи кесенесі",
+        "name_ru": "Мавзолей Қожа Ахмет Яссауи",
+        "region_kk": "ОҚО, Түркістан қаласы",
+        "region_ru": "ЮКО, город Туркистан",
+        "period_kk": "XIV-XV ғасыр",
+        "period_ru": "XIV-XV в.",
+        "photo": "assets/objects/mura-004.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.1391178,
+          44.4335258
+        ]
+      },
+      "properties": {
+        "id": "MURA-005",
+        "slug": "shaqpaq-ata-meshiti",
+        "type": "underground_mosque",
+        "category": "sacred",
+        "name_kk": "Шақпақ ата мешіті",
+        "name_ru": "Мечеть Шакпак ата",
+        "region_kk": "Маңғыстау облысы, Түпқараған ауданы, Таушық елді-мекені маңында",
+        "region_ru": "Мангистауская область, Тупкараганский район, рядом с населенным пунктом Таушык",
+        "period_kk": "X-ХV ғғ.",
+        "period_ru": "X-ХV в.",
+        "photo": "assets/objects/mura-005.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.8720984,
+          43.8999406
+        ]
+      },
+      "properties": {
+        "id": "MURA-006",
+        "slug": "karaman-ata-keshen",
+        "type": "necropolis",
+        "category": "sacred",
+        "name_kk": "Қараман ата кешені",
+        "name_ru": "Комплекс Караман ата",
+        "region_kk": "Маңғыстау облысы, Маңғыстау ауданы, Шетпе кентінен оңтүстік-батысқа қарай, Қандыбас қыстағының батыс бөлігі",
+        "region_ru": "Мангистауская область, Мангистауский район, юго-западнее посёлка Шетпе, западнее зимовки Кандыбас",
+        "period_kk": "XIII ғасыр",
+        "period_ru": "XIII век",
+        "photo": "assets/objects/mura-006.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.8839588,
+          43.6950904
+        ]
+      },
+      "properties": {
+        "id": "MURA-007",
+        "slug": "masat-ata-meshiti",
+        "type": "underground_mosque",
+        "category": "sacred",
+        "name_kk": "Масат ата мешіті",
+        "name_ru": "Мечеть Масат ата",
+        "region_kk": "Маңғыстау облысы, Маңғыстау ауданы, Үштаған ауылынан оңтүстік-шығысқа қарай 15 шақырымдай жер",
+        "region_ru": "Мангистауская область, Мангистауский район, примерно в 15 км к юго-востоку от села Уштаган",
+        "period_kk": "X–XIX ғасырлар",
+        "period_ru": "X–XIX века",
+        "photo": "assets/objects/mura-007.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.6233275,
+          50.3465745
+        ]
+      },
+      "properties": {
+        "id": "MURA-008",
+        "slug": "sarqyrama-qyz-aulie-bulagy",
+        "type": "spring",
+        "category": "nature",
+        "name_kk": "Сарқырама / Қыз әулие бұлағы",
+        "name_ru": "Сарқырама / родник Кыз-аулие",
+        "region_kk": "БҚО, Шыңғырлау ауданы, Ақсуат кенті маңы, Қараағаш орманы",
+        "region_ru": "ЗКО, Чингирлауский район, окрестности посёлка Аксуат, лес Караагаш",
+        "period_kk": "Табиғи ескерткіш",
+        "period_ru": "Памятник природы",
+        "photo": "assets/objects/mura-008.jpg"
+      }
+    }
+  ]
+}
