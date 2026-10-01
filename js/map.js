@@ -23,7 +23,7 @@
   };
  
   let lang = new URLSearchParams(location.search).get('lang') || 'kk';
-  let objects = [];       // полные записи из objects.json
+  let objects = [];       
   let activeId = null;
   let activeType = 'all';
  
@@ -61,7 +61,7 @@
         { id: 'osm', type: 'raster', source: 'osm' }
       ]
     },
-    center: [63.0, 47.5],   // центр Казахстана
+    center: [63.0, 47.5],   
     zoom: 4.1,
     attributionControl: { compact: true }
   });
@@ -174,8 +174,6 @@
     });
   });
  
-  /* ---------- Взаимодействие с точками ---------- */
- 
   map.on('click', 'points', function (e) {
     openObject(e.features[0].properties.id);
   });
@@ -192,8 +190,6 @@
     map.on('mouseenter', layer, function () { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', layer, function () { map.getCanvas().style.cursor = ''; });
   });
- 
-  /* ---------- Карточка объекта ---------- */
  
   function openObject(id, fly) {
     const obj = objects.find(function (o) { return o.id === id; });
@@ -246,8 +242,6 @@
     if (activeId) location.href = 'guide.html?object=' + activeId + '&lang=' + lang;
   });
  
-  /* ---------- Фильтры ---------- */
- 
   function applyFilter(type) {
     activeType = type;
     const base = ['!', ['has', 'point_count']];
@@ -264,8 +258,6 @@
       applyFilter(chip.dataset.type);
     });
   });
- 
-  /* ---------- Язык ---------- */
  
   function applyLang(next) {
     if (!I18N[next]) return;
